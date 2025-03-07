@@ -1,0 +1,9 @@
+[submodule "roms"]
+	path = roms-kate-ice
+	url = git@github.com:beringnpz/roms.git
+[submodule "romscom"]
+	path = romscom
+	url = git@github.com:beringnpz/romscom.git
+[submodule "bering-Apps"]
+	path = bering-Apps
+	url = git@github.com:beringnpz/bering-Apps.git
