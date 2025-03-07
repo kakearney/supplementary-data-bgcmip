@@ -1,0 +1,712 @@
+TITLE = Bering Sea 10km Grid
+MyAppCPP = BERING_10K
+VARNAME = ../bering-Apps/Apps/Bering_BGC_variants/varinfo_bestnpz_scaledbry.dat
+Ngrids = 1
+NestLayers = 1
+GridsInLayer = 1
+Lm == 180
+Mm == 256
+N == 30
+Nbed == 0
+NAT = 2
+NPT = 1
+NCS = 0
+NNS = 0
+NtileI == 7
+NtileJ == 20
+Hadvection == C4 C4
+Vadvection == C4 C4
+ad_Hadvection == U3 U3
+ad_Vadvection == C4 C4
+NIOTASKS = 8
+PIO_STRIDE = 1
+LBC(isFsur) == Che Che Clo Clo
+LBC(isUbar) == Fla Fla Clo Clo
+LBC(isVbar) == Fla Fla Clo Clo
+LBC(isUvel) == RadNud RadNud Clo Clo
+LBC(isVvel) == RadNud RadNud Clo Clo
+LBC(isMtke) == Clo Clo Clo Clo
+LBC(isTvar) == RadNud RadNud Clo Clo \
+RadNud RadNud Clo Clo
+LBC(isAice) == Clo Clo Clo Clo
+LBC(isHice) == Clo Clo Clo Clo
+LBC(isHsno) == Clo Clo Clo Clo
+LBC(isTice) == Clo Clo Clo Clo
+LBC(isSig11) == Clo Clo Clo Clo
+LBC(isSig12) == Clo Clo Clo Clo
+LBC(isSig22) == Clo Clo Clo Clo
+LBC(isUice) == Gra Gra Clo Clo
+LBC(isVice) == Gra Gra Clo Clo
+ad_LBC(isFsur) == Per Clo Per Clo
+ad_LBC(isUbar) == Per Clo Per Clo
+ad_LBC(isVbar) == Per Clo Per Clo
+ad_LBC(isUvel) == Per Clo Per Clo
+ad_LBC(isVvel) == Per Clo Per Clo
+ad_LBC(isMtke) == Per Clo Per Clo
+ad_LBC(isTvar) == Per Clo Per Clo \
+Per Clo Per Clo
+VolCons(west) == F
+VolCons(east) == F
+VolCons(south) == F
+VolCons(north) == F
+ad_VolCons(west) == F
+ad_VolCons(east) == F
+ad_VolCons(south) == F
+ad_VolCons(north) == F
+NTIMES == 526320
+DT == 600.0d0
+NDTFAST == 40
+NTIMES_ANA == 1440
+NTIMES_FCT == 1440
+ERstr = 1
+ERend = 1
+Nouter = 1
+Ninner = 1
+Nintervals = 1
+NEV = 2
+NCV = 10
+NRREC == -1
+LcycleRST == T
+NRST == 576
+NSTA == 144
+NFLT == 144
+NINFO == 1
+LDEFOUT == T
+NHIS == 576
+NDEFHIS == 5760
+NTSAVG == 1
+NAVG == 576
+NDEFAVG == 5760
+NTSAVG2 == 1
+NAVG2 == 27
+NDEFAVG2 == 2700
+NTSDIA == 1
+NDIA == 576
+NDEFDIA == 5760
+LcycleTLM == F
+NTLM == 72
+NDEFTLM == 0
+LcycleADJ == F
+NADJ == 72
+NDEFADJ == 0
+NSFF == 72
+NOBC == 72
+LmultiGST = F
+LrstGST = F
+MaxIterGST = 500
+NGST = 10
+Ritz_tol = 1d-15
+TNU2 == 25.0d0 25.0d0
+TNU4 == 0.0d0 0.0d0
+ad_TNU2 == 0.0d0 0.0d0
+ad_TNU4 == 0.0d0 0.0d0
+VISC2 == 25.0d0
+VISC4 == 0.0d0
+ad_VISC2 == 0.0d0
+ad_VISC4 == 0.0d0
+LuvSponge == T
+LtracerSponge == T T
+AKT_BAK == 1d-06 1d-06
+ad_AKT_fac == 1.0d0 1.0d0
+AKV_BAK == 1d-05
+ad_AKV_fac == 1.0d0
+AKT_LIMIT == 0.001d0 0.001d0
+AKV_LIMIT == 0.001d0
+AKK_BAK == 5d-06
+AKP_BAK == 5d-06
+TKENU2 == 0.0d0
+TKENU4 == 0.0d0
+GLS_P == -1.0d0
+GLS_M == 0.5d0
+GLS_N == -1.0d0
+GLS_Kmin == 7.6d-06
+GLS_Pmin == 1d-12
+GLS_CMU0 == 0.5477d0
+GLS_C1 == 0.555d0
+GLS_C2 == 0.833d0
+GLS_C3M == -0.6d0
+GLS_C3P == 1.0d0
+GLS_SIGK == 2.0d0
+GLS_SIGP == 2.0d0
+CHARNOK_ALPHA == 1400.0d0
+ZOS_HSIG_ALPHA == 0.5d0
+SZ_ALPHA == 0.25d0
+CRGBAN_CW == 100.0d0
+RDRG == 0.0003d0
+RDRG2 == 0.003d0
+Zob == 0.02d0
+Zos == 0.02d0
+BLK_ZQ == 10.0d0
+BLK_ZT == 10.0d0
+BLK_ZW == 10.0d0
+DCRIT == 0.5d0
+WTYPE == 1
+LEVSFRC == 15
+LEVBFRC == 1
+Vtransform == 1
+Vstretching == 1
+THETA_S == 5.0d0
+THETA_B == 0.4d0
+TCLINE == 10.0d0
+RHO0 = 1025.0d0
+BVF_BAK = 0.0001d0
+DSTART = 32886.0d0
+TIDE_START = -693962.0d0
+TIME_REF = 19000101.0d0
+TNUDG == 360.0d0 360.0d0
+ZNUDG == 360.0d0
+M2NUDG == 360.0d0
+M3NUDG == 360.0d0
+TNUDG_SSS == 60.0d0
+SSS_MISMATCH_THRESHOLD == 0.2d0
+OBCFAC == 120.0d0
+R0 == 1027.0d0
+T0 == 10.0d0
+S0 == 35.0d0
+TCOEF == 0.00017d0
+SCOEF == 0.00076d0
+GAMMA2 == 1.0d0
+LuvSrc == T
+LwSrc == F
+LtracerSrc == F F
+LsshCLM == F
+Lm2CLM == F
+Lm3CLM == F
+LtracerCLM == F F
+LnudgeM2CLM == F
+LnudgeM3CLM == F
+LnudgeTCLM == F F F F
+LmiCLM == F
+LaiCLM == F
+LsiCLM == F
+LnudgeMICLM == F
+LnudgeAICLM == F
+LnudgeSICLM == F
+DstrS == 0.0d0
+DendS == 0.0d0
+KstrS == 1
+KendS == 1
+Lstate(isFsur) == F
+Lstate(isUbar) == F
+Lstate(isVbar) == F
+Lstate(isUvel) == F
+Lstate(isVvel) == F
+Lstate(isWvel) == F
+Lstate(isTvar) == F F
+Fstate(isFsur) == F
+Fstate(isUbar) == F
+Fstate(isVbar) == F
+Fstate(isUvel) == F
+Fstate(isVvel) == F
+Fstate(isTvar) == F F
+Fstate(isUstr) == T
+Fstate(isVstr) == T
+Fstate(isTsur) == F F
+SO_decay == 2.0d0
+SO_sdev(isFsur) == 1.0d0
+SO_sdev(isUbar) == 1.0d0
+SO_sdev(isVbar) == 1.0d0
+SO_sdev(isUvel) == 1.0d0
+SO_sdev(isVvel) == 1.0d0
+SO_sdev(isTvar) == 1.0d0 1.0d0
+SO_sdev(isUstr) == 1.0d0
+SO_sdev(isVstr) == 1.0d0
+SO_sdev(isTsur) == 1.0d0 1.0d0
+Hout(idUvel) == T
+Hout(idVvel) == T
+Hout(idu3dE) == F
+Hout(idv3dN) == F
+Hout(idWvel) == T
+Hout(idOvel) == T
+Hout(idUbar) == T
+Hout(idVbar) == T
+Hout(idu2dE) == F
+Hout(idv2dN) == F
+Hout(idFsur) == T
+Hout(idBath) == T
+Hout(idTvar) == T T
+Hout(idpthR) == F
+Hout(idpthU) == F
+Hout(idpthV) == F
+Hout(idpthW) == F
+Hout(idUsms) == T
+Hout(idVsms) == T
+Hout(idUbms) == T
+Hout(idVbms) == T
+Hout(idUbrs) == F
+Hout(idVbrs) == F
+Hout(idUbws) == F
+Hout(idVbws) == F
+Hout(idUbcs) == F
+Hout(idVbcs) == F
+Hout(idUbot) == F
+Hout(idVbot) == F
+Hout(idUbur) == F
+Hout(idVbvr) == F
+Hout(idW2xx) == F
+Hout(idW2xy) == F
+Hout(idW2yy) == F
+Hout(idU2rs) == F
+Hout(idV2rs) == F
+Hout(idU2Sd) == F
+Hout(idV2Sd) == F
+Hout(idW3xx) == F
+Hout(idW3xy) == F
+Hout(idW3yy) == F
+Hout(idW3zx) == F
+Hout(idW3zy) == F
+Hout(idU3rs) == F
+Hout(idV3rs) == F
+Hout(idU3Sd) == F
+Hout(idV3Sd) == F
+Hout(idWamp) == F
+Hout(idWlen) == F
+Hout(idWdir) == F
+Hout(idWptp) == F
+Hout(idWpbt) == F
+Hout(idWorb) == F
+Hout(idWdis) == F
+Hout(idPair) == T
+Hout(idUair) == F
+Hout(idVair) == F
+Hout(idUairE) == F
+Hout(idVairN) == F
+Hout(idTsur) == T T
+Hout(idLhea) == T
+Hout(idShea) == T
+Hout(idLrad) == T
+Hout(idSrad) == T
+Hout(idEmPf) == T
+Hout(idevap) == F
+Hout(idrain) == F
+Hout(idDano) == T
+Hout(idVvis) == T
+Hout(idTdif) == T
+Hout(idSdif) == T
+Hout(idHsbl) == T
+Hout(idHbbl) == T
+Hout(idMtke) == F
+Hout(idMtls) == F
+Hout(idStr) == T
+Hout(id3dPV) == T
+Hout(id3dPVI) == T
+Hout(id3dPVJ) == T
+Hout(id3dPVK) == T
+Hout(inert) == T
+Qout(idUvel) == T
+Qout(idVvel) == T
+Qout(idu3dE) == T
+Qout(idv3dN) == T
+Qout(idWvel) == F
+Qout(idOvel) == F
+Qout(idUbar) == T
+Qout(idVbar) == T
+Qout(idu2dE) == T
+Qout(idv2dN) == T
+Qout(idFsur) == T
+Qout(idBath) == F
+Qout(idTvar) == F F
+Qout(idUsur) == T
+Qout(idVsur) == T
+Qout(idUsuE) == T
+Qout(idVsuN) == T
+Qout(idsurT) == T T
+Qout(idpthR) == F
+Qout(idpthU) == F
+Qout(idpthV) == F
+Qout(idpthW) == F
+Qout(idUsms) == F
+Qout(idVsms) == F
+Qout(idUbms) == F
+Qout(idVbms) == F
+Qout(idUbrs) == F
+Qout(idVbrs) == F
+Qout(idUbws) == F
+Qout(idVbws) == F
+Qout(idUbcs) == F
+Qout(idVbcs) == F
+Qout(idUbot) == F
+Qout(idVbot) == F
+Qout(idUbur) == F
+Qout(idVbvr) == F
+Qout(idW2xx) == F
+Qout(idW2xy) == F
+Qout(idW2yy) == F
+Qout(idU2rs) == F
+Qout(idV2rs) == F
+Qout(idU2Sd) == F
+Qout(idV2Sd) == F
+Qout(idW3xx) == F
+Qout(idW3xy) == F
+Qout(idW3yy) == F
+Qout(idW3zx) == F
+Qout(idW3zy) == F
+Qout(idU3rs) == F
+Qout(idV3rs) == F
+Qout(idU3Sd) == F
+Qout(idV3Sd) == F
+Qout(idWamp) == F
+Qout(idWlen) == F
+Qout(idWdir) == F
+Qout(idWptp) == F
+Qout(idWpbt) == F
+Qout(idWorb) == F
+Qout(idWdis) == F
+Qout(idPair) == F
+Qout(idUair) == T
+Qout(idVair) == T
+Qout(idUairE) == T
+Qout(idVairN) == T
+Qout(idTsur) == T T
+Qout(idLhea) == T
+Qout(idShea) == T
+Qout(idLrad) == T
+Qout(idSrad) == T
+Qout(idEmPf) == T
+Qout(idevap) == T
+Qout(idrain) == T
+Qout(idDano) == F
+Qout(idVvis) == F
+Qout(idTdif) == F
+Qout(idSdif) == F
+Qout(idHsbl) == F
+Qout(idHbbl) == F
+Qout(idMtke) == F
+Qout(idMtls) == F
+Qout(idEBF) == T
+Qout(idStr2) == T
+Qout(idRVsu) == T
+Qout(idPVsu) == T
+Qout(idPVIsu) == T
+Qout(idPVJsu) == T
+Qout(idPVKsu) == T
+Qout(inert) == F
+Qout(Snert) == F
+Aout2(idUvel) == T
+Aout2(idVvel) == T
+Aout2(idu3dE) == T
+Aout2(idv3dN) == T
+Aout2(idUbar) == T
+Aout2(idVbar) == T
+Aout2(idu2dE) == T
+Aout2(idv2dN) == T
+Aout2(idFsur) == T
+Aout2(idTvar) == T T
+Aout2(idUair) == T
+Aout2(idVair) == T
+Aout2(idUairE) == T
+Aout2(idVairN) == T
+Aout2(idUsms) == T
+Aout2(idVsms) == T
+Aout2(idTsur) == T T
+Aout2(idLhea) == T
+Aout2(idShea) == T
+Aout2(idLrad) == T
+Aout2(idSrad) == T
+Aout2(idEmPf) == F
+Aout2(idevap) == F
+Aout2(idrain) == F
+Aout2(inert) == F
+Aout(idUvel) == T
+Aout(idVvel) == T
+Aout(idu3dE) == T
+Aout(idv3dN) == T
+Aout(idWvel) == T
+Aout(idOvel) == T
+Aout(idUbar) == T
+Aout(idVbar) == T
+Aout(idu2dE) == T
+Aout(idv2dN) == T
+Aout(idFsur) == T
+Aout(idTvar) == T T
+Aout(idUsms) == T
+Aout(idVsms) == T
+Aout(idUbms) == T
+Aout(idVbms) == T
+Aout(idW2xx) == F
+Aout(idW2xy) == F
+Aout(idW2yy) == F
+Aout(idU2rs) == F
+Aout(idV2rs) == F
+Aout(idU2Sd) == F
+Aout(idV2Sd) == F
+Aout(idW3xx) == F
+Aout(idW3xy) == F
+Aout(idW3yy) == F
+Aout(idW3zx) == F
+Aout(idW3zy) == F
+Aout(idU3rs) == F
+Aout(idV3rs) == F
+Aout(idU3Sd) == F
+Aout(idV3Sd) == F
+Aout(idPair) == F
+Aout(idUair) == F
+Aout(idVair) == F
+Aout(idUairE) == F
+Aout(idVairN) == F
+Aout(idTsur) == T T
+Aout(idLhea) == T
+Aout(idShea) == T
+Aout(idLrad) == T
+Aout(idSrad) == T
+Aout(idevap) == T
+Aout(idrain) == T
+Aout(idDano) == T
+Aout(idVvis) == F
+Aout(idTdif) == F
+Aout(idSdif) == F
+Aout(idHsbl) == T
+Aout(idHbbl) == F
+Aout(id2dRV) == F
+Aout(id3dRV) == F
+Aout(id2dPV) == F
+Aout(id3dPV) == F
+Aout(idu3dD) == F
+Aout(idv3dD) == F
+Aout(idu2dD) == F
+Aout(idv2dD) == F
+Aout(idFsuD) == F
+Aout(idTrcD) == F F
+Aout(idHUav) == F
+Aout(idHVav) == F
+Aout(idUUav) == F
+Aout(idUVav) == F
+Aout(idVVav) == F
+Aout(idU2av) == F
+Aout(idV2av) == F
+Aout(idZZav) == F
+Aout(idTTav) == F F
+Aout(idUTav) == F F
+Aout(idVTav) == F F
+Aout(iHUTav) == F F
+Aout(iHVTav) == F F
+Aout(inert) == T
+Dout(M2rate) == T
+Dout(M2pgrd) == T
+Dout(M2fcor) == T
+Dout(M2hadv) == T
+Dout(M2xadv) == T
+Dout(M2yadv) == T
+Dout(M2hrad) == T
+Dout(M2hvis) == T
+Dout(M2xvis) == T
+Dout(M2yvis) == T
+Dout(M2sstr) == T
+Dout(M2bstr) == T
+Dout(M3rate) == T
+Dout(M3pgrd) == T
+Dout(M3fcor) == T
+Dout(M3hadv) == T
+Dout(M3xadv) == T
+Dout(M3yadv) == T
+Dout(M3vadv) == T
+Dout(M3hrad) == T
+Dout(M3vrad) == T
+Dout(M3hvis) == T
+Dout(M3xvis) == T
+Dout(M3yvis) == T
+Dout(M3vvis) == T
+Dout(iTrate) == T T
+Dout(iThadv) == T T
+Dout(iTxadv) == T T
+Dout(iTyadv) == T T
+Dout(iTvadv) == T T
+Dout(iThdif) == T T
+Dout(iTxdif) == T T
+Dout(iTydif) == T T
+Dout(iTsdif) == T T
+Dout(iTvdif) == T T
+NUSER = 0
+USER = 0.0d0
+NC_SHUFFLE = 1
+NC_DEFLATE == 1
+NC_DLEVEL = 1
+GRDNAME == ../../ROMS_Datasets/grids/AlaskaGrids_Bering10K.nc
+ININAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_13_rst.nc
+ITLNAME == placeholder.nc
+IRPNAME == placeholder.nc
+IADNAME == placeholder.nc
+FWDNAME == placeholder.nc
+ADSNAME == placeholder.nc
+FOInameA == placeholder.nc
+FOInameB == placeholder.nc
+FCTnameA == placeholder.nc
+FCTnameB == placeholder.nc
+NGCNAME = placeholder.nc
+NCLMFILES == 1
+CLMNAME == ../../ROMS_Datasets/initial/ini_hindcast_unnested_Bering10K_BEST_NPZ.nc
+NBCFILES == 3
+BRYNAME == ../../ROMS_Datasets/WOA2018/WOA2018_Bering10K_N30_brybgc.nc \
+../../ROMS_Datasets/CFS/2009/CFS-ocean-Bering10K-N30-bryocn-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-ocean-Bering10K-N30-bryocn-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-ocean-Bering10K-N30-bryocn-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-ocean-Bering10K-N30-bryocn-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-ocean-Bering10K-N30-bryocn-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-ocean-Bering10K-N30-bryocn-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-ocean-Bering10K-N30-bryocn-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-ocean-Bering10K-N30-bryocn-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-ocean-Bering10K-N30-bryocn-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-ocean-Bering10K-N30-bryocn-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-ocean-Bering10K-N30-bryocn-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-ocean-Bering10K-N30-bryocn-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2020.nc
+NUDNAME == ../../ROMS_Datasets/initial/nudgingcoeff_Bering10K.nc
+NSSFFILES == 1
+SSFNAME == placeholder.nc
+TIDENAME == ../../ROMS_Datasets/OTPS/tides_OTPS_Bering10K.nc
+NFFILES == 13
+FRCNAME == ../../ROMS_Datasets/BarrowCO2/atmo_co2_barrow_1970_2020.nc \
+../../ROMS_Datasets/Iron/ESM4_Bering10K_iron_dust_clim.nc \
+../../ROMS_Datasets/salinity/sss.clim.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-Pair-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-Pair-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-Pair-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-Pair-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-Pair-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-Pair-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-Pair-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-Pair-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Pair-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-Pair-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-Pair-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-Pair-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-Qair-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-Qair-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-Qair-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-Qair-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-Qair-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-Qair-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-Qair-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-Qair-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Qair-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-Qair-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-Qair-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-Qair-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-Tair-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-Tair-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-Tair-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-Tair-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-Tair-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-Tair-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-Tair-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-Tair-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Tair-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-Tair-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-Tair-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-Tair-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-Uwind-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-Uwind-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-Uwind-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-Uwind-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-Uwind-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-Uwind-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-Uwind-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-Uwind-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Uwind-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-Uwind-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-Uwind-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-Uwind-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-Vwind-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-Vwind-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-Vwind-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-Vwind-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-Vwind-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-Vwind-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-Vwind-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-Vwind-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Vwind-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-Vwind-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-Vwind-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-Vwind-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-rain-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-rain-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-rain-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-rain-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-rain-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-rain-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-rain-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-rain-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-rain-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-rain-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-rain-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-rain-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-swrad-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-swrad-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-swrad-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-swrad-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-swrad-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-swrad-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-swrad-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-swrad-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-swrad-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-swrad-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-swrad-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-swrad-2020.nc \
+../../ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-lwrad-2009.nc |
+../../ROMS_Datasets/CFS/2010/CFS-atmos-northPacific-lwrad-2010.nc |
+../../ROMS_Datasets/CFS/2011/CFS-atmos-northPacific-lwrad-2011.nc |
+../../ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-lwrad-2012.nc |
+../../ROMS_Datasets/CFS/2013/CFS-atmos-northPacific-lwrad-2013.nc |
+../../ROMS_Datasets/CFS/2014/CFS-atmos-northPacific-lwrad-2014.nc |
+../../ROMS_Datasets/CFS/2015/CFS-atmos-northPacific-lwrad-2015.nc |
+../../ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-lwrad-2016.nc |
+../../ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-lwrad-2017.nc |
+../../ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-lwrad-2018.nc |
+../../ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-lwrad-2019.nc |
+../../ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-lwrad-2020.nc \
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2009.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2010.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2011.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2012.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2013.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2014.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2015.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2016.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2017.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2018.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2019.nc |
+../../ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_2020.nc \
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2009.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2010.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2011.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2012.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2013.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2014.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2015.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2016.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2017.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2018.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2019.nc |
+../../ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2020.nc
+DAINAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_dai.nc
+GSTNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_gst.nc
+RSTNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_rst.nc
+HISNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_his.nc
+QCKNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_qck.nc
+TLMNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_tlm.nc
+TLFNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_tlf.nc
+ADJNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_adj.nc
+HARNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_har.nc
+AVGNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_avg.nc
+AVG2NAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_avg2.nc
+DIANAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_dia.nc
+STANAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_sta.nc
+FLTNAME == bgcmip_bestnpz/Out/bgcmip_bestnpz_14_flt.nc
+APARNAM = placeholder.in
+SPOSNAM = bgcmip_bestnpz/In/bgcmip_bestnpz_spos.in
+FPOSNAM = placeholder.in
+IPARNAM = bgcmip_bestnpz/In/bgcmip_bestnpz_ipar.in
+BPARNAM = bgcmip_bestnpz/In/bgcmip_bestnpz_bpar.in
+SPARNAM = placeholder.in
+USRNAME = placeholder.dat

@@ -1,0 +1,11 @@
+
+romsM_bestnpz_202310311628:32016 terminated with signal 11 at PC=67e176 SP=7ffcab17e0c0.  Backtrace:
+./romsM_bestnpz_202310311628[0x67e176]
+./romsM_bestnpz_202310311628[0x675504]
+./romsM_bestnpz_202310311628[0x4d2c13]
+./romsM_bestnpz_202310311628[0x40d849]
+./romsM_bestnpz_202310311628[0x40bdbc]
+./romsM_bestnpz_202310311628[0x40bb5e]
+./romsM_bestnpz_202310311628[0x40b95e]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b1be1f9c555]
+./romsM_bestnpz_202310311628[0x40b869]

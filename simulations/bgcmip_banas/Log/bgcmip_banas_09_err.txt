@@ -1,0 +1,5 @@
+slurmstepd: error: *** STEP 4641545.8 ON n2361 CANCELLED AT 2023-06-25T02:01:03 DUE TO JOB REQUEUE ***
+[mpiexec@n2361.hyak.local] control_cb (../../pm/pmiserv/pmiserv_cb.c:859): assert (!closed) failed
+[mpiexec@n2361.hyak.local] HYDT_dmxu_poll_wait_for_event (../../tools/demux/demux_poll.c:76): callback returned error status
+[mpiexec@n2361.hyak.local] HYD_pmci_wait_for_completion (../../pm/pmiserv/pmiserv_pmci.c:501): error waiting for event
+[mpiexec@n2361.hyak.local] main (../../ui/mpich/mpiexec.c:1147): process manager error waiting for completion

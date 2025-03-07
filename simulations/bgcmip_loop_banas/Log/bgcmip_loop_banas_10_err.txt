@@ -1,0 +1,1822 @@
+
+romsM_banas_202305241654:26677 terminated with signal 11 at PC=2b03e0804b7c SP=7ffdae6048a8.  Backtrace:
+
+romsM_banas_202305241654:18293 terminated with signal 11 at PC=2b9122e65b7c SP=7fffad5e74a8.  Backtrace:
+
+romsM_banas_202305241654:7569 terminated with signal 11 at PC=2b80be3cfb7c SP=7ffd3eb23928.  Backtrace:
+
+romsM_banas_202305241654:29579 terminated with signal 11 at PC=2afce8a04b7c SP=7ffd89f5c428.  Backtrace:
+
+romsM_banas_202305241654:26685 terminated with signal 11 at PC=2ad1cdd70b7c SP=7ffda28c7528.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b9122e65b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(cfree+0x1c)[0x2b80be3cfb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:29581 terminated with signal 11 at PC=2ba2a3e4eb7c SP=7ffe1cc35c28.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b03e0804b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9122e02555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:29572 terminated with signal 11 at PC=2b1003206b7c SP=7fff538d3528.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2ad1cdd70b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b80be36c555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:29569 terminated with signal 11 at PC=2aca796cfb7c SP=7fff3d084228.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:7566 terminated with signal 11 at PC=2ad890aecb7c SP=7ffdd67263a8.  Backtrace:
+
+romsM_banas_202305241654:29570 terminated with signal 11 at PC=2b019c910b7c SP=7ffc9b6cc5a8.  Backtrace:
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:7565 terminated with signal 11 at PC=2b9116b5fb7c SP=7ffd87d62728.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2aca796cfb7c]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b03e07a1555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2ad890aecb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2b019c910b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b019c8ad555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad1cdd0d555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b9116b5fb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(cfree+0x1c)[0x2b1003206b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b10031a3555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad890a89555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2afce8a04b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afce89a1555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:26698 terminated with signal 11 at PC=2b39f128db7c SP=7ffef942a428.  Backtrace:
+
+romsM_banas_202305241654:18288 terminated with signal 11 at PC=2b2d64afbb7c SP=7ffda5b3f6a8.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2ba2a3e4eb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba2a3deb555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b39f128db7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+/lib64/libc.so.6(cfree+0x1c)[0x2b2d64afbb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9116afc555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:7572 terminated with signal 11 at PC=2b7fa965eb7c SP=7ffd40b05228.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aca7966c555]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b39f122a555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b2d64a98555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b7fa965eb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:26689 terminated with signal 11 at PC=2b9bafea5b7c SP=7ffc36ccfb28.  Backtrace:
+
+romsM_banas_202305241654:18295 terminated with signal 11 at PC=2b9f85a33b7c SP=7ffd2edb6ca8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b9f85a33b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:29571 terminated with signal 11 at PC=2b0cd3118b7c SP=7ffd815a37a8.  Backtrace:
+
+romsM_banas_202305241654:26683 terminated with signal 11 at PC=2b4fcb014b7c SP=7ffd077732a8.  Backtrace:
+
+romsM_banas_202305241654:18299 terminated with signal 11 at PC=2afd0e204b7c SP=7fffb299afa8.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b7fa95fb555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b0cd3118b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+/lib64/libc.so.6(cfree+0x1c)[0x2b9bafea5b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9f859d0555]
+
+romsM_banas_202305241654:7583 terminated with signal 11 at PC=2b43ac2f5b7c SP=7ffd5106a628.  Backtrace:
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2afd0e204b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(cfree+0x1c)[0x2b43ac2f5b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b0cd30b5555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9bafe42555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:29574 terminated with signal 11 at PC=2abb16e58b7c SP=7ffeeaa77828.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b4fcb014b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afd0e1a1555]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b43ac292555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2abb16e58b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:7574 terminated with signal 11 at PC=2b7872756b7c SP=7ffcdd4a22a8.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b4fcafb1555]
+./romsM_banas_202305241654[0x40b869]
+*** Error in `./romsM_banas_202305241654': double free or corruption (out): 0x0000000002933e80 ***
+/lib64/libc.so.6(cfree+0x1c)[0x2b7872756b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2abb16df5555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:26680 terminated with signal 11 at PC=2afb7011ab7c SP=7ffc592b3028.  Backtrace:
+*** Error in `./romsM_banas_202305241654': double free or corruption (out): 0x0000000001b43ec0 ***
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b78726f3555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:29578 terminated with signal 11 at PC=2aecf67c5b7c SP=7ffee69ceea8.  Backtrace:
+
+romsM_banas_202305241654:26688 terminated with signal 11 at PC=2b4e15cc1b7c SP=7fff66f1b228.  Backtrace:
+======= Backtrace: =========
+
+romsM_banas_202305241654:7576 terminated with signal 11 at PC=2abc2f8fdb7c SP=7ffe9a8f4528.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2aecf67c5b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(cfree+0x1c)[0x2afb7011ab7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afb700b7555]
+./romsM_banas_202305241654[0x40b869]
+======= Backtrace: =========
+/lib64/libc.so.6(cfree+0x1c)[0x2abc2f8fdb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:29577 terminated with signal 11 at PC=2b63fcd9cb7c SP=7ffd32770628.  Backtrace:
+
+romsM_banas_202305241654:26684 terminated with signal 11 at PC=2af81d2b9b7c SP=7ffd3a366c28.  Backtrace:
+/lib64/libc.so.6(+0x81329)[0x2b9936e04329]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2abc2f89a555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:26686 terminated with signal 11 at PC=2b714d686b7c SP=7ffd504b31a8.  Backtrace:
+/lib64/libc.so.6(+0x81329)[0x2b6a06441329]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:7568 terminated with signal 11 at PC=2ac017d24b7c SP=7fffb39af4a8.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aecf6762555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b4e15cc1b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__deallocate_lub+0x416)[0xa7ad76]
+./romsM_banas_202305241654(for__exit_handler+0x201)[0xa6c371]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:7567 terminated with signal 11 at PC=2b6dfa273b7c SP=7fffd7787fa8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b63fcd9cb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(cfree+0x1c)[0x2af81d2b9b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__deallocate_lub+0x416)[0xa7ad76]
+./romsM_banas_202305241654(for__exit_handler+0x201)[0xa6c371]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:7591 terminated with signal 11 at PC=2b315e0f6b7c SP=7ffdb4c02028.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9936da5555]
+./romsM_banas_202305241654[0x40b869]
+======= Memory map: ========
+/lib64/libc.so.6(cfree+0x1c)[0x2ac017d24b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:29580 terminated with signal 11 at PC=2ac480b55b7c SP=7ffef0237428.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b4e15c5e555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6a063e2555]
+./romsM_banas_202305241654[0x40b869]
+======= Memory map: ========
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:29573 terminated with signal 11 at PC=2ad41ccf3b7c SP=7ffea4a0d228.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2af81d256555]
+./romsM_banas_202305241654[0x40b869]
+00400000-00c47000 r-xp 00000000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e47000-00e49000 r--p 00847000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e49000-00e7b000 rw-p 00849000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e7b000-01003000 rw-p 00000000 00:00 0 
+01a0e000-042d5000 rw-p 00000000 00:00 0                                  [heap]
+2b9931935000-2b9931957000 r-xp 00000000 00:25 78429                      /usr/lib64/ld-2.17.so
+2b9931957000-2b993195b000 rw-p 00000000 00:00 0 
+2b9931970000-2b9931984000 rw-p 00000000 00:00 0 
+2b9931a6e000-2b9931b50000 rw-p 00000000 00:00 0 
+2b9931b56000-2b9931b57000 r--p 00021000 00:25 78429                      /usr/lib64/ld-2.17.so
+2b9931b57000-2b9931b58000 rw-p 00022000 00:25 78429                      /usr/lib64/ld-2.17.so
+2b9931b58000-2b9931b5900
+romsM_banas_202305241654:7582 terminated with signal 11 at PC=2b3dd483db7c SP=7ffe50379028.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b63fcd39555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b714d686b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+00400000-00c47000 r-xp 00000000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e47000-00e49000 r--p 00847000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e49000-00e7b000 rw-p 00849000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e7b000-01003000 rw-p 00000000 00:00 0 
+027fe000-050c5000 rw-p 00000000 00:00 0                                  [heap]
+2b6a00f72000-2b6a00f94000 r-xp 00000000 00:25 78429                      /usr/lib64/ld-2.17.so
+2b6a00f94000-2b6a00f98000 rw-p 00000000 00:00 0 
+2b6a00fad000-2b6a00fc1000 rw-p 00000000 00:00 0 
+2b6a010ab000-2b6a0118d000 rw-p 00000000 00:00 0 
+2b6a01193000-2b6a01194000 r--p 00021000 00:25 78429                      /usr/lib64/ld-2.17.so
+2b6a01194000-2b6a01195000 rw-p 00022000 00:25 78429                      /usr/lib64/ld-2.17.so
+2b6a01195000-2b6a0119600/lib64/libc.so.6(cfree+0x1c)[0x2b6dfa273b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(cfree+0x1c)[0x2ac480b55b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+0 rw-p 00000000 00:00 0 
+2b9931b59000-2b9931cbe000 r-xp 00000000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b9931cbe000-2b9931ebd000 ---p 00165000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b9931ebd000-2b9931f0b000 r--p 00164000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b9931f0b000-2b9931f0f000 rw-p 001b2000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b9931f0f000-2b9934f1e000 rw-p 00000000 00:00 0 
+2b9934f1e000-2b9934fc5000 r-xp 00000000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b9934fc5000-2b99351c4000 ---p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b99351c4000-2b99351c5000 r--p 000a6000 00:2c 2625462                    /gscratch/sw/netcdf-fortr./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(cfree+0x1c)[0x2ad41ccf3b7c]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b714d623555]
+./romsM_banas_202305241654[0x40b869]
+0 rw-p 00000000 00:00 0 
+2b6a01196000-2b6a012fb000 r-xp 00000000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b6a012fb000-2b6a014fa000 ---p 00165000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b6a014fa000-2b6a01548000 r--p 00164000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b6a01548000-2b6a0154c000 rw-p 001b2000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b6a0154c000-2b6a0455b000 rw-p 00000000 00:00 0 
+2b6a0455b000-2b6a04602000 r-xp 00000000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b6a04602000-2b6a04801000 ---p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b6a04801000-2b6a04802000 r--p 000a6000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b6a04802000-2b6a04803000 rw-p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b6a04803000-2b6a049dd000 rw-p 00000000 00:00 0 
+2b6a049dd000-2b6a04b5b000 r-xp 00000000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b6a04b5b000-2b6a04d5b000 ---p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b6a04d5b000-2b6a04d62000 rw-p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b6a04d62000-2b6a04d86000 rw-p 00000000 00:00 0 
+2b6a04d86000-2b6a054c8000 r-xp 00000000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b6a054c8000-2b6a056c7000 ---p 00/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ac017cc1555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:26687 terminated with signal 11 at PC=2b8f87fd1b7c SP=7fff86c70328.  Backtrace:
+an+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b99351c5000-2b99351c6000 rw-p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b99351c6000-2b99353a0000 rw-p 00000000 00:00 0 
+2b99353a0000-2b993551e000 r-xp 00000000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b993551e000-2b993571e000 ---p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b993571e000-2b9935725000 rw-p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b9935725000-2b9935749000 rw-p 00000000 00:00 0 
+2b9935749000-2b9935e8b000 r-xp 00000000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b9935e8b000-2b993608a000 ---p 00742000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b993608a000-2b99360c2000 rw-p 00741000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b99360c2000-2b9936459000 rw-p 00000000 00:00 0 
+2b9936459000-2b993645b000 r-xp 00000000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b993645b000-2b993665b000 ---p 00002000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b993665b000-2b993665c000 r--p 00002000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b993665c000-2b993665d000 rw-p 00003000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b993665d000-2b9936664000 r-xp 00000000 00:25 79303                      /usr/lib64/librt-2.17.so
+2b9936664000-2b9936863000 ---p 00007000 00:25 79303                      /usr/lib64/librt-2.17.so
+2b9936863000-2b9936864000 r--p 00006000 00:25 79303     ./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2b8f87fd1b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+742000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b6a056c7000-2b6a056ff000 rw-p 00741000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b6a056ff000-2b6a05a96000 rw-p 00000000 00:00 0 
+2b6a05a96000-2b6a05a98000 r-xp 00000000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b6a05a98000-2b6a05c98000 ---p 00002000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b6a05c98000-2b6a05c99000 r--p 00002000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b6a05c99000-2b6a05c9a000 rw-p 00003000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2b6a05c9a000-2b6a05ca1000 r-xp 00000000 00:25 79303                      /usr/lib64/librt-2.17.so
+2b6a05ca1000-2b6a05ea0000 ---p 00007000 00:25 79303                      /usr/lib64/librt-2.17.so
+2b6a05ea0000-2b6a05ea1000 r--p 00006000 00:25 79303     /lib64/libc.so.6(cfree+0x1c)[0x2b315e0f6b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ac480af2555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+                 /usr/lib64/librt-2.17.so
+2b9936864000-2b9936865000 rw-p 00007000 00:25 79303                      /usr/lib64/librt-2.17.so
+2b9936865000-2b993687c000 r-xp 00000000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b993687c000-2b9936a7b000 ---p 00017000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b9936a7b000-2b9936a7c000 r--p 00016000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b9936a7c000-2b9936a7d000 rw-p 00017000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b9936a7d000-2b9936a81000 rw-p 00000000 00:00 0 
+2b9936a81000-2b9936b82000 r-xp 00000000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b9936b82000-2b9936d81000 ---p 00101000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b9936d81000-2b9936d82000 r--p 00100000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b9936d82000-2b9936d83000 rw-p 00101000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b9936d83000-2b9936f47000 r-xp 0000/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6dfa210555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad41cc90555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b8f87f6e555]
+./romsM_banas_202305241654[0x40b869]
+                 /usr/lib64/librt-2.17.so
+2b6a05ea1000-2b6a05ea2000 rw-p 00007000 00:25 79303                      /usr/lib64/librt-2.17.so
+2b6a05ea2000-2b6a05eb9000 r-xp 00000000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b6a05eb9000-2b6a060b8000 ---p 00017000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b6a060b8000-2b6a060b9000 r--p 00016000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b6a060b9000-2b6a060ba000 rw-p 00017000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2b6a060ba000-2b6a060be000 rw-p 00000000 00:00 0 
+2b6a060be000-2b6a061bf000 r-xp 00000000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b6a061bf000-2b6a063be000 ---p 00101000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b6a063be000-2b6a063bf000 r--p 00100000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b6a063bf000-2b6a063c0000 rw-p 00101000 00:25 78469                      /usr/lib64/libm-2.17.so
+2b6a063c0000-2b6a06584000 r-xp 0000./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:29591 terminated with signal 11 at PC=2ad0fce81b7c SP=7ffddff84ba8.  Backtrace:
+
+romsM_banas_202305241654:26691 terminated with signal 11 at PC=2ae0430fcb7c SP=7ffc31bbb6a8.  Backtrace:
+0000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b9936f47000-2b9937146000 ---p 001c4000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b9937146000-2b993714a000 r--p 001c3000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b993714a000-2b993714c000 rw-p 001c7000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b993714c000-2b9937151000 rw-p 00000000 00:00 0 
+2b9937151000-2b9937166000 r-xp 00000000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b9937166000-2b9937365000 ---p 00015000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b9937365000-2b9937366000 r--p 00014000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b9937366000-2b9937367000 rw-p 00015000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b9937367000-2b993738c000 r-xp 00000000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b993738c000-2b993758b000 ---p 00025000 /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b315e093555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2ad0fce81b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:26690 terminated with signal 11 at PC=2b4ecdaf2b7c SP=7ffedfcc9228.  Backtrace:
+0000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b6a06584000-2b6a06783000 ---p 001c4000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b6a06783000-2b6a06787000 r--p 001c3000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b6a06787000-2b6a06789000 rw-p 001c7000 00:25 78445                      /usr/lib64/libc-2.17.so
+2b6a06789000-2b6a0678e000 rw-p 00000000 00:00 0 
+2b6a0678e000-2b6a067a3000 r-xp 00000000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b6a067a3000-2b6a069a2000 ---p 00015000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b6a069a2000-2b6a069a3000 r--p 00014000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b6a069a3000-2b6a069a4000 rw-p 00015000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b6a069a4000-2b6a069c9000 r-xp 00000000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b6a069c9000-2b6a06bc8000 ---p 00025000 
+romsM_banas_202305241654:7581 terminated with signal 11 at PC=2b9cea664b7c SP=7ffec9f1c328.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2ae0430fcb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b993758b000-2b993758c000 r--p 00024000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b993758c000-2b993758d000 rw-p 00025000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b993758d000-2b993758e000 rw-p 00000000 00:00 0 
+2b993758e000-2b993792b000 r-xp 00000000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b993792b000-2b9937b2b000 ---p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b9937b2b000-2b9937b30000 r--p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b9937b30000-2b9937b37000 rw-p 003a2000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b9937b37000-2b9937b39000 rw-p 00000000 00:00 0 
+2b9937b39000-2b9937b4e000 r-xp 00000000 00:25 79411                 /lib64/libc.so.6(cfree+0x1c)[0x2b3dd483db7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad0fce1e555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b6a06bc8000-2b6a06bc9000 r--p 00024000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b6a06bc9000-2b6a06bca000 rw-p 00025000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b6a06bca000-2b6a06bcb000 rw-p 00000000 00:00 0 
+2b6a06bcb000-2b6a06f68000 r-xp 00000000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b6a06f68000-2b6a07168000 ---p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b6a07168000-2b6a0716d000 r--p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b6a0716d000-2b6a07174000 rw-p 003a2000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b6a07174000-2b6a07176000 rw-p 00000000 00:00 0 
+2b6a07176000-2b6a0718b000 r-xp 00000000 00:25 79411                 ./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae043099555]
+./romsM_banas_202305241654[0x40b869]
+     /usr/lib64/libz.so.1.2.7
+2b9937b4e000-2b9937d4d000 ---p 00015000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2b9937d4d000-2b9937d4e000 r--p 00014000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2b9937d4e000-2b9937d4f000 rw-p 00015000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2b9937d4f000-2b9937db5000 r-xp 00000000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b9937db5000-2b9937fb5000 ---p 00066000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b9937fb5000-2b9937fb7000 r--p 00066000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b9937fb7000-2b9937fb8000 rw-p 00068000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b9937fb8000-2b9937fb9000 rw-p 00000000 00:00 0 
+2b9937fb9000-2b993824b000 r-xp 00000000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b993824b000-2b993844a000 ---p 00292000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b993844a000-2b9938450000 r--p 00291000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b9938450000-2b99384a5000 rw-p 00297000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b99384a5000-2b9939174000 r-xp 00000000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b9939174000-2b9939374000 ---p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b9939374000-2b99393ab000 r--p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b99393ab000-2b99393b0000 rw-p 00d06000 00:/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3dd47da555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b4ecdaf2b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+     /usr/lib64/libz.so.1.2.7
+2b6a0718b000-2b6a0738a000 ---p 00015000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2b6a0738a000-2b6a0738b000 r--p 00014000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2b6a0738b000-2b6a0738c000 rw-p 00015000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2b6a0738c000-2b6a073f2000 r-xp 00000000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b6a073f2000-2b6a075f2000 ---p 00066000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b6a075f2000-2b6a075f4000 r--p 00066000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b6a075f4000-2b6a075f5000 rw-p 00068000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2b6a075f5000-2b6a075f6000 rw-p 00000000 00:00 0 
+2b6a075f6000-2b6a07888000 r-xp 00000000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b6a07888000-2b6a07a87000 ---p 00292000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b6a07a87000-2b6a07a8d000 r--p 00291000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b6a07a8d000-2b6a07ae2000 rw-p 00297000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b6a07ae2000-2b6a087b1000 r-xp 00000000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b6a087b1000-2b6a089b1000 ---p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b6a089b1000-2b6a089e8000 r--p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b6a089e8000-2b6a089ed000 rw-p 00d06000 00:/lib64/libc.so.6(cfree+0x1c)[0x2b9cea664b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b99393b0000-2b9939512000 r-xp 00000000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b9939512000-2b9939711000 ---p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b9939711000-2b9939712000 r--p 00161000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b9939712000-2b9939725000 rw-p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b9939725000-2b993978c000 r-xp 00000000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b993978./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b4ecda8f555]
+./romsM_banas_202305241654[0x40b869]
+2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b6a089ed000-2b6a08b4f000 r-xp 00000000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b6a08b4f000-2b6a08d4e000 ---p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b6a08d4e000-2b6a08d4f000 r--p 00161000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b6a08d4f000-2b6a08d62000 rw-p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b6a08d62000-2b6a08dc9000 r-xp 00000000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b6a08dc/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9cea601555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:26682 terminated with signal 11 at PC=2b7ca802bb7c SP=7fff1a14a328.  Backtrace:
+c000-2b993998c000 ---p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b993998c000-2b993998d000 r--p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b993998d000-2b993998e000 rw-p 00068000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b993998e000-2b993998f000 rw-p 00000000 00:00 0 
+2b993998f000-2b99399b5000 r-xp 00000000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b99399b5000-2b9939bb5000 ---p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b9939bb5000-2b9939bb6000 r--p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b9939bb6000-2b9939bb8000 rw-p 00027000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b9939bb8000-2b9939bbe000 rw-p 00000000 00:00 0 
+2b9939bbe000-2b9939cff000 r-xp 00000000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b9939cff000-2b9939eff000 ---p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b9939eff000-2b9939f02000 r--p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b9939f02000-2b9939f05000 rw-p 00144000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/in
+romsM_banas_202305241654:7580 terminated with signal 11 at PC=2ba27be80b7c SP=7ffc2dd17728.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b7ca802bb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+9000-2b6a08fc9000 ---p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b6a08fc9000-2b6a08fca000 r--p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b6a08fca000-2b6a08fcb000 rw-p 00068000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b6a08fcb000-2b6a08fcc000 rw-p 00000000 00:00 0 
+2b6a08fcc000-2b6a08ff2000 r-xp 00000000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b6a08ff2000-2b6a091f2000 ---p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b6a091f2000-2b6a091f3000 r--p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b6a091f3000-2b6a091f5000 rw-p 00027000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b6a091f5000-2b6a091fb000 rw-p 00000000 00:00 0 
+2b6a091fb000-2b6a0933c000 r-xp 00000000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b6a0933c000-2b6a0953c000 ---p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b6a0953c000-2b6a0953f000 r--p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b6a0953f000-2b6a09542000 rw-p 00144000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/in
+romsM_banas_202305241654:7564 terminated with signal 11 at PC=2acd0cad3b7c SP=7ffdf94274a8.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b7ca7fc8555]
+./romsM_banas_202305241654[0x40b869]
+tel64_lin/libifcoremt.so.5
+2b9939f05000-2b9939f4e000 rw-p 00000000 00:00 0 
+2b9939f4e000-2b9939f80000 r-xp 00000000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b9939f80000-2b993a17f000 ---p 00032000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b993a17f000-2b993a180000 r--p 00031000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b993a180000-2b993a181000 rw-p 00032000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b993a181000-2b993a1ac000 r-xp 00000000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b993a1ac000-2b993a3ac000 ---p 0002b000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b993a3ac000-2b993a3ad000 r--p 0002b000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b993a3ad000-2b993a3ae000 rw-p 0002c000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b993a3ae000-2b993a40d000 r-xp 00000000 00:25 76523                      /usr/lib64/libssl3.so
+2b993a40d000-2b993a60d000 ---p 0005f000 0/lib64/libc.so.6(cfree+0x1c)[0x2ba27be80b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:26681 terminated with signal 11 at PC=2ae66239fb7c SP=7ffc969daaa8.  Backtrace:
+tel64_lin/libifcoremt.so.5
+2b6a09542000-2b6a0958b000 rw-p 00000000 00:00 0 
+2b6a0958b000-2b6a095bd000 r-xp 00000000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b6a095bd000-2b6a097bc000 ---p 00032000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b6a097bc000-2b6a097bd000 r--p 00031000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b6a097bd000-2b6a097be000 rw-p 00032000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2b6a097be000-2b6a097e9000 r-xp 00000000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b6a097e9000-2b6a099e9000 ---p 0002b000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b6a099e9000-2b6a099ea000 r--p 0002b000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b6a099ea000-2b6a099eb000 rw-p 0002c000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2b6a099eb000-2b6a09a4a000 r-xp 00000000 00:25 76523                      /usr/lib64/libssl3.so
+2b6a09a4a000-2b6a09c4a000 ---p 0005f000 0./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:26679 terminated with signal 11 at PC=2ba355983b7c SP=7ffca0c8bda8.  Backtrace:
+0:25 76523                      /usr/lib64/libssl3.so
+2b993a60d000-2b993a611000 r--p 0005f000 00:25 76523                      /usr/lib64/libssl3.so
+2b993a611000-2b993a612000 rw-p 00063000 00:25 76523                      /usr/lib64/libssl3.so
+2b993a612000-2b993a613000 rw-p 00000000 00:00 0 
+2b993a613000-2b993a638000 r-xp 00000000 00:25 76517                      /usr/lib64/libsmime3.so
+2b993a638000-2b993a837000 ---p 00025000 00:25 76517                      /usr/lib64/libsmime3.so
+2b993a837000-2b993a83a000 r--p 00024000 00:25 76517                      /usr/lib64/libsmime3.so
+2b993a83a000-2b993a83b000 rw-p 00027000 00:25 76517                      /usr/lib64/libsmime3.so
+2b993a83b000-2b993a96c000 r-xp 00000000 00:25 77693                      /usr/lib64/libnss3.so
+2b993a96c000-2b993ab6c000 ---p 00131000 00:25 77693                      /usr/lib64/libnss3.so
+2b993ab6c000-2b993ab71000 r--p 00131000 00:25 77693                      /usr/lib64/libnss3.so
+2b993ab71000-2b993ab74000 rw-p 00136000 00:25 77693       /lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba27be1d555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2ae66239fb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+0:25 76523                      /usr/lib64/libssl3.so
+2b6a09c4a000-2b6a09c4e000 r--p 0005f000 00:25 76523                      /usr/lib64/libssl3.so
+2b6a09c4e000-2b6a09c4f000 rw-p 00063000 00:25 76523                      /usr/lib64/libssl3.so
+2b6a09c4f000-2b6a09c50000 rw-p 00000000 00:00 0 
+2b6a09c50000-2b6a09c75000 r-xp 00000000 00:25 76517                      /usr/lib64/libsmime3.so
+2b6a09c75000-2b6a09e74000 ---p 00025000 00:25 76517                      /usr/lib64/libsmime3.so
+2b6a09e74000-2b6a09e77000 r--p 00024000 00:25 76517                      /usr/lib64/libsmime3.so
+2b6a09e77000-2b6a09e78000 rw-p 00027000 00:25 76517                      /usr/lib64/libsmime3.so
+2b6a09e78000-2b6a09fa9000 r-xp 00000000 00:25 77693                      /usr/lib64/libnss3.so
+2b6a09fa9000-2b6a0a1a9000 ---p 00131000 00:25 77693                      /usr/lib64/libnss3.so
+2b6a0a1a9000-2b6a0a1ae000 r--p 00131000 00:25 77693                      /usr/lib64/libnss3.so
+2b6a0a1ae000-2b6a0a1b1000 rw-p 00136000 00:25 77693       /lib64/libc.so.6(cfree+0x1c)[0x2acd0cad3b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+               /usr/lib64/libnss3.so
+2b993ab74000-2b993ab75000 rw-p 00000000 00:00 0 
+2b993ab75000-2b993ab9e000 r-xp 00000000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b993ab9e000-2b993ad9d000 ---p 00029000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b993ad9d000-2b993ada4000 r--p 00028000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b993ada4000-2b993ada5000 rw-p 0002f000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b993ada5000-2b993ada8000 r-xp 00000000 00:25 78466                      /usr/lib64/libplds4.so
+2b993ada8000-2b993afa7000 ---p 00003000 00:25 78466                      /usr/lib64/libplds4.so
+2b993afa7000-2b993afa8000 r--p 00002000 00:25 78466                      /usr/lib64/libplds4.so
+2b993afa8000-2b993afa9000 rw-p 00003000 00:25 78466                      /usr/lib64/libplds4.so
+2b993afa9000-2b993afad000 r-xp 00000000 00:25 78450                      /usr/lib64/libplc4.so
+2b993afad000-2b993b1ac000 ---p 00004000 00:25 78450            /lib64/libc.so.6(__libc_start_main+0xf5)[0x2acd0ca70555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae66233c555]
+./romsM_banas_202305241654[0x40b869]
+               /usr/lib64/libnss3.so
+2b6a0a1b1000-2b6a0a1b2000 rw-p 00000000 00:00 0 
+2b6a0a1b2000-2b6a0a1db000 r-xp 00000000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b6a0a1db000-2b6a0a3da000 ---p 00029000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b6a0a3da000-2b6a0a3e1000 r--p 00028000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b6a0a3e1000-2b6a0a3e2000 rw-p 0002f000 00:25 78468                      /usr/lib64/libnssutil3.so
+2b6a0a3e2000-2b6a0a3e5000 r-xp 00000000 00:25 78466                      /usr/lib64/libplds4.so
+2b6a0a3e5000-2b6a0a5e4000 ---p 00003000 00:25 78466                      /usr/lib64/libplds4.so
+2b6a0a5e4000-2b6a0a5e5000 r--p 00002000 00:25 78466                      /usr/lib64/libplds4.so
+2b6a0a5e5000-2b6a0a5e6000 rw-p 00003000 00:25 78466                      /usr/lib64/libplds4.so
+2b6a0a5e6000-2b6a0a5ea000 r-xp 00000000 00:25 78450                      /usr/lib64/libplc4.so
+2b6a0a5ea000-2b6a0a7e9000 ---p 00004000 00:25 78450            
+romsM_banas_202305241654:26699 terminated with signal 11 at PC=2abd58146b7c SP=7ffc64274428.  Backtrace:
+          /usr/lib64/libplc4.so
+2b993b1ac000-2b993b1ad000 r--p 00003000 00:25 78450                      /usr/lib64/libplc4.so
+2b993b1ad000-2b993b1ae000 rw-p 00004000 00:25 78450                      /usr/lib64/libplc4.so
+2b993b1ae000-2b993b1e8000 r-xp 00000000 00:25 78446                      /usr/lib64/libnspr4.so
+2b993b1e8000-2b993b3e8000 ---p 0003a000 00:25 78446                      /usr/lib64/libnspr4.so
+2b993b3e8000-2b993b3e9000 r--p 0003a000 00:25 78446                      /usr/lib64/libnspr4.so
+2b993b3e9000-2b993b3eb000 rw-p 0003b000 00:25 78446                      /usr/lib64/libnspr4.so
+2b993b3eb000-2b993b3ed000 rw-p 00000000 00:00 0 
+2b993b3ed000-2b993b437000 r-xp 00000000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2b993b437000-2b993b637000 ---p 0004a000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2b993b637000-2b993b638000 r--p 0004a000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2b993b638000-2b993b63a000 rw-p 0004b000 00:25 81210
+romsM_banas_202305241654:26676 terminated with signal 11 at PC=2aca006d1b7c SP=7fffe1f30928.  Backtrace:
+          /usr/lib64/libplc4.so
+2b6a0a7e9000-2b6a0a7ea000 r--p 00003000 00:25 78450                      /usr/lib64/libplc4.so
+2b6a0a7ea000-2b6a0a7eb000 rw-p 00004000 00:25 78450                      /usr/lib64/libplc4.so
+2b6a0a7eb000-2b6a0a825000 r-xp 00000000 00:25 78446                      /usr/lib64/libnspr4.so
+2b6a0a825000-2b6a0aa25000 ---p 0003a000 00:25 78446                      /usr/lib64/libnspr4.so
+2b6a0aa25000-2b6a0aa26000 r--p 0003a000 00:25 78446                      /usr/lib64/libnspr4.so
+2b6a0aa26000-2b6a0aa28000 rw-p 0003b000 00:25 78446                      /usr/lib64/libnspr4.so
+2b6a0aa28000-2b6a0aa2a000 rw-p 00000000 00:00 0 
+2b6a0aa2a000-2b6a0aa74000 r-xp 00000000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2b6a0aa74000-2b6a0ac74000 ---p 0004a000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2b6a0ac74000-2b6a0ac75000 r--p 0004a000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2b6a0ac75000-2b6a0ac77000 rw-p 0004b000 00:25 81210/lib64/libc.so.6(cfree+0x1c)[0x2ba355983b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+                      /usr/lib64/libgssapi_krb5.so.2.2
+2b993b63a000-2b993b713000 r-xp 00000000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b993b713000-2b993b912000 ---p 000d9000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b993b912000-2b993b920000 r--p 000d8000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b993b920000-2b993b923000 rw-p 000e6000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b993b923000-2b993b954000 r-xp 00000000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b993b954000-2b993bb53000 ---p 00031000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b993bb53000-2b993bb55000 r--p 00030000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b993bb55000-2b993bb56000 rw-p 00032000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b993bb56000-2b993bb59000 r-xp 00000000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2b993bb59000-2b993bd58000 ---p 00003000 00:25 80539        ./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+                      /usr/lib64/libgssapi_krb5.so.2.2
+2b6a0ac77000-2b6a0ad50000 r-xp 00000000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b6a0ad50000-2b6a0af4f000 ---p 000d9000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b6a0af4f000-2b6a0af5d000 r--p 000d8000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b6a0af5d000-2b6a0af60000 rw-p 000e6000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2b6a0af60000-2b6a0af91000 r-xp 00000000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b6a0af91000-2b6a0b190000 ---p 00031000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b6a0b190000-2b6a0b192000 r--p 00030000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b6a0b192000-2b6a0b193000 rw-p 00032000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2b6a0b193000-2b6a0b196000 r-xp 00000000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2b6a0b196000-2b6a0b395000 ---p 00003000 00:25 80539        
+romsM_banas_202305241654:29592 terminated with signal 11 at PC=2ad6575fcb7c SP=7ffc3ad03528.  Backtrace:
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:18284 terminated with signal 11 at PC=2b0c176d5b7c SP=7ffe3f93d8a8.  Backtrace:
+
+romsM_banas_202305241654:29586 terminated with signal 11 at PC=2b88f4595b7c SP=7ffd0e8fb1a8.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba355920555]
+./romsM_banas_202305241654[0x40b869]
+              /usr/lib64/libcom_err.so.2.1
+2b993bd58000-2b993bd59000 r--p 00002000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2b993bd59000-2b993bd5a000 rw-p 00003000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2b993bd5a000-2b993bd68000 r-xp 00000000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b993bd68000-2b993bf67000 ---p 0000e000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b993bf67000-2b993bf68000 r--p 0000d000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b993bf68000-2b993bf69000 rw-p 0000e000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b993bf69000-2b993bfbb000 r-xp 00000000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b993bfbb000-2b993c1bb000 ---p 00052000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b993c1bb000-2b993c1bd000 r--p 00052000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b993c1bd000-2b993c1be000 rw-p 0005/lib64/libc.so.6(cfree+0x1c)[0x2abd58146b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+              /usr/lib64/libcom_err.so.2.1
+2b6a0b395000-2b6a0b396000 r--p 00002000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2b6a0b396000-2b6a0b397000 rw-p 00003000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2b6a0b397000-2b6a0b3a5000 r-xp 00000000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b6a0b3a5000-2b6a0b5a4000 ---p 0000e000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b6a0b5a4000-2b6a0b5a5000 r--p 0000d000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b6a0b5a5000-2b6a0b5a6000 rw-p 0000e000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2b6a0b5a6000-2b6a0b5f8000 r-xp 00000000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b6a0b5f8000-2b6a0b7f8000 ---p 00052000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b6a0b7f8000-2b6a0b7fa000 r--p 00052000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b6a0b7fa000-2b6a0b7fb000 rw-p 0005./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+
+romsM_banas_202305241654:18285 terminated with signal 11 at PC=2b6ad10cab7c SP=7ffe245fe8a8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2ad6575fcb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654[0x40b963]
+4000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b993c1be000-2b993c225000 r-xp 00000000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b993c225000-2b993c425000 ---p 00067000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b993c425000-2b993c429000 r--p 00067000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b993c429000-2b993c430000 rw-p 0006b000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b993c430000-2b993c667000 r-xp 00000000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b993c667000-2b993c866000 ---p 00237000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b993c866000-2b993c882000 r--p 00236000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b993c882000-2b993c88f000 rw-p 00252000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b993c88f000-2b993c893000 rw-p 00000000 00:00 0 
+2b993c893000-2b993c8a1000 r-xp 00000000 00:25 77615                      /usr/lib64/./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2abd580e3555]
+./romsM_banas_202305241654[0x40b869]
+4000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2b6a0b7fb000-2b6a0b862000 r-xp 00000000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b6a0b862000-2b6a0ba62000 ---p 00067000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b6a0ba62000-2b6a0ba66000 r--p 00067000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b6a0ba66000-2b6a0ba6d000 rw-p 0006b000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2b6a0ba6d000-2b6a0bca4000 r-xp 00000000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b6a0bca4000-2b6a0bea3000 ---p 00237000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b6a0bea3000-2b6a0bebf000 r--p 00236000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b6a0bebf000-2b6a0becc000 rw-p 00252000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2b6a0becc000-2b6a0bed0000 rw-p 00000000 00:00 0 
+2b6a0bed0000-2b6a0bede000 r-xp 00000000 00:25 77615                      /usr/lib64/
+romsM_banas_202305241654:7570 terminated with signal 11 at PC=2acaed77fb7c SP=7ffeb95bf9a8.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad657599555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2aca006d1b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aca0066e555]
+./romsM_banas_202305241654[0x40b869]
+libkrb5support.so.0.1
+2b993c8a1000-2b993caa1000 ---p 0000e000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2b993caa1000-2b993caa2000 r--p 0000e000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2b993caa2000-2b993caa3000 rw-p 0000f000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2b993caa3000-2b993caa6000 r-xp 00000000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b993caa6000-2b993cca5000 ---p 00003000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b993cca5000-2b993cca6000 r--p 00002000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b993cca6000-2b993cca7000 rw-p 00003000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b993cca7000-2b993ccbd000 r-xp 00000000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2b993ccbd000-2b993cebd000 ---p 00016000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2b993cebd000-2b993cebe000 r--p 00016000 00:25 79299                 
+romsM_banas_202305241654:7587 terminated with signal 11 at PC=2acb371d5b7c SP=7ffebfd7a228.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b88f4595b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+libkrb5support.so.0.1
+2b6a0bede000-2b6a0c0de000 ---p 0000e000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2b6a0c0de000-2b6a0c0df000 r--p 0000e000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2b6a0c0df000-2b6a0c0e0000 rw-p 0000f000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2b6a0c0e0000-2b6a0c0e3000 r-xp 00000000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b6a0c0e3000-2b6a0c2e2000 ---p 00003000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b6a0c2e2000-2b6a0c2e3000 r--p 00002000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b6a0c2e3000-2b6a0c2e4000 rw-p 00003000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2b6a0c2e4000-2b6a0c2fa000 r-xp 00000000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2b6a0c2fa000-2b6a0c4fa000 ---p 00016000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2b6a0c4fa000-2b6a0c4fb000 r--p 00016000 00:25 79299                 /lib64/libc.so.6(cfree+0x1c)[0x2acaed77fb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:18280 terminated with signal 11 at PC=2ba2d3086b7c SP=7ffd3637fa28.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b88f4532555]
+./romsM_banas_202305241654[0x40b869]
+     /usr/lib64/libresolv-2.17.so
+2b993cebe000-2b993cebf000 rw-p 00017000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2b993cebf000-2b993cec1000 rw-p 00000000 00:00 0 
+2b993cec1000-2b993cedd000 r-xp 00000000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b993cedd000-2b993d0dc000 ---p 0001c000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b993d0dc000-2b993d0dd000 r--p 0001b000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b993d0dd000-2b993d0de000 rw-p 0001c000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b993d0de000-2b993d102000 r-xp 00000000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b993d102000-2b993d301000 ---p 00024000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b993d301000-2b993d302000 r--p 00023000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b993d302000-2b993d303000 rw-p 00024000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b993d303000-2b993d305000 rw-p ./romsM_banas_202305241654[0x40b963]
+     /usr/lib64/libresolv-2.17.so
+2b6a0c4fb000-2b6a0c4fc000 rw-p 00017000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2b6a0c4fc000-2b6a0c4fe000 rw-p 00000000 00:00 0 
+2b6a0c4fe000-2b6a0c51a000 r-xp 00000000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b6a0c51a000-2b6a0c719000 ---p 0001c000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b6a0c719000-2b6a0c71a000 r--p 0001b000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b6a0c71a000-2b6a0c71b000 rw-p 0001c000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2b6a0c71b000-2b6a0c73f000 r-xp 00000000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b6a0c73f000-2b6a0c93e000 ---p 00024000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b6a0c93e000-2b6a0c93f000 r--p 00023000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b6a0c93f000-2b6a0c940000 rw-p 00024000 00:25 79302                      /usr/lib64/libselinux.so.1
+2b6a0c940000-2b6a0c942000 rw-p 00000000 00:00 0 
+2b6a0c942000-2b6a0c94a000 r-xp 00000000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b6a0c94a000-2b6a0cb49000 ---p 00008000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b6a0cb49000-2b6a0cb4a000 r--p 00007000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b6a0cb4a000-2b6a0cb4b000 rw-p 00008000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b6a0cb4b000-2b6a0cb79000 rw-p 00000000 00:00 0 
+2b6a0cb79000-2b6a0cbd9000 r-xp 00000000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b6a0cbd9000-2b6a0cdd9000 ---p 00060000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b6a0cdd9000-2b6a0cdda000 r--p 00060000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b6a0cdda000-2b6a0cddb000 rw-p 00061000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b6a0cddb000-2b6a0cddd000 r-xp 00000000 00:25 78423                      /usr/lib64/libfreebl3.so
+2b6a0cddd000-2b6a0cfdc000 ---p 00002000 00:25 78423/lib64/libc.so.6(__libc_start_main+0xf5)[0x2acaed71c555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:18282 terminated with signal 11 at PC=2b129e720b7c SP=7fff5823c5a8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2acb371d5b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+00000000 00:00 0 
+2b993d305000-2b993d30d000 r-xp 00000000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b993d30d000-2b993d50c000 ---p 00008000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b993d50c000-2b993d50d000 r--p 00007000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b993d50d000-2b993d50e000 rw-p 00008000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2b993d50e000-2b993d53c000 rw-p 00000000 00:00 0 
+2b993d53c000-2b993d59c000 r-xp 00000000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b993d59c000-2b993d79c000 ---p 00060000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b993d79c000-2b993d79d000 r--p 00060000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b993d79d000-2b993d79e000 rw-p 00061000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2b993d79e000-2b993d7a0000 r-xp 00000000 00:25 78423                      /usr/lib64/libfreebl3.so
+2b993d7a0000-2b993d99f000 ---p 00002000 00:25 78423                      /usr/lib64/libfreebl3.so
+2b993d99f000-2b993d9a0000 r--p 00001000 00:25 78423                      /usr/lib64/libfreebl3.so
+2b993d9a0000-2b993d9a1000 rw-p 00002000 00:25 78423                      /usr/lib64/libfreebl3.so
+2b993d9a1000-2b993d9ab000 r-xp 00000000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b993d9ab000-2b993dbab000 ---p 0000a000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b993dbab000-2b993dbac000 r--p 0000a000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b993dbac000-2b993dbad000 rw-p 0000b000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b994eafc000-2b994ec36000 r-xp 00000000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2b994ec36000-2b994ee35000 ---p 0013a000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2b994ee35000-2b994ee56000 r--p 00139000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2b994ee56000-2b994ee60000 rw-p 0015a000 00:25 87308              ./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+                      /usr/lib64/libfreebl3.so
+2b6a0cfdc000-2b6a0cfdd000 r--p 00001000 00:25 78423                      /usr/lib64/libfreebl3.so
+2b6a0cfdd000-2b6a0cfde000 rw-p 00002000 00:25 78423                      /usr/lib64/libfreebl3.so
+2b6a0cfde000-2b6a0cfe8000 r-xp 00000000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b6a0cfe8000-2b6a0d1e8000 ---p 0000a000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b6a0d1e8000-2b6a0d1e9000 r--p 0000a000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b6a0d1e9000-2b6a0d1ea000 rw-p 0000b000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2b6a1e139000-2b6a1e273000 r-xp 00000000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2b6a1e273000-2b6a1e472000 ---p 0013a000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2b6a1e472000-2b6a1e493000 r--p 00139000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2b6a1e493000-2b6a1e49d000 rw-p 0015a000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2b6a1e49d000-2b6a1e4b2000 r-xp 00000000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b6a1e4b2000-2b6a1e6b1000 ---p 00015000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b6a1e6b1000-2b6a1e6b2000 r--p 00014000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b6a1e6b2000-2b6a1e6b3000 rw-p 00015000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b6a1e6b3000-2b6a1e6b4000 rw-p 00000000 00:00 0 
+2b6a1e6b4000-2b6a1e6cc000 r-xp 00000000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b6a1e6cc000-2b6a1e8cb000 ---p 00018000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b6a1e8cb000-2b6a1e8cc000 r--p 00017000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b6a1e8cc000-2b6a1e8cd000 rw-p 00018000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b6a1e8cd000-2b6a1e8eb000 r-xp 00000000 00:25 84895                      /usr/lib64//lib64/libc.so.6(__libc_start_main+0xf5)[0x2acb37172555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b0c176d5b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:7590 terminated with signal 11 at PC=2ae21b9f8b7c SP=7ffc04c355a8.  Backtrace:
+        /usr/lib64/libfabric.so.1.10.2
+2b994ee60000-2b994ee75000 r-xp 00000000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b994ee75000-2b994f074000 ---p 00015000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b994f074000-2b994f075000 r--p 00014000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b994f075000-2b994f076000 rw-p 00015000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2b994f076000-2b994f077000 rw-p 00000000 00:00 0 
+2b994f077000-2b994f08f000 r-xp 00000000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b994f08f000-2b994f28e000 ---p 00018000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b994f28e000-2b994f28f000 r--p 00017000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b994f28f000-2b994f290000 rw-p 00018000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2b994f290000-2b994f2ae000 r-xp 00000000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2b994f2ae000-2b994f4ae000 ---p 0001e000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2b994f4ae000-2b994f4b0000 r--p 0001e000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2b994f4b0000-2b994f4b1000 rw-p 00020000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2b994f4b1000-2b994f515000 r-xp 00000000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b994f515000-2b994f714000 ---p 00064000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b994f714000-2b994f717000 r--p 00063000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b994f717000-2b994f71c000 rw-p 00066000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b994f71c000-2b994f71e000 rw-p 00000000 00:00 0 
+2b994f71e000-2b994f772000 r-xp 00000000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2b994f772000-2b994f971000 ---p 00054000 00:25 84531                      /usr/lib64/libpsm_in./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2b6ad10cab7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:7585 terminated with signal 11 at PC=2afc286dbb7c SP=7ffcaf48e1a8.  Backtrace:
+libnl-3.so.200.23.0
+2b6a1e8eb000-2b6a1eaeb000 ---p 0001e000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2b6a1eaeb000-2b6a1eaed000 r--p 0001e000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2b6a1eaed000-2b6a1eaee000 rw-p 00020000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2b6a1eaee000-2b6a1eb52000 r-xp 00000000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b6a1eb52000-2b6a1ed51000 ---p 00064000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b6a1ed51000-2b6a1ed54000 r--p 00063000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b6a1ed54000-2b6a1ed59000 rw-p 00066000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2b6a1ed59000-2b6a1ed5b000 rw-p 00000000 00:00 0 
+2b6a1ed5b000-2b6a1edaf000 r-xp 00000000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2b6a1edaf000-2b6a1efae000 ---p 00054000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2b6a1efae000-2b6a1efaf000 r--p 00053000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2b6a1efaf000-2b6a1efb0000 rw-p 00054000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2b6a1efb0000-2b6a1efb1000 rw-p 00000000 00:00 0 
+2b6a1efb1000-2b6a1f013000 r-xp 00000000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b6a1f013000-2b6a1f213000 ---p 00062000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b6a1f213000-2b6a1f214000 r--p 00062000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b6a1f214000-2b6a1f215000 rw-p 00063000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b6a1f215000-2b6a1f217000 rw-p 00000000 00:00 0 
+2b6a1f217000-2b6a1f225000 r-xp 00000000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2b6a1f225000-2b6a1f424000 ---p 0000e000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2b6a1f424000-2b6a1f425000 r--p 0000d000 00:25 84473                      /usr/lib64/lib64/libc.so.6(cfree+0x1c)[0x2ae21b9f8b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:7586 terminated with signal 11 at PC=2b66972beb7c SP=7fff53e9a9a8.  Backtrace:
+finipath.so.1.16
+2b994f971000-2b994f972000 r--p 00053000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2b994f972000-2b994f973000 rw-p 00054000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2b994f973000-2b994f974000 rw-p 00000000 00:00 0 
+2b994f974000-2b994f9d6000 r-xp 00000000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b994f9d6000-2b994fbd6000 ---p 00062000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b994fbd6000-2b994fbd7000 r--p 00062000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b994fbd7000-2b994fbd8000 rw-p 00063000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2b994fbd8000-2b994fbda000 rw-p 00000000 00:00 0 
+2b994fbda000-2b994fbe8000 r-xp 00000000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2b994fbe8000-2b994fde7000 ---p 0000e000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2b994fde7000-2b994fde8000 r--p 0000d000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2b994fde8000-2b994fde9000 rw-p 0000e000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2b994fde9000-2b994fded000 r-xp 00000000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b994fded000-2b994ffec000 ---p 00004000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b994ffec000-2b994ffed000 r--p 00003000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b994ffed000-2b994ffee000 rw-p 00004000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b994ffee000-2b9950052000 r-xp 00000000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b9950052000-2b9950251000 ---p 00064000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b9950251000-2b9950252000 r--p 00063000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b9950252000-2b9950255000 rw-p 00064000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b9950255000-2b995025a000 rw-p 00000000 00:00 0 
+2b995025./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2ba2d3086b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae21b995555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b0c17672555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:7588 terminated with signal 11 at PC=2ac64b4c2b7c SP=7fffd66026a8.  Backtrace:
+a000-2b995025f000 r-xp 00000000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b995025f000-2b995045f000 ---p 00005000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b995045f000-2b9950460000 r--p 00005000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b9950460000-2b9950461000 rw-p 00006000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b9950461000-2b995046a000 r-xp 00000000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b995046a000-2b995066a000 ---p 00009000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b995066a000-2b995066b000 r--p 00009000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b995066b000-2b995066c000 rw-p 0000a000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b995066c000-2b9950670000 r-xp 00000000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdma/lib64/libc.so.6(cfree+0x1c)[0x2afc286dbb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/libinfinipath.so.4.0
+2b6a1f425000-2b6a1f426000 rw-p 0000e000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2b6a1f426000-2b6a1f42a000 r-xp 00000000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b6a1f42a000-2b6a1f629000 ---p 00004000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b6a1f629000-2b6a1f62a000 r--p 00003000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b6a1f62a000-2b6a1f62b000 rw-p 00004000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2b6a1f62b000-2b6a1f68f000 r-xp 00000000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b6a1f68f000-2b6a1f88e000 ---p 00064000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b6a1f88e000-2b6a1f88f000 r--p 00063000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b6a1f88f000-2b6a1f892000 rw-p 00064000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2b6a1f892000-2b6a1f897000 rw-p 00000000 00:00 0 
+2b6a1f897000-2b6a1f89c000 r-xp 00000000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b6a1f89c000-2b6a1fa9c000 ---p 00005000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b6a1fa9c000-2b6a1fa9d000 r--p 00005000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b6a1fa9d000-2b6a1fa9e000 rw-p 00006000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b6a1fa9e000-2b6a1faa7000 r-xp 00000000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b6a1faa7000-2b6a1fca7000 ---p 00009000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b6a1fca7000-2b6a1fca8000 r--p 00009000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b6a1fca8000-2b6a1fca9000 rw-p 0000a000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b6a1fca9000-2b6a1fcad000 r-xp 00000000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdma./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba2d3023555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b66972beb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(cfree+0x1c)[0x2b129e720b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afc28678555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6ad1067555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+v22.so
+2b9950670000-2b995086f000 ---p 00004000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b995086f000-2b9950870000 r--p 00003000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b9950870000-2b9950871000 rw-p 00004000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b9950871000-2b9950878000 r-xp 00000000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b9950878000-2b9950a77000 ---p 00007000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b9950a77000-2b9950a78000 r--p 00006000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b9950a78000-2b9950a79000 rw-p 00007000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b9950a79000-2b9950a7d000 r-xp 00000000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b9950a7d000-2b9950c7c000 ---p 00004000 00:25 86247                      /usr/li/lib64/libc.so.6(cfree+0x1c)[0x2ac64b4c2b7c]
+v22.so
+2b6a1fcad000-2b6a1feac000 ---p 00004000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b6a1feac000-2b6a1fead000 r--p 00003000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b6a1fead000-2b6a1feae000 rw-p 00004000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b6a1feae000-2b6a1feb5000 r-xp 00000000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b6a1feb5000-2b6a200b4000 ---p 00007000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b6a200b4000-2b6a200b5000 r--p 00006000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b6a200b5000-2b6a200b6000 rw-p 00007000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b6a200b6000-2b6a200ba000 r-xp 00000000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b6a200ba000-2b6a202b9000 ---p 00004000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b6a202b9000-2b6a202ba000 r--p 00003000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b6a202ba000-2b6a202bb000 rw-p 00004000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b6a202bb000-2b6a202c6000 r-xp 00000000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b6a202c6000-2b6a204c5000 ---p 0000b000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b6a204c5000-2b6a204c6000 r--p 0000a000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b6a204c6000-2b6a204c7000 rw-p 0000b000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b6a204c7000-2b6a204ee000 r-xp 00000000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b6a204ee000-2b6a206ed000 ---p 00027000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b6a206ed000-2b6a206ee000 r--p 00026000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b6a206ee000-2b6/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b669725b555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b129e6bd555]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+b64/libibverbs/libipathverbs-rdmav22.so
+2b9950c7c000-2b9950c7d000 r--p 00003000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b9950c7d000-2b9950c7e000 rw-p 00004000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b9950c7e000-2b9950c89000 r-xp 00000000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b9950c89000-2b9950e88000 ---p 0000b000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b9950e88000-2b9950e89000 r--p 0000a000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b9950e89000-2b9950e8a000 rw-p 0000b000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2b9950e8a000-2b9950eb1000 r-xp 00000000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b9950eb1000-2b99510b0000 ---p 00027000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b99510b0000-2b99510b1000 r--p 00026000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b99510b1000-2b99510b2000 rw-p 00027000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b99510b2000-2b99510ba000 r-xp 00000000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b99510ba000-2b99512b9000 ---p 00008000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b99512b9000-2b99512ba000 r--p 00007000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b99512ba000-2b99512bb000 rw-p 00008000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b99512bb000-2b99512c0000 r-xp 00000000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b99512c0000-2b99514c0000 ---p 00005000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b99514c0000-2b99514c1000 r--p 00005000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b99514c1000-2b99514c2000 rw-p 00006000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b99514c2000-2b99514c800./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ac64b45f555]
+./romsM_banas_202305241654[0x40b869]
+a206ef000 rw-p 00027000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2b6a206ef000-2b6a206f7000 r-xp 00000000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b6a206f7000-2b6a208f6000 ---p 00008000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b6a208f6000-2b6a208f7000 r--p 00007000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b6a208f7000-2b6a208f8000 rw-p 00008000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b6a208f8000-2b6a208fd000 r-xp 00000000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b6a208fd000-2b6a20afd000 ---p 00005000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b6a20afd000-2b6a20afe000 r--p 00005000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b6a20afe000-2b6a20aff000 rw-p 00006000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b6a20aff000-2b6a20b05000 r-xp 00000000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b6a20b05000-2b6a20d04000 ---p 00006000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b6a20d04000-2b6a20d05000 r--p 00005000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b6a20d05000-2b6a20d06000 rw-p 00006000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b6a20d06000-2b6a20d0f000 r-xp 00000000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b6a20d0f000-2b6a20f0e000 ---p 00009000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b6a20f0e000-2b6a20f0f000 r--p 00008000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b6a20f0f000-2b6a20f10000 rw-p 00009000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b6a20f10000-2b6a20f14000 r-xp 00000000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b6a20f14000-2b0 r-xp 00000000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b99514c8000-2b99516c7000 ---p 00006000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b99516c7000-2b99516c8000 r--p 00005000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b99516c8000-2b99516c9000 rw-p 00006000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b99516c9000-2b99516d2000 r-xp 00000000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b99516d2000-2b99518d1000 ---p 00009000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b99518d1000-2b99518d2000 r--p 00008000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b99518d2000-2b99518d3000 rw-p 00009000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b99518d3000-2b99518d7000 r-xp 00000000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b99518d7000-2b9951ad6000 ---p 00004000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b9951ad6000-2b9951ad7000 r--p 00003000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b9951ad7000-2b9951ad8000 rw-p 00004000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b9951ad8000-2b9951ade000 r-xp 00000000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b9951ade000-2b9951cdd000 ---p 00006000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b9951cdd000-2b9951cde000 r--p 00005000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b9951cde000-2b9951cdf000 rw-p 00006000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b9951cdf000-2b9951ce7000 r-xp 00000000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b9951ce7000-2b9951ee6000 ---p 00008000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b99516a21113000 ---p 00004000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b6a21113000-2b6a21114000 r--p 00003000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b6a21114000-2b6a21115000 rw-p 00004000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b6a21115000-2b6a2111b000 r-xp 00000000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b6a2111b000-2b6a2131a000 ---p 00006000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b6a2131a000-2b6a2131b000 r--p 00005000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b6a2131b000-2b6a2131c000 rw-p 00006000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b6a2131c000-2b6a21324000 r-xp 00000000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b6a21324000-2b6a21523000 ---p 00008000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b6a21ee6000-2b9951ee7000 r--p 00007000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b9951ee7000-2b9951ee8000 rw-p 00008000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b9951ee8000-2b9951eec000 r-xp 00000000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b9951eec000-2b99520ec000 ---p 00004000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b99520ec000-2b99520ed000 r--p 00004000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b99520ed000-2b99520ee000 rw-p 00005000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b99520ee000-2b99520fa000 r-xp 00000000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b99520fa000-2b99522f9000 ---p 0000c000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b99522f9000-2b99522fa000 r--p 0000b000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b99522fa523000-2b6a21524000 r--p 00007000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b6a21524000-2b6a21525000 rw-p 00008000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b6a21525000-2b6a21529000 r-xp 00000000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b6a21529000-2b6a21729000 ---p 00004000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b6a21729000-2b6a2172a000 r--p 00004000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b6a2172a000-2b6a2172b000 rw-p 00005000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b6a2172b000-2b6a21737000 r-xp 00000000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b6a21737000-2b6a21936000 ---p 0000c000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b6a21936000-2b6a21937000 r--p 0000b000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b6a21937000-2b6a21938000 rw-p 0000c000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b6a21938000-2b6a2193e000 rw-p 00000000 00:00 0 
+2b6a22b64000-2b6a22bc5000 rw-p 00000000 00:00 0 
+2b6a23aa2000-2b6a23aa3000 ---p 00000000 00:00 0 
+2b6a23aa3000-2b6a23ca3000 rw-p 00000000 00:00 0 
+2b6a240c6000-2b6a240e7000 rw-p 00000000 00:00 0 
+2b6a245ef000-2b6a26ae8000 rw-p 00000000 00:00 0 
+2b6a28000000-2b6a28027000 rw-p 00000000 00:00 0 
+2b6a28027000-2b6a2c000000 ---p 00000000 00:00 0 
+7ffce2c45000-7ffce2c6c000 rw-p 00000000 00:00 0                          [stack]
+7ffce2db6000-7ffce2db8000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+000-2b99522fb000 rw-p 0000c000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2b99522fb000-2b9952301000 rw-p 00000000 00:00 0 
+2b9953527000-2b9953588000 rw-p 00000000 00:00 0 
+2b9954465000-2b9954466000 ---p 00000000 00:00 0 
+2b9954466000-2b9954666000 rw-p 00000000 00:00 0 
+2b9954a89000-2b9954aaa000 rw-p 00000000 00:00 0 
+2b9954fb2000-2b99574ab000 rw-p 00000000 00:00 0 
+2b9958000000-2b9958027000 rw-p 00000000 00:00 0 
+2b9958027000-2b995c000000 ---p 00000000 00:00 0 
+7ffe95935000-7ffe9595d000 rw-p 00000000 00:00 0                          [stack]
+7ffe95982000-7ffe95984000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+romsM_banas_202305241654:18274 terminated with signal 6 at PC=2b9936db9387 SP=7ffe95955d88.  Backtrace:
+
+romsM_banas_202305241654:18276 terminated with signal 6 at PC=2b6a063f6387 SP=7ffce2c65d08.  Backtrace:
+/lib64/libc.so.6(gsignal+0x37)[0x2b9936db9387]
+/lib64/libc.so.6(abort+0x148)[0x2b9936dbaa78]
+/lib64/libc.so.6(gsignal+0x37)[0x2b6a063f6387]
+/lib64/libc.so.6(abort+0x148)[0x2b6a063f7a78]
+/lib64/libc.so.6(+0x78f67)[0x2b9936dfbf67]
+/lib64/libc.so.6(+0x78f67)[0x2b6a06438f67]
+/lib64/libc.so.6(+0x81329)[0x2b9936e04329]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(+0x81329)[0x2b6a06441329]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__deallocate_lub+0x416)[0xa7ad76]
+./romsM_banas_202305241654(for__exit_handler+0x201)[0xa6c371]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__deallocate_lub+0x416)[0xa7ad76]
+./romsM_banas_202305241654(for__exit_handler+0x201)[0xa6c371]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9936da5555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6a063e2555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:18298 terminated with signal 11 at PC=2afb7dfd9b7c SP=7ffe3d4af7a8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2afb7dfd9b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2afb7df76555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:29590 terminated with signal 11 at PC=2b9ff706bb7c SP=7ffd504cad28.  Backtrace:
+
+romsM_banas_202305241654:18300 terminated with signal 11 at PC=2adf532c6b7c SP=7fff6f832128.  Backtrace:
+
+romsM_banas_202305241654:29594 terminated with signal 11 at PC=2b83624afb7c SP=7ffc325f0128.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2adf532c6b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2adf53263555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:18278 terminated with signal 11 at PC=2b5e04243b7c SP=7ffe8a7aa328.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b5e04243b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(cfree+0x1c)[0x2b9ff706bb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:18281 terminated with signal 11 at PC=2b2c353f2b7c SP=7ffc7258bf28.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b9ff7008555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b5e041e0555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b83624afb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(cfree+0x1c)[0x2b2c353f2b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:29593 terminated with signal 11 at PC=2ab3b8408b7c SP=7ffda97979a8.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b2c3538f555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b836244c555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:18287 terminated with signal 11 at PC=2b7f2bd8ab7c SP=7fffbffcf9a8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2ab3b8408b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+
+romsM_banas_202305241654:18286 terminated with signal 11 at PC=2b67305a5b7c SP=7ffc76fc17a8.  Backtrace:
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:18277 terminated with signal 11 at PC=2b99c4a84b7c SP=7ffce5f69ea8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b7f2bd8ab7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+
+romsM_banas_202305241654:18283 terminated with signal 11 at PC=2af7b6323b7c SP=7ffd4c10ba28.  Backtrace:
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ab3b83a5555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b7f2bd27555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2b67305a5b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(cfree+0x1c)[0x2b99c4a84b7c]
+./romsM_banas_202305241654[0x40b963]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b6730542555]
+./romsM_banas_202305241654[0x40b869]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b99c4a21555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2af7b6323b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2af7b62c0555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:29596 terminated with signal 11 at PC=2b8b252c7b7c SP=7ffd89c58328.  Backtrace:
+*** Error in `./romsM_banas_202305241654': double free or corruption (out): 0x0000000002555f40 ***
+
+romsM_banas_202305241654:29584 terminated with signal 11 at PC=2ae2a08c4b7c SP=7ffdcebe69a8.  Backtrace:
+======= Backtrace: =========
+
+romsM_banas_202305241654:29587 terminated with signal 11 at PC=2b5e6715cb7c SP=7ffe20252ea8.  Backtrace:
+/lib64/libc.so.6(+0x81329)[0x2ba337832329]
+
+romsM_banas_202305241654:29583 terminated with signal 11 at PC=2abfd2f01b7c SP=7ffddb62f728.  Backtrace:
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__deallocate_lub+0x416)[0xa7ad76]
+/lib64/libc.so.6(cfree+0x1c)[0x2b8b252c7b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654(for__exit_handler+0x201)[0xa6c371]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(cfree+0x1c)[0x2ae2a08c4b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba3377d3555]
+./romsM_banas_202305241654[0x40b869]
+======= Memory map: ========
+./romsM_banas_202305241654[0x40b963]
+00400000-00c47000 r-xp 00000000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e47000-00e49000 r--p 00847000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e49000-00e7b000 rw-p 00849000 00:2c 46176198                           /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_banas_202305241654
+00e7b000-01003000 rw-p 00000000 00:00 0 
+02420000-04eb6000 rw-p 00000000 00:00 0                                  [heap]
+2ba332363000-2ba332385000 r-xp 00000000 00:25 78429                      /usr/lib64/ld-2.17.so
+2ba332385000-2ba332389000 rw-p 00000000 00:00 0 
+2ba33239e000-2ba3323b2000 rw-p 00000000 00:00 0 
+2ba33249c000-2ba33257e000 rw-p 00000000 00:00 0 
+2ba332584000-2ba332585000 r--p 00021000 00:25 78429                      /usr/lib64/ld-2.17.so
+2ba332585000-2ba332586000 rw-p 00022000 00:25 78429                      /usr/lib64/ld-2.17.so
+2ba332586000-2ba33258700./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+0 rw-p 00000000 00:00 0 
+2ba332587000-2ba3326ec000 r-xp 00000000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2ba3326ec000-2ba3328eb000 ---p 00165000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2ba3328eb000-2ba332939000 r--p 00164000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2ba332939000-2ba33293d000 rw-p 001b2000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2ba33293d000-2ba33594c000 rw-p 00000000 00:00 0 
+2ba33594c000-2ba3359f3000 r-xp 00000000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2ba3359f3000-2ba335bf2000 ---p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2ba335bf2000-2ba335bf3000 r--p 000a6000 00:2c 2625462                    /gscratch/sw/netcdf-fortr/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b8b25264555]
+./romsM_banas_202305241654[0x40b869]
+an+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2ba335bf3000-2ba335bf4000 rw-p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2ba335bf4000-2ba335dce000 rw-p 00000000 00:00 0 
+2ba335dce000-2ba335f4c000 r-xp 00000000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2ba335f4c000-2ba33614c000 ---p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2ba33614c000-2ba336153000 rw-p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2ba336153000-2ba336177000 rw-p 00000000 00:00 0 
+2ba336177000-2ba3368b9000 r-xp 00000000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2ba3368b9000-2ba336ab8000 ---p 00/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae2a0861555]
+./romsM_banas_202305241654[0x40b869]
+742000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2ba336ab8000-2ba336af0000 rw-p 00741000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2ba336af0000-2ba336e87000 rw-p 00000000 00:00 0 
+2ba336e87000-2ba336e89000 r-xp 00000000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2ba336e89000-2ba337089000 ---p 00002000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2ba337089000-2ba33708a000 r--p 00002000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2ba33708a000-2ba33708b000 rw-p 00003000 00:25 78465                      /usr/lib64/libdl-2.17.so
+2ba33708b000-2ba337092000 r-xp 00000000 00:25 79303                      /usr/lib64/librt-2.17.so
+2ba337092000-2ba337291000 ---p 00007000 00:25 79303                      /usr/lib64/librt-2.17.so
+2ba337291000-2ba337292000 r--p 00006000 00:25 79303     /lib64/libc.so.6(cfree+0x1c)[0x2b5e6715cb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+                 /usr/lib64/librt-2.17.so
+2ba337292000-2ba337293000 rw-p 00007000 00:25 79303                      /usr/lib64/librt-2.17.so
+2ba337293000-2ba3372aa000 r-xp 00000000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2ba3372aa000-2ba3374a9000 ---p 00017000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2ba3374a9000-2ba3374aa000 r--p 00016000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2ba3374aa000-2ba3374ab000 rw-p 00017000 00:25 79295                      /usr/lib64/libpthread-2.17.so
+2ba3374ab000-2ba3374af000 rw-p 00000000 00:00 0 
+2ba3374af000-2ba3375b0000 r-xp 00000000 00:25 78469                      /usr/lib64/libm-2.17.so
+2ba3375b0000-2ba3377af000 ---p 00101000 00:25 78469                      /usr/lib64/libm-2.17.so
+2ba3377af000-2ba3377b0000 r--p 00100000 00:25 78469                      /usr/lib64/libm-2.17.so
+2ba3377b0000-2ba3377b1000 rw-p 00101000 00:25 78469                      /usr/lib64/libm-2.17.so
+2ba3377b1000-2ba337975000 r-xp 0000./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+0000 00:25 78445                      /usr/lib64/libc-2.17.so
+2ba337975000-2ba337b74000 ---p 001c4000 00:25 78445                      /usr/lib64/libc-2.17.so
+2ba337b74000-2ba337b78000 r--p 001c3000 00:25 78445                      /usr/lib64/libc-2.17.so
+2ba337b78000-2ba337b7a000 rw-p 001c7000 00:25 78445                      /usr/lib64/libc-2.17.so
+2ba337b7a000-2ba337b7f000 rw-p 00000000 00:00 0 
+2ba337b7f000-2ba337b94000 r-xp 00000000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ba337b94000-2ba337d93000 ---p 00015000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ba337d93000-2ba337d94000 r--p 00014000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ba337d94000-2ba337d95000 rw-p 00015000 00:25 78408                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ba337d95000-2ba337dba000 r-xp 00000000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2ba337dba000-2ba337fb9000 ---p 00025000 /lib64/libc.so.6(cfree+0x1c)[0x2abfd2f01b7c]
+00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2ba337fb9000-2ba337fba000 r--p 00024000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2ba337fba000-2ba337fbb000 rw-p 00025000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2ba337fbb000-2ba337fbc000 rw-p 00000000 00:00 0 
+2ba337fbc000-2ba338359000 r-xp 00000000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2ba338359000-2ba338559000 ---p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2ba338559000-2ba33855e000 r--p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2ba33855e000-2ba338565000 rw-p 003a2000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2ba338565000-2ba338567000 rw-p 00000000 00:00 0 
+2ba338567000-2ba33857c000 r-xp 00000000 00:25 79411                 ./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+     /usr/lib64/libz.so.1.2.7
+2ba33857c000-2ba33877b000 ---p 00015000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2ba33877b000-2ba33877c000 r--p 00014000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2ba33877c000-2ba33877d000 rw-p 00015000 00:25 79411                      /usr/lib64/libz.so.1.2.7
+2ba33877d000-2ba3387e3000 r-xp 00000000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2ba3387e3000-2ba3389e3000 ---p 00066000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2ba3389e3000-2ba3389e5000 r--p 00066000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2ba3389e5000-2ba3389e6000 rw-p 00068000 00:25 77666                      /usr/lib64/libcurl.so.4.3.0
+2ba3389e6000-2ba3389e7000 rw-p 00000000 00:00 0 
+2ba3389e7000-2ba338c79000 r-xp 00000000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2ba338c79000-2ba338e78000 ---p 00292000 00:2c 803043                    /lib64/libc.so.6(__libc_start_main+0xf5)[0x2b5e670f9555]
+./romsM_banas_202305241654[0x40b869]
+ /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2ba338e78000-2ba338e7e000 r--p 00291000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2ba338e7e000-2ba338ed3000 rw-p 00297000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2ba338ed3000-2ba339ba2000 r-xp 00000000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2ba339ba2000-2ba339da2000 ---p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2ba339da2000-2ba339dd9000 r--p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2ba339dd9000-2ba339dde000 rw-p 00d06000 00:./romsM_banas_202305241654[0x40b963]
+2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2ba339dde000-2ba339f40000 r-xp 00000000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2ba339f40000-2ba33a13f000 ---p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2ba33a13f000-2ba33a140000 r--p 00161000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2ba33a140000-2ba33a153000 rw-p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2ba33a153000-2ba33a1ba000 r-xp 00000000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2ba33a1b/lib64/libc.so.6(__libc_start_main+0xf5)[0x2abfd2e9e555]
+./romsM_banas_202305241654[0x40b869]
+a000-2ba33a3ba000 ---p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2ba33a3ba000-2ba33a3bb000 r--p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2ba33a3bb000-2ba33a3bc000 rw-p 00068000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2ba33a3bc000-2ba33a3bd000 rw-p 00000000 00:00 0 
+2ba33a3bd000-2ba33a3e3000 r-xp 00000000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2ba33a3e3000-2ba33a5e3000 ---p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2ba33a5e3000-2ba33a5e4000 r--p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2ba33a5e4000-2ba33a5e6000 rw-p 00027000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2ba33a5e6000-2ba33a5ec000 rw-p 00000000 00:00 0 
+2ba33a5ec000-2ba33a72d000 r-xp 00000000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2ba33a72d000-2ba33a92d000 ---p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2ba33a92d000-2ba33a930000 r--p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2ba33a930000-2ba33a933000 rw-p 00144000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2ba33a933000-2ba33a97c000 rw-p 00000000 00:00 0 
+2ba33a97c000-2ba33a9ae000 r-xp 00000000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2ba33a9ae000-2ba33abad000 ---p 00032000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2ba33abad000-2ba33abae000 r--p 00031000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2ba33abae000-2ba33abaf000 rw-p 00032000 00:25 76337                      /usr/lib64/libidn.so.11.6.11
+2ba33abaf000-2ba33abda000 r-xp 00000000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2ba33abda000-2ba33adda000 ---p 0002b000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2ba33adda000-2ba33addb000 r--p 0002b000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2ba33addb000-2ba33addc000 rw-p 0002c000 00:25 77662                      /usr/lib64/libssh2.so.1.0.1
+2ba33addc000-2ba33ae3b000 r-xp 00000000 00:25 76523                      /usr/lib64/libssl3.so
+2ba33ae3b000-2ba33b03b000 ---p 0005f000 00:25 76523                      /usr/lib64/libssl3.so
+2ba33b03b000-2ba33b03f000 r--p 0005f000 00:25 76523                      /usr/lib64/libssl3.so
+2ba33b03f000-2ba33b040000 rw-p 00063000 00:25 76523                      /usr/lib64/libssl3.so
+2ba33b040000-2ba33b041000 rw-p 00000000 00:00 0 
+2ba33b041000-2ba33b066000 r-xp 00000000 00:25 76517                      /usr/lib64/libsmime3.so
+2ba33b066000-2ba33b265000 ---p 00025000 00:25 76517                      /usr/lib64/libsmime3.so
+2ba33b265000-2ba33b268000 r--p 00024000 00:25 76517                      /usr/lib64/libsmime3.so
+2ba33b268000-2ba33b269000 rw-p 00027000 00:25 76517                      /usr/lib64/libsmime3.so
+2ba33b269000-2ba33b39a000 r-xp 00000000 00:25 77693                      /usr/lib64/libnss3.so
+2ba33b39a000-2ba33b59a000 ---p 00131000 00:25 77693                      /usr/lib64/libnss3.so
+2ba33b59a000-2ba33b59f000 r--p 00131000 00:25 77693                      /usr/lib64/libnss3.so
+2ba33b59f000-2ba33b5a2000 rw-p 00136000 00:25 77693                      /usr/lib64/libnss3.so
+2ba33b5a2000-2ba33b5a3000 rw-p 00000000 00:00 0 
+2ba33b5a3000-2ba33b5cc000 r-xp 00000000 00:25 78468                      /usr/lib64/libnssutil3.so
+2ba33b5cc000-2ba33b7cb000 ---p 00029000 00:25 78468                      /usr/lib64/libnssutil3.so
+2ba33b7cb000-2ba33b7d2000 r--p 00028000 00:25 78468                      /usr/lib64/libnssutil3.so
+2ba33b7d2000-2ba33b7d3000 rw-p 0002f000 00:25 78468                      /usr/lib64/libnssutil3.so
+2ba33b7d3000-2ba33b7d6000 r-xp 00000000 00:25 78466                      /usr/lib64/libplds4.so
+2ba33b7d6000-2ba33b9d5000 ---p 00003000 00:25 78466                      /usr/lib64/libplds4.so
+2ba33b9d5000-2ba33b9d6000 r--p 00002000 00:25 78466                      /usr/lib64/libplds4.so
+2ba33b9d6000-2ba33b9d7000 rw-p 00003000 00:25 78466                      /usr/lib64/libplds4.so
+2ba33b9d7000-2ba33b9db000 r-xp 00000000 00:25 78450                      /usr/lib64/libplc4.so
+2ba33b9db000-2ba33bbda000 ---p 00004000 00:25 78450                      /usr/lib64/libplc4.so
+2ba33bbda000-2ba33bbdb000 r--p 00003000 00:25 78450                      /usr/lib64/libplc4.so
+2ba33bbdb000-2ba33bbdc000 rw-p 00004000 00:25 78450                      /usr/lib64/libplc4.so
+2ba33bbdc000-2ba33bc16000 r-xp 00000000 00:25 78446                      /usr/lib64/libnspr4.so
+2ba33bc16000-2ba33be16000 ---p 0003a000 00:25 78446                      /usr/lib64/libnspr4.so
+2ba33be16000-2ba33be17000 r--p 0003a000 00:25 78446                      /usr/lib64/libnspr4.so
+2ba33be17000-2ba33be19000 rw-p 0003b000 00:25 78446                      /usr/lib64/libnspr4.so
+2ba33be19000-2ba33be1b000 rw-p 00000000 00:00 0 
+2ba33be1b000-2ba33be65000 r-xp 00000000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2ba33be65000-2ba33c065000 ---p 0004a000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2ba33c065000-2ba33c066000 r--p 0004a000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2ba33c066000-2ba33c068000 rw-p 0004b000 00:25 81210                      /usr/lib64/libgssapi_krb5.so.2.2
+2ba33c068000-2ba33c141000 r-xp 00000000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2ba33c141000-2ba33c340000 ---p 000d9000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2ba33c340000-2ba33c34e000 r--p 000d8000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2ba33c34e000-2ba33c351000 rw-p 000e6000 00:25 77611                      /usr/lib64/libkrb5.so.3.3
+2ba33c351000-2ba33c382000 r-xp 00000000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2ba33c382000-2ba33c581000 ---p 00031000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2ba33c581000-2ba33c583000 r--p 00030000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2ba33c583000-2ba33c584000 rw-p 00032000 00:25 77592                      /usr/lib64/libk5crypto.so.3.1
+2ba33c584000-2ba33c587000 r-xp 00000000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2ba33c587000-2ba33c786000 ---p 00003000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2ba33c786000-2ba33c787000 r--p 00002000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2ba33c787000-2ba33c788000 rw-p 00003000 00:25 80539                      /usr/lib64/libcom_err.so.2.1
+2ba33c788000-2ba33c796000 r-xp 00000000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2ba33c796000-2ba33c995000 ---p 0000e000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2ba33c995000-2ba33c996000 r--p 0000d000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2ba33c996000-2ba33c997000 rw-p 0000e000 00:25 84865                      /usr/lib64/liblber-2.4.so.2.10.7
+2ba33c997000-2ba33c9e9000 r-xp 00000000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2ba33c9e9000-2ba33cbe9000 ---p 00052000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2ba33cbe9000-2ba33cbeb000 r--p 00052000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2ba33cbeb000-2ba33cbec000 rw-p 00054000 00:25 84878                      /usr/lib64/libldap-2.4.so.2.10.7
+2ba33cbec000-2ba33cc53000 r-xp 00000000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2ba33cc53000-2ba33ce53000 ---p 00067000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2ba33ce53000-2ba33ce57000 r--p 00067000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2ba33ce57000-2ba33ce5e000 rw-p 0006b000 00:25 84881                      /usr/lib64/libssl.so.1.0.2k
+2ba33ce5e000-2ba33d095000 r-xp 00000000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2ba33d095000-2ba33d294000 ---p 00237000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2ba33d294000-2ba33d2b0000 r--p 00236000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2ba33d2b0000-2ba33d2bd000 rw-p 00252000 00:25 84879                      /usr/lib64/libcrypto.so.1.0.2k
+2ba33d2bd000-2ba33d2c1000 rw-p 00000000 00:00 0 
+2ba33d2c1000-2ba33d2cf000 r-xp 00000000 00:25 77615                      /usr/lib64/
+romsM_banas_202305241654:18296 terminated with signal 11 at PC=2b266618fb7c SP=7ffce30b2928.  Backtrace:
+libkrb5support.so.0.1
+2ba33d2cf000-2ba33d4cf000 ---p 0000e000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2ba33d4cf000-2ba33d4d0000 r--p 0000e000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2ba33d4d0000-2ba33d4d1000 rw-p 0000f000 00:25 77615                      /usr/lib64/libkrb5support.so.0.1
+2ba33d4d1000-2ba33d4d4000 r-xp 00000000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2ba33d4d4000-2ba33d6d3000 ---p 00003000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2ba33d6d3000-2ba33d6d4000 r--p 00002000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2ba33d6d4000-2ba33d6d5000 rw-p 00003000 00:25 76318                      /usr/lib64/libkeyutils.so.1.5
+2ba33d6d5000-2ba33d6eb000 r-xp 00000000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2ba33d6eb000-2ba33d8eb000 ---p 00016000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2ba33d8eb000-2ba33d8ec000 r--p 00016000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2ba33d8ec000-2ba33d8ed000 rw-p 00017000 00:25 79299                      /usr/lib64/libresolv-2.17.so
+2ba33d8ed000-2ba33d8ef000 rw-p 00000000 00:00 0 
+2ba33d8ef000-2ba33d90b000 r-xp 00000000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2ba33d90b000-2ba33db0a000 ---p 0001c000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2ba33db0a000-2ba33db0b000 r--p 0001b000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2ba33db0b000-2ba33db0c000 rw-p 0001c000 00:25 76323                      /usr/lib64/libsasl2.so.3.0.0
+2ba33db0c000-2ba33db30000 r-xp 00000000 00:25 79302                      /usr/lib64/libselinux.so.1
+2ba33db30000-2ba33dd2f000 ---p 00024000 00:25 79302                      /usr/lib64/libselinux.so.1
+2ba33dd2f000-2ba33dd30000 r--p 00023000 00:25 79302                      /usr/lib64/libselinux.so.1
+2ba33dd30000-2ba33dd31000 rw-p 00024000 00:25 79302                      /usr/lib64/libselinux.so.1
+2ba33dd31000-2ba33dd33000 rw-p 00000000 00:00 0 
+2ba33dd33000-2ba33dd3b000 r-xp 00000000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2ba33dd3b000-2ba33df3a000 ---p 00008000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2ba33df3a000-2ba33df3b000 r--p 00007000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2ba33df3b000-2ba33df3c000 rw-p 00008000 00:25 78461                      /usr/lib64/libcrypt-2.17.so
+2ba33df3c000-2ba33df6a000 rw-p 00000000 00:00 0 
+2ba33df6a000-2ba33dfca000 r-xp 00000000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2ba33dfca000-2ba33e1ca000 ---p 00060000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2ba33e1ca000-2ba33e1cb000 r--p 00060000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2ba33e1cb000-2ba33e1cc000 rw-p 00061000 00:25 79276                      /usr/lib64/libpcre.so.1.2.0
+2ba33e1cc000-2ba33e1ce000 r-xp 00000000 00:25 78423                      /usr/lib64/libfreebl3.so
+2ba33e1ce000-2ba33e3cd000 ---p 00002000 00:25 78423                      /usr/lib64/libfreebl3.so
+2ba33e3cd000-2ba33e3ce000 r--p 00001000 00:25 78423                      /usr/lib64/libfreebl3.so
+2ba33e3ce000-2ba33e3cf000 rw-p 00002000 00:25 78423                      /usr/lib64/libfreebl3.so
+2ba33e3cf000-2ba33e3d9000 r-xp 00000000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2ba33e3d9000-2ba33e5d9000 ---p 0000a000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2ba33e5d9000-2ba33e5da000 r--p 0000a000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2ba33e5da000-2ba33e5db000 rw-p 0000b000 00:25 88163                      /usr/lib64/libnuma.so.1.0.0
+2ba34f52a000-2ba34f664000 r-xp 00000000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2ba34f664000-2ba34f863000 ---p 0013a000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2ba34f863000-2ba34f884000 r--p 00139000 00:25 87308                      /usr/lib64/libfabric.so.1.10.2
+2ba34f884000-2ba34f88e000 rw-p 0015a000 00:25 87308              
+romsM_banas_202305241654:18294 terminated with signal 11 at PC=2ad70ff99b7c SP=7ffe2fed8da8.  Backtrace:
+        /usr/lib64/libfabric.so.1.10.2
+2ba34f88e000-2ba34f8a3000 r-xp 00000000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2ba34f8a3000-2ba34faa2000 ---p 00015000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2ba34faa2000-2ba34faa3000 r--p 00014000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2ba34faa3000-2ba34faa4000 rw-p 00015000 00:25 88144                      /usr/lib64/librdmacm.so.1.1.22.4
+2ba34faa4000-2ba34faa5000 rw-p 00000000 00:00 0 
+2ba34faa5000-2ba34fabd000 r-xp 00000000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2ba34fabd000-2ba34fcbc000 ---p 00018000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2ba34fcbc000-2ba34fcbd000 r--p 00017000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2ba34fcbd000-2ba34fcbe000 rw-p 00018000 00:25 88134                      /usr/lib64/libibverbs.so.1.5.22.4
+2ba34fcbe000-2ba34fcdc000 r-xp 00000000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2ba34fcdc000-2ba34fedc000 ---p 0001e000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2ba34fedc000-2ba34fede000 r--p 0001e000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2ba34fede000-2ba34fedf000 rw-p 00020000 00:25 84895                      /usr/lib64/libnl-3.so.200.23.0
+2ba34fedf000-2ba34ff43000 r-xp 00000000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2ba34ff43000-2ba350142000 ---p 00064000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2ba350142000-2ba350145000 r--p 00063000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2ba350145000-2ba35014a000 rw-p 00066000 00:25 84912                      /usr/lib64/libnl-route-3.so.200.23.0
+2ba35014a000-2ba35014c000 rw-p 00000000 00:00 0 
+2ba35014c000-2ba3501a0000 r-xp 00000000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2ba3501a0000-2ba35039f000 ---p 00054000 00:25 84531                      /usr/lib64/libpsm_in/lib64/libc.so.6(cfree+0x1c)[0x2b266618fb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+finipath.so.1.16
+2ba35039f000-2ba3503a0000 r--p 00053000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2ba3503a0000-2ba3503a1000 rw-p 00054000 00:25 84531                      /usr/lib64/libpsm_infinipath.so.1.16
+2ba3503a1000-2ba3503a2000 rw-p 00000000 00:00 0 
+2ba3503a2000-2ba350404000 r-xp 00000000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2ba350404000-2ba350604000 ---p 00062000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2ba350604000-2ba350605000 r--p 00062000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2ba350605000-2ba350606000 rw-p 00063000 00:25 85629                      /usr/lib64/libpsm2.so.2.1
+2ba350606000-2ba350608000 rw-p 00000000 00:00 0 
+2ba350608000-2ba350616000 r-xp 00000000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2ba350616000-2ba350815000 ---p 0000e000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2ba350815000-2ba350816000 r--p 0000d000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2ba350816000-2ba350817000 rw-p 0000e000 00:25 84473                      /usr/lib64/libinfinipath.so.4.0
+2ba350817000-2ba35081b000 r-xp 00000000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2ba35081b000-2ba350a1a000 ---p 00004000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2ba350a1a000-2ba350a1b000 r--p 00003000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2ba350a1b000-2ba350a1c000 rw-p 00004000 00:25 80841                      /usr/lib64/libuuid.so.1.3.0
+2ba350a1c000-2ba350a80000 r-xp 00000000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2ba350a80000-2ba350c7f000 ---p 00064000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2ba350c7f000-2ba350c80000 r--p 00063000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2ba350c80000-2ba350c83000 rw-p 00064000 00:25 85540                      /usr/lib64/libfabric/libverbs-fi.so
+2ba350c83000-2ba350c88000 rw-p 00000000 00:00 0 
+2ba350c8/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b266612c555]
+./romsM_banas_202305241654[0x40b869]
+8000-2ba350c8d000 r-xp 00000000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2ba350c8d000-2ba350e8d000 ---p 00005000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2ba350e8d000-2ba350e8e000 r--p 00005000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2ba350e8e000-2ba350e8f000 rw-p 00006000 00:25 86242                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2ba350e8f000-2ba350e98000 r-xp 00000000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2ba350e98000-2ba351098000 ---p 00009000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2ba351098000-2ba351099000 r--p 00009000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2ba351099000-2ba35109a000 rw-p 0000a000 00:25 86243                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2ba35109a000-2ba35109e000 r-xp 00000000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2ba35109e000-2ba35129d000 ---p 00004000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2ba35129d000-2ba35129e000 r--p 00003000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2ba35129e000-2ba35129f000 rw-p 00004000 00:25 86244                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2ba35129f000-2ba3512a6000 r-xp 00000000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2ba3512a6000-2ba3514a5000 ---p 00007000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2ba3514a5000-2ba3514a6000 r--p 00006000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2ba3514a6000-2ba3514a7000 rw-p 00007000 00:25 86246                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2ba3514a7000-2ba3514ab000 r-xp 00000000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2ba3514ab000-2ba3516aa000 ---p 00004000 00:25 86247                      /usr/li/lib64/libc.so.6(cfree+0x1c)[0x2ad70ff99b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+b64/libibverbs/libipathverbs-rdmav22.so
+2ba3516aa000-2ba3516ab000 r--p 00003000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2ba3516ab000-2ba3516ac000 rw-p 00004000 00:25 86247                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2ba3516ac000-2ba3516b7000 r-xp 00000000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2ba3516b7000-2ba3518b6000 ---p 0000b000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2ba3518b6000-2ba3518b7000 r--p 0000a000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2ba3518b7000-2ba3518b8000 rw-p 0000b000 00:25 88138                      /usr/lib64/libmlx4.so.1.0.22.4
+2ba3518b8000-2ba3518df000 r-xp 00000000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2ba3518df000-2ba351ade000 ---p 00027000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2ba351ade000-2ba351adf000 r--p 00026000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2ba351adf000-2ba./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+351ae0000 rw-p 00027000 00:25 88140                      /usr/lib64/libmlx5.so.1.8.22.4
+2ba351ae0000-2ba351ae8000 r-xp 00000000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2ba351ae8000-2ba351ce7000 ---p 00008000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2ba351ce7000-2ba351ce8000 r--p 00007000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2ba351ce8000-2ba351ce9000 rw-p 00008000 00:25 86250                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2ba351ce9000-2ba351cee000 r-xp 00000000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2ba351cee000-2ba351eee000 ---p 00005000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2ba351eee000-2ba351eef000 r--p 00005000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2ba351eef000-2ba351ef0000 rw-p 00006000 00:25 86251                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2ba351ef0000-2ba351ef600/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ad70ff36555]
+./romsM_banas_202305241654[0x40b869]
+0 r-xp 00000000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2ba351ef6000-2ba3520f5000 ---p 00006000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2ba3520f5000-2ba3520f6000 r--p 00005000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2ba3520f6000-2ba3520f7000 rw-p 00006000 00:25 86252                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2ba3520f7000-2ba352100000 r-xp 00000000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2ba352100000-2ba3522ff000 ---p 00009000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2ba3522ff000-2ba352300000 r--p 00008000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2ba352300000-2ba352301000 rw-p 00009000 00:25 86253                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2ba352301000-2ba352305000 r-xp 00000000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2ba352305000-2ba352504000 ---p 00004000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2ba352504000-2ba352505000 r--p 00003000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2ba352505000-2ba352506000 rw-p 00004000 00:25 86254                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2ba352506000-2ba35250c000 r-xp 00000000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2ba35250c000-2ba35270b000 ---p 00006000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2ba35270b000-2ba35270c000 r--p 00005000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2ba35270c000-2ba35270d000 rw-p 00006000 00:25 86241                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2ba35270d000-2ba352715000 r-xp 00000000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2ba352715000-2ba352914000 ---p 00008000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2ba352914000-2ba352915000 r--p 00007000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2ba352915000-2ba352916000 rw-p 00008000 00:25 86245                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2ba352916000-2ba35291a000 r-xp 00000000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2ba35291a000-2ba352b1a000 ---p 00004000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2ba352b1a000-2ba352b1b000 r--p 00004000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2ba352b1b000-2ba352b1c000 rw-p 00005000 00:25 86255                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2ba352b1c000-2ba352b28000 r-xp 00000000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2ba352b28000-2ba352d27000 ---p 0000c000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2ba352d27000-2ba352d28000 r--p 0000b000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2ba352d28000-2ba352d29000 rw-p 0000c000 00:25 79275                      /usr/lib64/libnss_files-2.17.so
+2ba352d29000-2ba352d2f000 rw-p 00000000 00:00 0 
+2ba353f55000-2ba353fb6000 rw-p 00000000 00:00 0 
+2ba354e93000-2ba354e94000 ---p 00000000 00:00 0 
+2ba354e94000-2ba355094000 rw-p 00000000 00:00 0 
+2ba3554b7000-2ba3554d8000 rw-p 00000000 00:00 0 
+2ba3559e0000-2ba357bb4000 rw-p 00000000 00:00 0 
+2ba358000000-2ba358026000 rw-p 00000000 00:00 0 
+2ba358026000-2ba35c000000 ---p 00000000 00:00 0 
+7ffdb0833000-7ffdb085a000 rw-p 00000000 00:00 0                          [stack]
+7ffdb0997000-7ffdb0999000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+romsM_banas_202305241654:18273 terminated with signal 6 at PC=2ba3377e7387 SP=7ffdb0853408.  Backtrace:
+/lib64/libc.so.6(gsignal+0x37)[0x2ba3377e7387]
+/lib64/libc.so.6(abort+0x148)[0x2ba3377e8a78]
+/lib64/libc.so.6(+0x78f67)[0x2ba337829f67]
+/lib64/libc.so.6(+0x81329)[0x2ba337832329]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__deallocate_lub+0x416)[0xa7ad76]
+./romsM_banas_202305241654(for__exit_handler+0x201)[0xa6c371]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2ba3377d3555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:7584 terminated with signal 11 at PC=2b0e6f387b7c SP=7ffcfd33e128.  Backtrace:
+
+romsM_banas_202305241654:18279 terminated with signal 11 at PC=2aad2703cb7c SP=7ffc3c49db28.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b0e6f387b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b0e6f324555]
+./romsM_banas_202305241654[0x40b869]
+/lib64/libc.so.6(cfree+0x1c)[0x2aad2703cb7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2aad26fd9555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:29585 terminated with signal 11 at PC=2b72dde92b7c SP=7fffeb023ca8.  Backtrace:
+/lib64/libc.so.6(cfree+0x1c)[0x2b72dde92b7c]
+./romsM_banas_202305241654(for__free_vm+0x16)[0xa98686]
+./romsM_banas_202305241654(for__close_proc+0x4ad)[0xa5cd9d]
+./romsM_banas_202305241654(for__exit_handler+0x1d1)[0xa6c341]
+./romsM_banas_202305241654[0x40b963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b72dde2f555]
+./romsM_banas_202305241654[0x40b869]
+
+romsM_banas_202305241654:5036 terminated with signal 11 at PC=2b07517d9b7c SP=7fffa59f2c28.  Backtrace:
+
+romsM_banas_202305241654:5045 terminated with signal 11 at PC=2b17fb22ab7c SP=7ffd023682a8.  Backtrace:
+
+romsM_banas_202305241654:5058 terminated with signal 11 at PC=2af4f2506b7c SP=7ffd788dbd28.  Backtrace:
+
+romsM_banas_202305241654:5033 terminated with signal 11 at PC=2ab3be9fdb7c SP=7ffdba6bb928.  Backtrace:
+
+romsM_banas_202305241654:5034 terminated with signal 11 at PC=2b825197ab7c SP=7ffe5f525528.  Backtrace:
+
+romsM_banas_202305241654:5037 terminated with signal 11 at PC=2aece67a3b7c SP=7fff271bf6a8.  Backtrace:
+
+romsM_banas_202305241654:5038 terminated with signal 11 at PC=2ada323c9b7c SP=7fffe704c3a8.  Backtrace:
+
+romsM_banas_202305241654:5039 terminated with signal 11 at PC=2b5044c4cb7c SP=7fff2980c328.  Backtrace:
+
+romsM_banas_202305241654:5040 terminated with signal 11 at PC=2b248897bb7c SP=7fff77320fa8.  Backtrace:
+
+romsM_banas_202305241654:5042 terminated with signal 11 at PC=2ac560b2eb7c SP=7ffde64a6328.  Backtrace:
+
+romsM_banas_202305241654:5044 terminated with signal 11 at PC=2ae167063b7c SP=7fffa687b328.  Backtrace:
+
+romsM_banas_202305241654:5050 terminated with signal 11 at PC=2ab3bf4beb7c SP=7ffca0f17ea8.  Backtrace:
+
+romsM_banas_202305241654:5046 terminated with signal 11 at PC=2b306b03db7c SP=7ffc3dc848a8.  Backtrace:
+
+romsM_banas_202305241654:5047 terminated with signal 11 at PC=2b83a358cb7c SP=7ffef569caa8.  Backtrace:
+
+romsM_banas_202305241654:5049 terminated with signal 11 at PC=2b5746798b7c SP=7fff483702a8.  Backtrace:
+
+romsM_banas_202305241654:5052 terminated with signal 11 at PC=2b2410718b7c SP=7ffe26fbf428.  Backtrace:
+
+romsM_banas_202305241654:5053 terminated with signal 11 at PC=2ac6eb26ab7c SP=7fffb7bdfd28.  Backtrace:
+
+romsM_banas_202305241654:5054 terminated with signal 11 at PC=2ae957141b7c SP=7fff08ab5aa8.  Backtrace:
+
+romsM_banas_202305241654:5055 terminated with signal 11 at PC=2afc40bf9b7c SP=7ffdfd4ca128.  Backtrace:
+
+romsM_banas_202305241654:5056 terminated with signal 11 at PC=2b0869284b7c SP=7fff8996f228.  Backtrace:
+
+romsM_banas_202305241654:5048 terminated with signal 11 at PC=2b653e8b3b7c SP=7ffefd0764a8.  Backtrace:
+
+romsM_banas_202305241654:5041 terminated with signal 11 at PC=2acd38a64b7c SP=7ffc5789be28.  Backtrace:
+
+romsM_banas_202305241654:5059 terminated with signal 11 at PC=2b22ce900b7c SP=7ffe4588a1a8.  Backtrace:

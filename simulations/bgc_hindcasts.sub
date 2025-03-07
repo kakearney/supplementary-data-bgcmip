@@ -1,0 +1,73 @@
+#!/bin/bash
+
+## Job Name
+#SBATCH --job-name=B10Knew
+
+## Allocation Definition
+
+## On mox and ikt, the account and partition options should be the same.
+#SBATCH --account=bumblereem
+#SBATCH --partition=bumblereem
+
+## Resources
+## Nodes
+#SBATCH --nodes=5
+## Tasks per node (Slurm assumes you want to run 28 tasks per node unless explicitly told otherwise)
+#SBATCH --ntasks-per-node=28
+
+## Walltime 
+#SBATCH --time=100:00:00
+
+## Memory per node
+#SBATCH --mem=10G
+
+
+module load icc_17-impi_2017
+module load netcdf_fortran+c_4.4.1.1-icc_17
+
+# Loop 1: spinup-ish, all start from same
+# Run the full 30-year sim and a 3-year save-all-fluxes-for-N-budget bit
+
+source activate kakpython
+
+python bgc_hindcasts.py --bio banas
+python bgc_hindcasts.py --nbudget --bio banas
+
+python bgc_hindcasts.py --bio bestnpz
+python bgc_hindcasts.py --nbudget --bio bestnpz
+
+python bgc_hindcasts.py --bury --bio bestnpz
+python bgc_hindcasts.py --bury --nbudget --bio bestnpz
+
+python bgc_hindcasts.py --bury --noinfauna --bio bestnpz
+python bgc_hindcasts.py --bury --noinfauna --nbudget --bio bestnpz
+
+python bgc_hindcasts.py --bio cobalt
+python bgc_hindcasts.py --nbudget --bio cobalt
+
+# Loop 2: primary loop, starting from end of first hindcast
+# 30-year and 3-year nbudget
+# Note: these must be run after the above non-nbudget sims are fully complete, and should be run in dry-run mode with the mynco environment first to properly set up ININAME files
+
+# source activate mynco
+#
+# python bgc_hindcasts.py --dryrun --loop --bio banas
+# python bgc_hindcasts.py --dryrun --loop --bio bestnpz
+# python bgc_hindcasts.py --dryrun --bury --loop --bio bestnpz
+# python bgc_hindcasts.py --dryrun --bury --noinfauna --loop --bio bestnpz
+# python bgc_hindcasts.py --dryrun --loop --bio cobalt
+#
+# source activate kakpython
+
+python bgc_hindcasts.py --loop --bio banas
+python bgc_hindcasts.py --loop --bio bestnpz
+python bgc_hindcasts.py --bury --loop --bio bestnpz
+python bgc_hindcasts.py --bury --noinfauna --loop --bio bestnpz
+python bgc_hindcasts.py --loop --bio cobalt
+
+python bgc_hindcasts.py --loop --nbudget --bio bestnpz
+python bgc_hindcasts.py --bury --loop --nbudget --bio bestnpz
+python bgc_hindcasts.py --bury --noinfauna --loop --nbudget --bio bestnpz
+python bgc_hindcasts.py --loop --nbudget --bio cobalt
+
+

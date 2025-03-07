@@ -1,0 +1,395 @@
+*** Error in `./romsM_bestnpz_202305311611': malloc(): smallbin double linked list corrupted: 0x00000000022221d0 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7f474)[0x2b3d29a23474]
+/lib64/libc.so.6(+0x82bb0)[0x2b3d29a26bb0]
+/lib64/libc.so.6(__libc_malloc+0x4c)[0x2b3d29a2978c]
+./romsM_bestnpz_202305311611(for__get_vm+0x6d)[0xb3685d]
+./romsM_bestnpz_202305311611(for__acquire_lun+0x16b4)[0xb180d4]
+./romsM_bestnpz_202305311611(for_write_int_fmt+0x83)[0xb37c33]
+./romsM_bestnpz_202305311611[0x8df74f]
+./romsM_bestnpz_202305311611[0x763271]
+./romsM_bestnpz_202305311611[0x455cca]
+./romsM_bestnpz_202305311611[0x40d718]
+./romsM_bestnpz_202305311611[0x40bdbc]
+./romsM_bestnpz_202305311611[0x40bb5e]
+./romsM_bestnpz_202305311611[0x40b95e]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3d299c6555]
+./romsM_bestnpz_202305311611[0x40b869]
+======= Memory map: ========
+00400000-00d00000 r-xp 00000000 00:2c 105074452                          /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_bestnpz_202305311611
+00eff000-00f01000 r--p 008ff000 00:2c 105074452                          /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_bestnpz_202305311611
+00f01000-00f36000 rw-p 00901000 00:2c 105074452                          /gscratch/bumblereem/kearney/BGC_hindcasts_workdir/romsM_bestnpz_202305311611
+00f36000-010be000 rw-p 00000000 00:00 0 
+02032000-04918000 rw-p 00000000 00:00 0                                  [heap]
+2b3d24556000-2b3d24578000 r-xp 00000000 00:25 80502                      /usr/lib64/ld-2.17.so
+2b3d24578000-2b3d2457b000 rw-p 00000000 00:00 0 
+2b3d2457b000-2b3d2457c000 r--s dabbad00030d0000 00:05 34821              /dev/hfi1_0
+2b3d2457c000-2b3d24583000 -w-s dabbad00020d0000 00:05 34821              /dev/hfi1_0
+2b3d24583000-2b3d2458a000 -w-s dabbad00010d0000 00:05 34821              /dev/hfi1_0
+2b3d2458a000-2b3d2458b000 r--s ffff9a2331bd8000 00:05 34821              /dev/hfi1_0
+2b3d2458b000-2b3d2458c000 rw-s dabbad00060d0000 00:05 34821              /dev/hfi1_0
+2b3d2458c000-2b3d2458d000 r--s ffff9a230cedc000 00:05 34821              /dev/hfi1_0
+2b3d2458d000-2b3d2458e000 r--s dabbad00080d0000 00:05 34821              /dev/hfi1_0
+2b3d2458e000-2b3d2458f000 rw-p 00000000 00:00 0 
+2b3d24591000-2b3d2464f000 rw-p 00000000 00:00 0 
+2b3d2464f000-2b3d2468f000 r--s dabbad00040d0000 00:05 34821              /dev/hfi1_0
+2b3d2468f000-2b3d24771000 rw-p 00000000 00:00 0 
+2b3d24777000-2b3d24778000 r--p 00021000 00:25 80502                      /usr/lib64/ld-2.17.so
+2b3d24778000-2b3d24779000 rw-p 00022000 00:25 80502                      /usr/lib64/ld-2.17.so
+2b3d24779000-2b3d2477a000 rw-p 00000000 00:00 0 
+2b3d2477a000-2b3d248df000 r-xp 00000000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b3d248df000-2b3d24ade000 ---p 00165000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b3d24ade000-2b3d24b2c000 r--p 00164000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b3d24b2c000-2b3d24b30000 rw-p 001b2000 00:2c 2624582                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdf.so.11.0.4
+2b3d24b30000-2b3d27b3f000 rw-p 00000000 00:00 0 
+2b3d27b3f000-2b3d27be6000 r-xp 00000000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b3d27be6000-2b3d27de5000 ---p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b3d27de5000-2b3d27de6000 r--p 000a6000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b3d27de6000-2b3d27de7000 rw-p 000a7000 00:2c 2625462                    /gscratch/sw/netcdf-fortran+c-4.4.1.1_icc-17/lib/libnetcdff.so.6.1.1
+2b3d27de7000-2b3d27fc1000 rw-p 00000000 00:00 0 
+2b3d27fc1000-2b3d2813f000 r-xp 00000000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b3d2813f000-2b3d2833f000 ---p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b3d2833f000-2b3d28346000 rw-p 0017e000 00:2c 968282                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/libmpifort.so.12.0
+2b3d28346000-2b3d2836a000 rw-p 00000000 00:00 0 
+2b3d2836a000-2b3d28aac000 r-xp 00000000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b3d28aac000-2b3d28cab000 ---p 00742000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b3d28cab000-2b3d28ce3000 rw-p 00741000 00:2c 968316                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/mpi/intel64/lib/release_mt/libmpi.so.12.0
+2b3d28ce3000-2b3d2907a000 rw-p 00000000 00:00 0 
+2b3d2907a000-2b3d2907c000 r-xp 00000000 00:25 80538                      /usr/lib64/libdl-2.17.so
+2b3d2907c000-2b3d2927c000 ---p 00002000 00:25 80538                      /usr/lib64/libdl-2.17.so
+2b3d2927c000-2b3d2927d000 r--p 00002000 00:25 80538                      /usr/lib64/libdl-2.17.so
+2b3d2927d000-2b3d2927e000 rw-p 00003000 00:25 80538                      /usr/lib64/libdl-2.17.so
+2b3d2927e000-2b3d29285000 r-xp 00000000 00:25 71549                      /usr/lib64/librt-2.17.so
+2b3d29285000-2b3d29484000 ---p 00007000 00:25 71549                      /usr/lib64/librt-2.17.so
+2b3d29484000-2b3d29485000 r--p 00006000 00:25 71549                      /usr/lib64/librt-2.17.so
+2b3d29485000-2b3d29486000 rw-p 00007000 00:25 71549                      /usr/lib64/librt-2.17.so
+2b3d29486000-2b3d2949d000 r-xp 00000000 00:25 71541                      /usr/lib64/libpthread-2.17.so
+2b3d2949d000-2b3d2969c000 ---p 00017000 00:25 71541                      /usr/lib64/libpthread-2.17.so
+2b3d2969c000-2b3d2969d000 r--p 00016000 00:25 71541                      /usr/lib64/libpthread-2.17.so
+2b3d2969d000-2b3d2969e000 rw-p 00017000 00:25 71541                      /usr/lib64/libpthread-2.17.so
+2b3d2969e000-2b3d296a2000 rw-p 00000000 00:00 0 
+2b3d296a2000-2b3d297a3000 r-xp 00000000 00:25 80542                      /usr/lib64/libm-2.17.so
+2b3d297a3000-2b3d299a2000 ---p 00101000 00:25 80542                      /usr/lib64/libm-2.17.so
+2b3d299a2000-2b3d299a3000 r--p 00100000 00:25 80542                      /usr/lib64/libm-2.17.so
+2b3d299a3000-2b3d299a4000 rw-p 00101000 00:25 80542                      /usr/lib64/libm-2.17.so
+2b3d299a4000-2b3d29b68000 r-xp 00000000 00:25 80518                      /usr/lib64/libc-2.17.so
+2b3d29b68000-2b3d29d67000 ---p 001c4000 00:25 80518                      /usr/lib64/libc-2.17.so
+2b3d29d67000-2b3d29d6b000 r--p 001c3000 00:25 80518                      /usr/lib64/libc-2.17.so
+2b3d29d6b000-2b3d29d6d000 rw-p 001c7000 00:25 80518                      /usr/lib64/libc-2.17.so
+2b3d29d6d000-2b3d29d72000 rw-p 00000000 00:00 0 
+2b3d29d72000-2b3d29d87000 r-xp 00000000 00:25 80481                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b3d29d87000-2b3d29f86000 ---p 00015000 00:25 80481                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b3d29f86000-2b3d29f87000 r--p 00014000 00:25 80481                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b3d29f87000-2b3d29f88000 rw-p 00015000 00:25 80481                      /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2b3d29f88000-2b3d29fad000 r-xp 00000000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b3d29fad000-2b3d2a1ac000 ---p 00025000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b3d2a1ac000-2b3d2a1ad000 r--p 00024000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b3d2a1ad000-2b3d2a1ae000 rw-p 00025000 00:2c 857574                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5_hl.so.10.1.1
+2b3d2a1ae000-2b3d2a1af000 rw-p 00000000 00:00 0 
+2b3d2a1af000-2b3d2a54c000 r-xp 00000000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b3d2a54c000-2b3d2a74c000 ---p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b3d2a74c000-2b3d2a751000 r--p 0039d000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b3d2a751000-2b3d2a758000 rw-p 003a2000 00:2c 857329                     /gscratch/sw/hdf5-1.8.18_icc-17/lib/libhdf5.so.10.2.1
+2b3d2a758000-2b3d2a75a000 rw-p 00000000 00:00 0 
+2b3d2a75a000-2b3d2a76f000 r-xp 00000000 00:25 71657                      /usr/lib64/libz.so.1.2.7
+2b3d2a76f000-2b3d2a96e000 ---p 00015000 00:25 71657                      /usr/lib64/libz.so.1.2.7
+2b3d2a96e000-2b3d2a96f000 r--p 00014000 00:25 71657                      /usr/lib64/libz.so.1.2.7
+2b3d2a96f000-2b3d2a970000 rw-p 00015000 00:25 71657                      /usr/lib64/libz.so.1.2.7
+2b3d2a970000-2b3d2a9d6000 r-xp 00000000 00:25 83885                      /usr/lib64/libcurl.so.4.3.0
+2b3d2a9d6000-2b3d2abd6000 ---p 00066000 00:25 83885                      /usr/lib64/libcurl.so.4.3.0
+2b3d2abd6000-2b3d2abd8000 r--p 00066000 00:25 83885                      /usr/lib64/libcurl.so.4.3.0
+2b3d2abd8000-2b3d2abd9000 rw-p 00068000 00:25 83885                      /usr/lib64/libcurl.so.4.3.0
+2b3d2abd9000-2b3d2abda000 rw-p 00000000 00:00 0 
+2b3d2abda000-2b3d2ae6c000 r-xp 00000000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b3d2ae6c000-2b3d2b06b000 ---p 00292000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b3d2b06b000-2b3d2b071000 r--p 00291000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b3d2b071000-2b3d2b0c6000 rw-p 00297000 00:2c 803043                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libimf.so
+2b3d2b0c6000-2b3d2bd95000 r-xp 00000000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b3d2bd95000-2b3d2bf95000 ---p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b3d2bf95000-2b3d2bfcc000 r--p 00ccf000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b3d2bfcc000-2b3d2bfd1000 rw-p 00d06000 00:2c 803025                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libsvml.so
+2b3d2bfd1000-2b3d2c133000 r-xp 00000000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b3d2c133000-2b3d2c332000 ---p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b3d2c332000-2b3d2c333000 r--p 00161000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b3d2c333000-2b3d2c346000 rw-p 00162000 00:2c 803041                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libirng.so
+2b3d2c346000-2b3d2c3ad000 r-xp 00000000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b3d2c3ad000-2b3d2c5ad000 ---p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b3d2c5ad000-2b3d2c5ae000 r--p 00067000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b3d2c5ae000-2b3d2c5af000 rw-p 00068000 00:2c 803053                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b3d2c5af000-2b3d2c5b0000 rw-p 00000000 00:00 0 
+2b3d2c5b0000-2b3d2c5d6000 r-xp 00000000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b3d2c5d6000-2b3d2c7d6000 ---p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b3d2c7d6000-2b3d2c7d7000 r--p 00026000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b3d2c7d7000-2b3d2c7d9000 rw-p 00027000 00:2c 988566                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifport.so.5
+2b3d2c7d9000-2b3d2c7df000 rw-p 00000000 00:00 0 
+2b3d2c7df000-2b3d2c920000 r-xp 00000000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b3d2c920000-2b3d2cb20000 ---p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b3d2cb20000-2b3d2cb23000 r--p 00141000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b3d2cb23000-2b3d2cb26000 rw-p 00144000 00:2c 988562                     /gscratch/sw/intel-201703/compilers_and_libraries_2017.2.174/linux/compiler/lib/intel64_lin/libifcoremt.so.5
+2b3d2cb26000-2b3d2cb6f000 rw-p 00000000 00:00 0 
+2b3d2cb6f000-2b3d2cba1000 r-xp 00000000 00:25 83136                      /usr/lib64/libidn.so.11.6.11
+2b3d2cba1000-2b3d2cda0000 ---p 00032000 00:25 83136                      /usr/lib64/libidn.so.11.6.11
+2b3d2cda0000-2b3d2cda1000 r--p 00031000 00:25 83136                      /usr/lib64/libidn.so.11.6.11
+2b3d2cda1000-2b3d2cda2000 rw-p 00032000 00:25 83136                      /usr/lib64/libidn.so.11.6.11
+2b3d2cda2000-2b3d2cdcd000 r-xp 00000000 00:25 83881                      /usr/lib64/libssh2.so.1.0.1
+2b3d2cdcd000-2b3d2cfcd000 ---p 0002b000 00:25 83881                      /usr/lib64/libssh2.so.1.0.1
+2b3d2cfcd000-2b3d2cfce000 r--p 0002b000 00:25 83881                      /usr/lib64/libssh2.so.1.0.1
+2b3d2cfce000-2b3d2cfcf000 rw-p 0002c000 00:25 83881                      /usr/lib64/libssh2.so.1.0.1
+2b3d2cfcf000-2b3d2d02e000 r-xp 00000000 00:25 83924                      /usr/lib64/libssl3.so
+2b3d2d02e000-2b3d2d22e000 ---p 0005f000 00:25 83924                      /usr/lib64/libssl3.so
+2b3d2d22e000-2b3d2d232000 r--p 0005f000 00:25 83924                      /usr/lib64/libssl3.so
+2b3d2d232000-2b3d2d233000 rw-p 00063000 00:25 83924                      /usr/lib64/libssl3.so
+2b3d2d233000-2b3d2d234000 rw-p 00000000 00:00 0 
+2b3d2d234000-2b3d2d259000 r-xp 00000000 00:25 83918                      /usr/lib64/libsmime3.so
+2b3d2d259000-2b3d2d458000 ---p 00025000 00:25 83918                      /usr/lib64/libsmime3.so
+2b3d2d458000-2b3d2d45b000 r--p 00024000 00:25 83918                      /usr/lib64/libsmime3.so
+2b3d2d45b000-2b3d2d45c000 rw-p 00027000 00:25 83918                      /usr/lib64/libsmime3.so
+2b3d2d45c000-2b3d2d58d000 r-xp 00000000 00:25 83912                      /usr/lib64/libnss3.so
+2b3d2d58d000-2b3d2d78d000 ---p 00131000 00:25 83912                      /usr/lib64/libnss3.so
+2b3d2d78d000-2b3d2d792000 r--p 00131000 00:25 83912                      /usr/lib64/libnss3.so
+2b3d2d792000-2b3d2d795000 rw-p 00136000 00:25 83912                      /usr/lib64/libnss3.so
+2b3d2d795000-2b3d2d796000 rw-p 00000000 00:00 0 
+2b3d2d796000-2b3d2d7bf000 r-xp 00000000 00:25 80541                      /usr/lib64/libnssutil3.so
+2b3d2d7bf000-2b3d2d9be000 ---p 00029000 00:25 80541                      /usr/lib64/libnssutil3.so
+2b3d2d9be000-2b3d2d9c5000 r--p 00028000 00:25 80541                      /usr/lib64/libnssutil3.so
+2b3d2d9c5000-2b3d2d9c6000 rw-p 0002f000 00:25 80541                      /usr/lib64/libnssutil3.so
+2b3d2d9c6000-2b3d2d9c9000 r-xp 00000000 00:25 80539                      /usr/lib64/libplds4.so
+2b3d2d9c9000-2b3d2dbc8000 ---p 00003000 00:25 80539                      /usr/lib64/libplds4.so
+2b3d2dbc8000-2b3d2dbc9000 r--p 00002000 00:25 80539                      /usr/lib64/libplds4.so
+2b3d2dbc9000-2b3d2dbca000 rw-p 00003000 00:25 80539                      /usr/lib64/libplds4.so
+2b3d2dbca000-2b3d2dbce000 r-xp 00000000 00:25 80523                      /usr/lib64/libplc4.so
+2b3d2dbce000-2b3d2ddcd000 ---p 00004000 00:25 80523                      /usr/lib64/libplc4.so
+2b3d2ddcd000-2b3d2ddce000 r--p 00003000 00:25 80523                      /usr/lib64/libplc4.so
+2b3d2ddce000-2b3d2ddcf000 rw-p 00004000 00:25 80523                      /usr/lib64/libplc4.so
+2b3d2ddcf000-2b3d2de09000 r-xp 00000000 00:25 80519                      /usr/lib64/libnspr4.so
+2b3d2de09000-2b3d2e009000 ---p 0003a000 00:25 80519                      /usr/lib64/libnspr4.so
+2b3d2e009000-2b3d2e00a000 r--p 0003a000 00:25 80519                      /usr/lib64/libnspr4.so
+2b3d2e00a000-2b3d2e00c000 rw-p 0003b000 00:25 80519                      /usr/lib64/libnspr4.so
+2b3d2e00c000-2b3d2e00e000 rw-p 00000000 00:00 0 
+2b3d2e00e000-2b3d2e058000 r-xp 00000000 00:25 83783                      /usr/lib64/libgssapi_krb5.so.2.2
+2b3d2e058000-2b3d2e258000 ---p 0004a000 00:25 83783                      /usr/lib64/libgssapi_krb5.so.2.2
+2b3d2e258000-2b3d2e259000 r--p 0004a000 00:25 83783                      /usr/lib64/libgssapi_krb5.so.2.2
+2b3d2e259000-2b3d2e25b000 rw-p 0004b000 00:25 83783                      /usr/lib64/libgssapi_krb5.so.2.2
+2b3d2e25b000-2b3d2e334000 r-xp 00000000 00:25 83830                      /usr/lib64/libkrb5.so.3.3
+2b3d2e334000-2b3d2e533000 ---p 000d9000 00:25 83830                      /usr/lib64/libkrb5.so.3.3
+2b3d2e533000-2b3d2e541000 r--p 000d8000 00:25 83830                      /usr/lib64/libkrb5.so.3.3
+2b3d2e541000-2b3d2e544000 rw-p 000e6000 00:25 83830                      /usr/lib64/libkrb5.so.3.3
+2b3d2e544000-2b3d2e575000 r-xp 00000000 00:25 83811                      /usr/lib64/libk5crypto.so.3.1
+2b3d2e575000-2b3d2e774000 ---p 00031000 00:25 83811                      /usr/lib64/libk5crypto.so.3.1
+2b3d2e774000-2b3d2e776000 r--p 00030000 00:25 83811                      /usr/lib64/libk5crypto.so.3.1
+2b3d2e776000-2b3d2e777000 rw-p 00032000 00:25 83811                      /usr/lib64/libk5crypto.so.3.1
+2b3d2e777000-2b3d2e77a000 r-xp 00000000 00:25 82780                      /usr/lib64/libcom_err.so.2.1
+2b3d2e77a000-2b3d2e979000 ---p 00003000 00:25 82780                      /usr/lib64/libcom_err.so.2.1
+2b3d2e979000-2b3d2e97a000 r--p 00002000 00:25 82780                      /usr/lib64/libcom_err.so.2.1
+2b3d2e97a000-2b3d2e97b000 rw-p 00003000 00:25 82780                      /usr/lib64/libcom_err.so.2.1
+2b3d2e97b000-2b3d2e989000 r-xp 00000000 00:25 88468                      /usr/lib64/liblber-2.4.so.2.10.7
+2b3d2e989000-2b3d2eb88000 ---p 0000e000 00:25 88468                      /usr/lib64/liblber-2.4.so.2.10.7
+2b3d2eb88000-2b3d2eb89000 r--p 0000d000 00:25 88468                      /usr/lib64/liblber-2.4.so.2.10.7
+2b3d2eb89000-2b3d2eb8a000 rw-p 0000e000 00:25 88468                      /usr/lib64/liblber-2.4.so.2.10.7
+2b3d2eb8a000-2b3d2ebdc000 r-xp 00000000 00:25 88481                      /usr/lib64/libldap-2.4.so.2.10.7
+2b3d2ebdc000-2b3d2eddc000 ---p 00052000 00:25 88481                      /usr/lib64/libldap-2.4.so.2.10.7
+2b3d2eddc000-2b3d2edde000 r--p 00052000 00:25 88481                      /usr/lib64/libldap-2.4.so.2.10.7
+2b3d2edde000-2b3d2eddf000 rw-p 00054000 00:25 88481                      /usr/lib64/libldap-2.4.so.2.10.7
+2b3d2eddf000-2b3d2ee46000 r-xp 00000000 00:25 88484                      /usr/lib64/libssl.so.1.0.2k
+2b3d2ee46000-2b3d2f046000 ---p 00067000 00:25 88484                      /usr/lib64/libssl.so.1.0.2k
+2b3d2f046000-2b3d2f04a000 r--p 00067000 00:25 88484                      /usr/lib64/libssl.so.1.0.2k
+2b3d2f04a000-2b3d2f051000 rw-p 0006b000 00:25 88484                      /usr/lib64/libssl.so.1.0.2k
+2b3d2f051000-2b3d2f288000 r-xp 00000000 00:25 88482                      /usr/lib64/libcrypto.so.1.0.2k
+2b3d2f288000-2b3d2f487000 ---p 00237000 00:25 88482                      /usr/lib64/libcrypto.so.1.0.2k
+2b3d2f487000-2b3d2f4a3000 r--p 00236000 00:25 88482                      /usr/lib64/libcrypto.so.1.0.2k
+2b3d2f4a3000-2b3d2f4b0000 rw-p 00252000 00:25 88482                      /usr/lib64/libcrypto.so.1.0.2k
+2b3d2f4b0000-2b3d2f4b4000 rw-p 00000000 00:00 0 
+2b3d2f4b4000-2b3d2f4c2000 r-xp 00000000 00:25 83834                      /usr/lib64/libkrb5support.so.0.1
+2b3d2f4c2000-2b3d2f6c2000 ---p 0000e000 00:25 83834                      /usr/lib64/libkrb5support.so.0.1
+2b3d2f6c2000-2b3d2f6c3000 r--p 0000e000 00:25 83834                      /usr/lib64/libkrb5support.so.0.1
+2b3d2f6c3000-2b3d2f6c4000 rw-p 0000f000 00:25 83834                      /usr/lib64/libkrb5support.so.0.1
+2b3d2f6c4000-2b3d2f6c7000 r-xp 00000000 00:25 83117                      /usr/lib64/libkeyutils.so.1.5
+2b3d2f6c7000-2b3d2f8c6000 ---p 00003000 00:25 83117                      /usr/lib64/libkeyutils.so.1.5
+2b3d2f8c6000-2b3d2f8c7000 r--p 00002000 00:25 83117                      /usr/lib64/libkeyutils.so.1.5
+2b3d2f8c7000-2b3d2f8c8000 rw-p 00003000 00:25 83117                      /usr/lib64/libkeyutils.so.1.5
+2b3d2f8c8000-2b3d2f8de000 r-xp 00000000 00:25 71545                      /usr/lib64/libresolv-2.17.so
+2b3d2f8de000-2b3d2fade000 ---p 00016000 00:25 71545                      /usr/lib64/libresolv-2.17.so
+2b3d2fade000-2b3d2fadf000 r--p 00016000 00:25 71545                      /usr/lib64/libresolv-2.17.so
+2b3d2fadf000-2b3d2fae0000 rw-p 00017000 00:25 71545                      /usr/lib64/libresolv-2.17.so
+2b3d2fae0000-2b3d2fae2000 rw-p 00000000 00:00 0 
+2b3d2fae2000-2b3d2fafe000 r-xp 00000000 00:25 83122                      /usr/lib64/libsasl2.so.3.0.0
+2b3d2fafe000-2b3d2fcfd000 ---p 0001c000 00:25 83122                      /usr/lib64/libsasl2.so.3.0.0
+2b3d2fcfd000-2b3d2fcfe000 r--p 0001b000 00:25 83122                      /usr/lib64/libsasl2.so.3.0.0
+2b3d2fcfe000-2b3d2fcff000 rw-p 0001c000 00:25 83122                      /usr/lib64/libsasl2.so.3.0.0
+2b3d2fcff000-2b3d2fd23000 r-xp 00000000 00:25 71548                      /usr/lib64/libselinux.so.1
+2b3d2fd23000-2b3d2ff22000 ---p 00024000 00:25 71548                      /usr/lib64/libselinux.so.1
+2b3d2ff22000-2b3d2ff23000 r--p 00023000 00:25 71548                      /usr/lib64/libselinux.so.1
+2b3d2ff23000-2b3d2ff24000 rw-p 00024000 00:25 71548                      /usr/lib64/libselinux.so.1
+2b3d2ff24000-2b3d2ff26000 rw-p 00000000 00:00 0 
+2b3d2ff26000-2b3d2ff2e000 r-xp 00000000 00:25 80534                      /usr/lib64/libcrypt-2.17.so
+2b3d2ff2e000-2b3d3012d000 ---p 00008000 00:25 80534                      /usr/lib64/libcrypt-2.17.so
+2b3d3012d000-2b3d3012e000 r--p 00007000 00:25 80534                      /usr/lib64/libcrypt-2.17.so
+2b3d3012e000-2b3d3012f000 rw-p 00008000 00:25 80534                      /usr/lib64/libcrypt-2.17.so
+2b3d3012f000-2b3d3015d000 rw-p 00000000 00:00 0 
+2b3d3015d000-2b3d301bd000 r-xp 00000000 00:25 71522                      /usr/lib64/libpcre.so.1.2.0
+2b3d301bd000-2b3d303bd000 ---p 00060000 00:25 71522                      /usr/lib64/libpcre.so.1.2.0
+2b3d303bd000-2b3d303be000 r--p 00060000 00:25 71522                      /usr/lib64/libpcre.so.1.2.0
+2b3d303be000-2b3d303bf000 rw-p 00061000 00:25 71522                      /usr/lib64/libpcre.so.1.2.0
+2b3d303bf000-2b3d303c1000 r-xp 00000000 00:25 80496                      /usr/lib64/libfreebl3.so
+2b3d303c1000-2b3d305c0000 ---p 00002000 00:25 80496                      /usr/lib64/libfreebl3.so
+2b3d305c0000-2b3d305c1000 r--p 00001000 00:25 80496                      /usr/lib64/libfreebl3.so
+2b3d305c1000-2b3d305c2000 rw-p 00002000 00:25 80496                      /usr/lib64/libfreebl3.so
+2b3d305c2000-2b3d305cc000 r-xp 00000000 00:25 74651                      /usr/lib64/libnuma.so.1.0.0
+2b3d305cc000-2b3d307cc000 ---p 0000a000 00:25 74651                      /usr/lib64/libnuma.so.1.0.0
+2b3d307cc000-2b3d307cd000 r--p 0000a000 00:25 74651                      /usr/lib64/libnuma.so.1.0.0
+2b3d307cd000-2b3d307ce000 rw-p 0000b000 00:25 74651                      /usr/lib64/libnuma.so.1.0.0
+2b3d307ce000-2b3d4171d000 rw-s 00000000 00:13 87309751                   /dev/shm/Intel_MPI_L6P3WT (deleted)
+2b3d4171d000-2b3d41857000 r-xp 00000000 00:25 89284                      /usr/lib64/libfabric.so.1.10.2
+2b3d41857000-2b3d41a56000 ---p 0013a000 00:25 89284                      /usr/lib64/libfabric.so.1.10.2
+2b3d41a56000-2b3d41a77000 r--p 00139000 00:25 89284                      /usr/lib64/libfabric.so.1.10.2
+2b3d41a77000-2b3d41a81000 rw-p 0015a000 00:25 89284                      /usr/lib64/libfabric.so.1.10.2
+2b3d41a81000-2b3d41a96000 r-xp 00000000 00:25 74632                      /usr/lib64/librdmacm.so.1.1.22.4
+2b3d41a96000-2b3d41c95000 ---p 00015000 00:25 74632                      /usr/lib64/librdmacm.so.1.1.22.4
+2b3d41c95000-2b3d41c96000 r--p 00014000 00:25 74632                      /usr/lib64/librdmacm.so.1.1.22.4
+2b3d41c96000-2b3d41c97000 rw-p 00015000 00:25 74632                      /usr/lib64/librdmacm.so.1.1.22.4
+2b3d41c97000-2b3d41c98000 rw-p 00000000 00:00 0 
+2b3d41c98000-2b3d41cb0000 r-xp 00000000 00:25 74622                      /usr/lib64/libibverbs.so.1.5.22.4
+2b3d41cb0000-2b3d41eaf000 ---p 00018000 00:25 74622                      /usr/lib64/libibverbs.so.1.5.22.4
+2b3d41eaf000-2b3d41eb0000 r--p 00017000 00:25 74622                      /usr/lib64/libibverbs.so.1.5.22.4
+2b3d41eb0000-2b3d41eb1000 rw-p 00018000 00:25 74622                      /usr/lib64/libibverbs.so.1.5.22.4
+2b3d41eb1000-2b3d41ecf000 r-xp 00000000 00:25 74400                      /usr/lib64/libnl-3.so.200.23.0
+2b3d41ecf000-2b3d420cf000 ---p 0001e000 00:25 74400                      /usr/lib64/libnl-3.so.200.23.0
+2b3d420cf000-2b3d420d1000 r--p 0001e000 00:25 74400                      /usr/lib64/libnl-3.so.200.23.0
+2b3d420d1000-2b3d420d2000 rw-p 00020000 00:25 74400                      /usr/lib64/libnl-3.so.200.23.0
+2b3d420d2000-2b3d42136000 r-xp 00000000 00:25 74417                      /usr/lib64/libnl-route-3.so.200.23.0
+2b3d42136000-2b3d42335000 ---p 00064000 00:25 74417                      /usr/lib64/libnl-route-3.so.200.23.0
+2b3d42335000-2b3d42338000 r--p 00063000 00:25 74417                      /usr/lib64/libnl-route-3.so.200.23.0
+2b3d42338000-2b3d4233d000 rw-p 00066000 00:25 74417                      /usr/lib64/libnl-route-3.so.200.23.0
+2b3d4233d000-2b3d4233f000 rw-p 00000000 00:00 0 
+2b3d4233f000-2b3d42393000 r-xp 00000000 00:25 88362                      /usr/lib64/libpsm_infinipath.so.1.16
+2b3d42393000-2b3d42592000 ---p 00054000 00:25 88362                      /usr/lib64/libpsm_infinipath.so.1.16
+2b3d42592000-2b3d42593000 r--p 00053000 00:25 88362                      /usr/lib64/libpsm_infinipath.so.1.16
+2b3d42593000-2b3d42594000 rw-p 00054000 00:25 88362                      /usr/lib64/libpsm_infinipath.so.1.16
+2b3d42594000-2b3d42595000 rw-p 00000000 00:00 0 
+2b3d42595000-2b3d425f7000 r-xp 00000000 00:25 78233                      /usr/lib64/libpsm2.so.2.1
+2b3d425f7000-2b3d427f7000 ---p 00062000 00:25 78233                      /usr/lib64/libpsm2.so.2.1
+2b3d427f7000-2b3d427f8000 r--p 00062000 00:25 78233                      /usr/lib64/libpsm2.so.2.1
+2b3d427f8000-2b3d427f9000 rw-p 00063000 00:25 78233                      /usr/lib64/libpsm2.so.2.1
+2b3d427f9000-2b3d427fb000 rw-p 00000000 00:00 0 
+2b3d427fb000-2b3d42809000 r-xp 00000000 00:25 88071                      /usr/lib64/libinfinipath.so.4.0
+2b3d42809000-2b3d42a08000 ---p 0000e000 00:25 88071                      /usr/lib64/libinfinipath.so.4.0
+2b3d42a08000-2b3d42a09000 r--p 0000d000 00:25 88071                      /usr/lib64/libinfinipath.so.4.0
+2b3d42a09000-2b3d42a0a000 rw-p 0000e000 00:25 88071                      /usr/lib64/libinfinipath.so.4.0
+2b3d42a0a000-2b3d42a0e000 r-xp 00000000 00:25 83082                      /usr/lib64/libuuid.so.1.3.0
+2b3d42a0e000-2b3d42c0d000 ---p 00004000 00:25 83082                      /usr/lib64/libuuid.so.1.3.0
+2b3d42c0d000-2b3d42c0e000 r--p 00003000 00:25 83082                      /usr/lib64/libuuid.so.1.3.0
+2b3d42c0e000-2b3d42c0f000 rw-p 00004000 00:25 83082                      /usr/lib64/libuuid.so.1.3.0
+2b3d42c0f000-2b3d42c73000 r-xp 00000000 00:25 87784                      /usr/lib64/libfabric/libverbs-fi.so
+2b3d42c73000-2b3d42e72000 ---p 00064000 00:25 87784                      /usr/lib64/libfabric/libverbs-fi.so
+2b3d42e72000-2b3d42e73000 r--p 00063000 00:25 87784                      /usr/lib64/libfabric/libverbs-fi.so
+2b3d42e73000-2b3d42e76000 rw-p 00064000 00:25 87784                      /usr/lib64/libfabric/libverbs-fi.so
+2b3d42e76000-2b3d42e7b000 rw-p 00000000 00:00 0 
+2b3d42e7b000-2b3d42e80000 r-xp 00000000 00:25 80910                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b3d42e80000-2b3d43080000 ---p 00005000 00:25 80910                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b3d43080000-2b3d43081000 r--p 00005000 00:25 80910                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b3d43081000-2b3d43082000 rw-p 00006000 00:25 80910                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2b3d43082000-2b3d4308b000 r-xp 00000000 00:25 80911                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b3d4308b000-2b3d4328b000 ---p 00009000 00:25 80911                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b3d4328b000-2b3d4328c000 r--p 00009000 00:25 80911                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b3d4328c000-2b3d4328d000 rw-p 0000a000 00:25 80911                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2b3d4328d000-2b3d43291000 r-xp 00000000 00:25 80912                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b3d43291000-2b3d43490000 ---p 00004000 00:25 80912                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b3d43490000-2b3d43491000 r--p 00003000 00:25 80912                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b3d43491000-2b3d43492000 rw-p 00004000 00:25 80912                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2b3d43492000-2b3d43499000 r-xp 00000000 00:25 80914                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b3d43499000-2b3d43698000 ---p 00007000 00:25 80914                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b3d43698000-2b3d43699000 r--p 00006000 00:25 80914                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b3d43699000-2b3d4369a000 rw-p 00007000 00:25 80914                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b3d4369a000-2b3d4369e000 r-xp 00000000 00:25 80915                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b3d4369e000-2b3d4389d000 ---p 00004000 00:25 80915                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b3d4389d000-2b3d4389e000 r--p 00003000 00:25 80915                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b3d4389e000-2b3d4389f000 rw-p 00004000 00:25 80915                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2b3d4389f000-2b3d438aa000 r-xp 00000000 00:25 74626                      /usr/lib64/libmlx4.so.1.0.22.4
+2b3d438aa000-2b3d43aa9000 ---p 0000b000 00:25 74626                      /usr/lib64/libmlx4.so.1.0.22.4
+2b3d43aa9000-2b3d43aaa000 r--p 0000a000 00:25 74626                      /usr/lib64/libmlx4.so.1.0.22.4
+2b3d43aaa000-2b3d43aab000 rw-p 0000b000 00:25 74626                      /usr/lib64/libmlx4.so.1.0.22.4
+2b3d43aab000-2b3d43ad2000 r-xp 00000000 00:25 74628                      /usr/lib64/libmlx5.so.1.8.22.4
+2b3d43ad2000-2b3d43cd1000 ---p 00027000 00:25 74628                      /usr/lib64/libmlx5.so.1.8.22.4
+2b3d43cd1000-2b3d43cd2000 r--p 00026000 00:25 74628                      /usr/lib64/libmlx5.so.1.8.22.4
+2b3d43cd2000-2b3d43cd3000 rw-p 00027000 00:25 74628                      /usr/lib64/libmlx5.so.1.8.22.4
+2b3d43cd3000-2b3d43cdb000 r-xp 00000000 00:25 80918                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b3d43cdb000-2b3d43eda000 ---p 00008000 00:25 80918                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b3d43eda000-2b3d43edb000 r--p 00007000 00:25 80918                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b3d43edb000-2b3d43edc000 rw-p 00008000 00:25 80918                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2b3d43edc000-2b3d43ee1000 r-xp 00000000 00:25 80919                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b3d43ee1000-2b3d440e1000 ---p 00005000 00:25 80919                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b3d440e1000-2b3d440e2000 r--p 00005000 00:25 80919                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b3d440e2000-2b3d440e3000 rw-p 00006000 00:25 80919                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2b3d440e3000-2b3d440e9000 r-xp 00000000 00:25 80920                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b3d440e9000-2b3d442e8000 ---p 00006000 00:25 80920                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b3d442e8000-2b3d442e9000 r--p 00005000 00:25 80920                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b3d442e9000-2b3d442ea000 rw-p 00006000 00:25 80920                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2b3d442ea000-2b3d442f3000 r-xp 00000000 00:25 80921                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b3d442f3000-2b3d444f2000 ---p 00009000 00:25 80921                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b3d444f2000-2b3d444f3000 r--p 00008000 00:25 80921                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b3d444f3000-2b3d444f4000 rw-p 00009000 00:25 80921                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2b3d444f4000-2b3d444f8000 r-xp 00000000 00:25 80922                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b3d444f8000-2b3d446f7000 ---p 00004000 00:25 80922                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b3d446f7000-2b3d446f8000 r--p 00003000 00:25 80922                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b3d446f8000-2b3d446f9000 rw-p 00004000 00:25 80922                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2b3d446f9000-2b3d446ff000 r-xp 00000000 00:25 80909                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b3d446ff000-2b3d448fe000 ---p 00006000 00:25 80909                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b3d448fe000-2b3d448ff000 r--p 00005000 00:25 80909                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b3d448ff000-2b3d44900000 rw-p 00006000 00:25 80909                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b3d44900000-2b3d44908000 r-xp 00000000 00:25 80913                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b3d44908000-2b3d44b07000 ---p 00008000 00:25 80913                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b3d44b07000-2b3d44b08000 r--p 00007000 00:25 80913                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b3d44b08000-2b3d44b09000 rw-p 00008000 00:25 80913                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2b3d44b09000-2b3d44b0d000 r-xp 00000000 00:25 80923                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b3d44b0d000-2b3d44d0d000 ---p 00004000 00:25 80923                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b3d44d0d000-2b3d44d0e000 r--p 00004000 00:25 80923                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b3d44d0e000-2b3d44d0f000 rw-p 00005000 00:25 80923                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2b3d44d0f000-2b3d44d1b000 r-xp 00000000 00:25 71521                      /usr/lib64/libnss_files-2.17.so
+2b3d44d1b000-2b3d44f1a000 ---p 0000c000 00:25 71521                      /usr/lib64/libnss_files-2.17.so
+2b3d44f1a000-2b3d44f1b000 r--p 0000b000 00:25 71521                      /usr/lib64/libnss_files-2.17.so
+2b3d44f1b000-2b3d44f1c000 rw-p 0000c000 00:25 71521                      /usr/lib64/libnss_files-2.17.so
+2b3d44f1c000-2b3d44f22000 rw-p 00000000 00:00 0 
+2b3d44f22000-2b3d45722000 r--s dabbad00050d0000 00:05 34821              /dev/hfi1_0
+2b3d45722000-2b3d47086000 rw-p 00000000 00:00 0 
+2b3d47086000-2b3d47087000 ---p 00000000 00:00 0 
+2b3d47087000-2b3d47287000 rw-p 00000000 00:00 0 
+2b3d47287000-2b3d476aa000 rw-s 00000000 00:13 87309795                   /dev/shm/psm2_shm.6924510000000000b60d020
+2b3d476aa000-2b3d476cb000 rw-p 00000000 00:00 0 
+2b3d476cb000-2b3d476cc000 rw-s 00000000 00:13 87309796                   /dev/shm/shm-col-space-30076-2-606501DF457CF
+2b3d476cc000-2b3d476cd000 rw-s 00001000 00:13 87309796                   /dev/shm/shm-col-space-30076-2-606501DF457CF
+2b3d476cd000-2b3d476ce000 rw-s 00002000 00:13 87309796                   /dev/shm/shm-col-space-30076-2-606501DF457CF
+2b3d476ce000-2b3d47706000 rw-s 00003000 00:13 87309796                   /dev/shm/shm-col-space-30076-2-606501DF457CF
+2b3d47706000-2b3d4773e000 rw-s 0003b000 00:13 87309796                   /dev/shm/shm-col-space-30076-2-606501DF457CF
+2b3d4773e000-2b3d4773f000 rw-s 00000000 00:13 87309797                   /dev/shm/shm-col-space-30076-12-606501DF49D5C
+2b3d4773f000-2b3d47740000 rw-s 00001000 00:13 87309797                   /dev/shm/shm-col-space-30076-12-606501DF49D5C
+2b3d47740000-2b3d47741000 rw-s 00002000 00:13 87309797                   /dev/shm/shm-col-space-30076-12-606501DF49D5C
+2b3d47741000-2b3d47779000 rw-s 00003000 00:13 87309797                   /dev/shm/shm-col-space-30076-12-606501DF49D5C
+2b3d47779000-2b3d477b1000 rw-s 0003b000 00:13 87309797                   /dev/shm/shm-col-space-30076-12-606501DF49D5C
+2b3d477b1000-2b3d4d00b000 rw-p 00000000 00:00 0 
+2b3d50000000-2b3d50026000 rw-p 00000000 00:00 0 
+2b3d50026000-2b3d54000000 ---p 00000000 00:00 0 
+2b3d54000000-2b3d54021000 rw-p 00000000 00:00 0 
+2b3d54021000-2b3d58000000 ---p 00000000 00:00 0 
+7ffca4b34000-7ffca4b5b000 rw-p 00000000 00:00 0                          [stack]
+7ffca4b90000-7ffca4b92000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+romsM_bestnpz_202305311611:30076 terminated with signal 6 at PC=2b3d299da387 SP=7ffca4b40e08.  Backtrace:
+/lib64/libc.so.6(gsignal+0x37)[0x2b3d299da387]
+/lib64/libc.so.6(abort+0x148)[0x2b3d299dba78]
+/lib64/libc.so.6(+0x78f67)[0x2b3d29a1cf67]
+/lib64/libc.so.6(+0x7f474)[0x2b3d29a23474]
+/lib64/libc.so.6(+0x82bb0)[0x2b3d29a26bb0]
+/lib64/libc.so.6(__libc_malloc+0x4c)[0x2b3d29a2978c]
+./romsM_bestnpz_202305311611(for__get_vm+0x6d)[0xb3685d]
+./romsM_bestnpz_202305311611(for__acquire_lun+0x16b4)[0xb180d4]
+./romsM_bestnpz_202305311611(for_write_int_fmt+0x83)[0xb37c33]
+./romsM_bestnpz_202305311611[0x8df74f]
+./romsM_bestnpz_202305311611[0x763271]
+./romsM_bestnpz_202305311611[0x455cca]
+./romsM_bestnpz_202305311611[0x40d718]
+./romsM_bestnpz_202305311611[0x40bdbc]
+./romsM_bestnpz_202305311611[0x40bb5e]
+./romsM_bestnpz_202305311611[0x40b95e]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b3d299c6555]
+./romsM_bestnpz_202305311611[0x40b869]

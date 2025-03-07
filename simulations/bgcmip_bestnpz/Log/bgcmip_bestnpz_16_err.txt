@@ -1,0 +1,2 @@
+srun: Job step aborted: Waiting up to 12 seconds for job step to finish.
+slurmstepd: error: *** STEP 4641546.16 ON n2164 CANCELLED AT 2023-06-26T11:21:44 DUE TO PREEMPTION ***

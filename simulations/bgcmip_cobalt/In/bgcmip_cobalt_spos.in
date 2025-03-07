@@ -1,0 +1,111 @@
+Lstations == T
+Sout(idFsur) == T
+Sout(idUbar) == T
+Sout(idVbar) == T
+Sout(idUvel) == T
+Sout(idVvel) == T
+Sout(idWvel) == T
+Sout(idOvel) == T
+Sout(idTvar) == T
+Sout(idUsms) == T
+Sout(idVsms) == T
+Sout(idUbms) == T
+Sout(idVbms) == T
+Sout(idUbws) == F
+Sout(idVbws) == F
+Sout(idUbed) == F
+Sout(idVbed) == F
+Sout(idUbot) == F
+Sout(idVbot) == F
+Sout(idTsur) == T T
+Sout(idLhea) == T
+Sout(idShea) == T
+Sout(idLrad) == T
+Sout(idSrad) == T
+Sout(idevap) == F
+Sout(idrain) == F
+Sout(idDano) == T
+Sout(idVvis) == T
+Sout(idTdif) == T
+Sout(idSdif) == T
+Sout(idHsbl) == T
+Sout(idHbbl) == T
+Sout(idMtke) == F
+Sout(idMtls) == F
+Sout(idUice) == T
+Sout(idVice) == T
+Sout(idAice) == T
+Sout(idHice) == T
+Sout(idTice) == T
+Sout(idHsno) == T
+Sout(idTimid) == T
+Sout(idT2ice) == T
+Sout(idTauiw) == F
+Sout(idChuiw) == F
+Sout(idAgeice) == T
+Sout(idSig11) == T
+Sout(idSig12) == T
+Sout(idSig22) == T
+Sout(idS0mk) == T
+Sout(idT0mk) == T
+Sout(idWfr) == T
+Sout(idWai) == T
+Sout(idWao) == T
+Sout(idWio) == T
+Sout(idWro) == T
+Sout(idWdiv) == T
+Sout(idAlbe) == T
+Sout(idAlbI) == T
+Sout(idLWdn) == T
+Sout(idSWdn) == T
+Sout(idLatI) == T
+Sout(idSenI) == T
+Sout(idLWupI) == T
+Sout(idSWupI) == T
+Sout(idSWinI) == T
+Sout(idSWthruI) == T
+Sout(idSaltI) == T
+Sout(idSaltL) == T
+Sout(idQao) == T
+Sout(idQai) == T
+Sout(idQio) == T
+Sout(idQi2) == T
+Sout(idSnoI) == T
+Sout(idBott) == F F F F F F F F F F F F F F F F
+NSTATION == 35
+POS =               GRID FLAG X-POS        Y-POS        COMMENT     
+                    1    1   195.482000    55.072000
+                    1    1   195.943000    56.877000
+                    1    1   193.663000    56.049000
+                    1    1   191.130000    57.853000
+                    1    1   188.289000    59.898000
+                    1    1   191.146000    53.406000
+                    1    1   190.905000    53.598000
+                    1    1   185.332000    62.194000
+                    1    1   198.050942    56.268793
+                    1    1   197.075666    58.082151
+                    1    1   201.560638    57.889318
+                    1    1   193.438736    57.912346
+                    1    1   199.847699    57.364473
+                    1    1   189.605389    56.811488
+                    1    1   192.498012    59.274617
+                    1    1   183.091018    60.346739
+                    1    1   186.321121    58.817561
+                    1    1   187.786134    57.099870
+                    1    1   191.340159    61.212814
+                    1    1   187.719107    63.766476
+                    1    1   191.833220    64.425345
+                    1    1   195.143283    63.956613
+                    1    1   181.242499    59.030382
+                    1    1   184.563456    58.055814
+                    1    1   187.977788    55.954464
+                    1    1   189.535606    55.377820
+                    1    1   192.351143    54.443646
+                    1    1   189.364722    53.519340
+                    1    1   181.732286    64.069596
+                    1    1   164.339841    59.524587
+                    1    1   176.673737    57.534277
+                    1    1   176.187612    53.526246
+                    1    1   167.077501    57.035096
+                    1    1   179.911736    53.260088
+                    1    1   170.626328    58.287708

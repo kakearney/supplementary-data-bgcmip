@@ -1,0 +1,63 @@
+Lbiology == T
+BioIter == 1
+mu0 == 1.2d0
+att_sw == 0.05d0
+att_p == 0.006d0
+alpha_win == 0.01d0
+alpha_sum == 0.16d0
+Ecrit == 30
+deltaE == 5
+kmin == 0.16d0
+phi_NH4 == 2.0d0
+CNratio == 9.0d0
+chlNratio == 2.2d0
+m_P == 0.03d0
+m_agg == 0.009d0
+I0 == 3.4d0
+Kgraz == 1
+epsil == 0.3d0
+fex == 0.35d0
+m_Z == 1.5d0
+w_S == 3
+w_L == 100
+r_remin == 0.05d0
+r_nitr == 0.03d0
+Q_P == 2
+Q_Z == 2.8d0
+Q_R == 2.8d0
+k_sed1 == 2.833d0
+k_sed2 == -1.079d0
+TNU2 == 25.0d0 25.0d0 25.0d0 25.0d0 25.0d0 25.0d0
+TNU4 == 0.0d0
+AKT_BAK == 1d-06
+TNUDG == 0.0d0
+Hadvection == HSIMT
+Vadvection == HSIMT
+ad_Hadvection == U3
+ad_Vadvection == C4
+Hout(idTvar) == F
+Aout(idTvar) == T T T T T T
+Dout(iflxnpp) == T
+Dout(iflxgra) == T
+Dout(iflxagg) == T
+Dout(iflxpmor) == T
+Dout(iflxzmor) == T
+Dout(iflxsrem) == T
+Dout(iflxlrem) == T
+Dout(iflxnit) == T
+Dout(ifratio) == T
+Dout(iflxsinks) == T
+Dout(iflxsinkl) == T
+Dout(iThadv) == T
+Dout(iTvadv) == T
+Dout(iThdif) == T
+Dout(iTvdif) == T
+LBC(isTvar) == RadNud RadNud Clo Clo \
+RadNud RadNud Clo Clo \
+RadNud RadNud Clo Clo \
+RadNud RadNud Clo Clo \
+RadNud RadNud Clo Clo \
+RadNud RadNud Clo Clo
+LtracerCLM == F F F F F F
+LnudgeTCLM == F F F F F F
+LtracerSrc == F F F F F F

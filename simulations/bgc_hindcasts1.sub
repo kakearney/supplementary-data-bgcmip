@@ -1,0 +1,33 @@
+#!/bin/bash
+
+## Job Name
+#SBATCH --job-name=B10Kbgc1
+
+## Allocation Definition
+
+## On mox and ikt, the account and partition options should be the same.
+#SBATCH --account=bumblereem-ckpt
+#SBATCH --partition=ckpt
+
+## Resources
+## Nodes
+#SBATCH --nodes=5
+## Tasks per node (Slurm assumes you want to run 28 tasks per node unless explicitly told otherwise)
+#SBATCH --ntasks-per-node=28
+
+## Walltime 
+#SBATCH --time=80:00:00
+
+## Memory per node
+#SBATCH --mem=10G
+
+
+module load icc_17-impi_2017
+module load netcdf_fortran+c_4.4.1.1-icc_17
+source activate kakpython
+
+# python bgc_hindcasts.py --bio banas
+# python bgc_hindcasts.py --nbudget --bio banas
+
+python bgc_hindcasts.py --bury --loop --bio bestnpz
+
