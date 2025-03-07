@@ -2186,16 +2186,17 @@ set([h.ts; h.temp], 'linewidth', 1.5);
 exportgraphics(h.fig, 'lightlim.png', 'Resolution', 300);
 
 
-%% ... all fluxes at M2
+%% ... all fluxes at M2 (flux per group figures)
 
 relflag = true;
 
 nbudfilem2 = fullfile(simfolder, 'analysis/nbudgets_all_M2single.mat');
 NbudM2 = load(nbudfilem2);
 
-[~,mask] = ismember(["../bgcmip_nbudget_banas/Out", ...
-                     "../bgcmip_nbudget_bestnpz/Out", ...
-                     "../bgcmip_nbudget_cobalt/Out"], NbudM2.outpath);
+[~,mask] = ismember(["../bgcmip_loop_nbudget_banas/Out", ...
+                     "../bgcmip_loop_nbudget_bestnpz/Out", ...
+                     "../bgcmip_loop_nbudget_cobalt/Out"], NbudM2.outpath);
+lblname = ["Banas", "BEST_NPZ", "COBALT"];
 NbudM2.G = NbudM2.G(mask);
 NbudM2.tg = NbudM2.tg(mask);
 
@@ -2262,6 +2263,8 @@ for ii = 1:nplt
             h.leg(ii,jj) = legendflex(h.ba(ii,jj).pos, lbl, 'ref', h.ax(ii,jj), 'anchor', {'nw','sw'}, 'buffer', [0 0], ...
                 'fontsize', 8, 'xscale', 0.5, 'nrow', 3, 'box','off');
         
+            labelaxes(h.ax(ii,jj), lblname{plt{ii,2*jj-1}}+": "+string(plt{ii,2*jj}), 'northwest', 'interpreter', 'none', 'fontweight', 'b');
+
             % Biomass
         
             h.bio(ii,jj) = plot(h.ax(nplt+1,jj), ttmp, pbio, 'color', colmodel(plt{ii,jj*2-1},:));
@@ -2311,42 +2314,49 @@ set(h.ax(1:nplt,2), 'ylim', [-2 2]);
 
 set(h.ax(nplt+1,:), 'ylim', [1e-2 400], 'yscale', 'log');
 
-set(h.bio(ismember(plt(:,2:2:end),{'PhL','nlg','Jel'})), 'linestyle', '-.');
+set(h.bio(ismember(plt(:,2:2:end),{'PhL','nlg','Jel','nlgz'})), 'linestyle', '-.');
 set(h.bio(ismember(plt(:,2:2:end),{'NCaS'})), 'linestyle', ':');
 set(h.fig, 'color', 'w');
 
 set(h.ax(1:nplt-1,:), 'xticklabel', '');
 set(h.ax([cellfun(@isnan, plt(:,1:2:end)); false(1,ncol)]), 'visible', 'off');
 
-export_fig(h.fig, "flx_per_biomass_spinup", '-png', '-r300', '-nocrop', '-painters');
-
-return
-
-set(h.ax(1:nplt-1), 'xticklabel', '');
-
-pflag = any(strcmp(plt(:,2), 'phyto'));
-mzflag = any(strcmp(plt(:,2), 'microzoo'));
-if relflag
-    if pflag
-        set(h.ax, 'ylim', [-1 1]);
-    elseif mzflag
-        set(h.ax, 'ylim', [-2 2]);
-    end
-else
-    set(h.ax, 'ylim', [-50 50]);
+for jj = 1:ncol
+    mask = ismissing(plt(:,jj*2));
+    h.leg(jj) = legendflex(h.bio(~mask,jj), plt(~mask,jj*2), ...
+        'ref', h.ax(nplt+1,jj), 'anchor', {'nw','sw'}, 'buffer', [0 0], ...
+        'fontsize', 8, 'xscale', 1.0, 'nrow', 1, 'box','off');
 end
 
-if pflag
-    set(h.ax(nplt+1), 'yscale', 'log', 'ylim', [1 400]);
-end
-if mzflag
-    set(h.ax(nplt+1), 'ylim', [1e-2 30], 'yscale', 'log');
-end
+% export_fig(h.fig, "flx_per_biomass_spinup", '-png', '-r300', '-nocrop', '-painters');
+export_fig(h.fig, "flx_per_biomass", '-png', '-r300', '-nocrop', '-painters');
 
-set(h.bio(ismember(plt(:,2:2:end),{'PhS','nsm','Jel'})), 'linestyle', '-.');
-set(h.bio(ismember(plt(:,2:2:end),{'NCaS'})), 'linestyle', ':');
 
-set(h.fig, 'color', 'w');
+% set(h.ax(1:nplt-1), 'xticklabel', '');
+% 
+% pflag = any(strcmp(plt(:,2), 'phyto'));
+% mzflag = any(strcmp(plt(:,2), 'microzoo'));
+% if relflag
+%     if pflag
+%         set(h.ax, 'ylim', [-1 1]);
+%     elseif mzflag
+%         set(h.ax, 'ylim', [-2 2]);
+%     end
+% else
+%     set(h.ax, 'ylim', [-50 50]);
+% end
+% 
+% if pflag
+%     set(h.ax(nplt+1), 'yscale', 'log', 'ylim', [1 400]);
+% end
+% if mzflag
+%     set(h.ax(nplt+1), 'ylim', [1e-2 30], 'yscale', 'log');
+% end
+% 
+% set(h.bio(ismember(plt(:,2:2:end),{'PhS','nsm','Jel'})), 'linestyle', '-.');
+% set(h.bio(ismember(plt(:,2:2:end),{'NCaS'})), 'linestyle', ':');
+% 
+% set(h.fig, 'color', 'w');
 
 % if pflag
 %     export_fig(h.fig, "flx_phyto"+yrplt, '-png', '-r150', '-nocrop');
