@@ -1,0 +1,26 @@
+netcdf Mineral_Flux_AM4 {
+dimensions:
+	lon = 288 ;
+	lat = 180 ;
+	Time = UNLIMITED ; // (12 currently)
+variables:
+	float FLUX_MINERAL(Time, lat, lon) ;
+		FLUX_MINERAL:long_name = "Mineral Dust Deposition (Wet and Dry)" ;
+		FLUX_MINERAL:units = "g/m2/s" ;
+	double lon(lon) ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+	double lat(lat) ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+	double Time(Time) ;
+		Time:units = "seconds since 0001-01-01 00:00:00" ;
+		Time:Time_origin = "01-JAN-0001 00:00:00" ;
+		Time:calendar = "NOLEAP" ;
+		Time:modulo = "T" ;
+		Time:axis = "T" ;
+
+// global attributes:
+		:title = "Mineral flux from AM4 documentation run" ;
+		:source_files = "/archive/h1g/awg/warsaw/c96L33_am4p0_cmip6Diag/gfdl.ncrc4-intel-prod-openmp/" ;
+}

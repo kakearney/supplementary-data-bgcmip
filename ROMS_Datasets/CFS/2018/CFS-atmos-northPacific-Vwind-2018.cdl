@@ -1,0 +1,41 @@
+netcdf CFS-atmos-northPacific-Vwind-2018 {
+dimensions:
+	wind_time = UNLIMITED ; // (1451 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Vwind(wind_time, lat, lon) ;
+		Vwind:missing_value = -1.e+34 ;
+		Vwind:_FillValue = -1.e+34 ;
+		Vwind:time = "wind_time" ;
+		Vwind:coordinates = "lon lat" ;
+		Vwind:height_above_ground1 = 10.f ;
+		Vwind:long_name = "V wind" ;
+		Vwind:history = "From roms-cfs-atmos-Vwind-2018" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double wind_time(wind_time) ;
+		wind_time:units = "day since 1900-01-01 00:00:00" ;
+		wind_time:time_origin = "01-JAN-1900 00:00:00" ;
+		wind_time:axis = "T" ;
+		wind_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:25:14 2022: ncks -F -O -d wind_time,2,1452 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-Vwind-2018.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-Vwind-2018.nc\n",
+			"Thu May 30 20:49:28 2019: Time overhang added\n",
+			"Thu May 30 20:49:21 2019: ncrcat /tmp/tp06740970_4dbc_4b9d_809d_86b5d0ead677.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-Vwind-2018.nc /tmp/tpfccae5ff_839b_414d_9567_584a9c40d934.nc /tmp/tp1a52d97b_c6f4_4cce_8e33_5ea86656d5e3.nc\n",
+			"Thu May 30 20:49:21 2019: ncks -F -d wind_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-Vwind-2018.nc /tmp/tp06740970_4dbc_4b9d_809d_86b5d0ead677.nc\n",
+			"FERRET V7.4  29-May-19" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

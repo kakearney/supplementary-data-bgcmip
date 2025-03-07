@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/initial/INIice_Bering10K.nc

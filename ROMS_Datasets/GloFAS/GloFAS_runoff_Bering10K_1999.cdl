@@ -1,0 +1,33 @@
+netcdf GloFAS_runoff_Bering10K_1999 {
+dimensions:
+	runoff_time = UNLIMITED ; // (365 currently)
+	eta_rho = 258 ;
+	xi_rho = 182 ;
+variables:
+	double Runoff(runoff_time, eta_rho, xi_rho) ;
+		Runoff:missing_value = -1.e+34 ;
+		Runoff:_FillValue = -1.e+34 ;
+		Runoff:long_name = "river runoff (as surface freshwater flux)" ;
+		Runoff:history = "From /gscratch/goaclim/hermann/Ken_CGOA/Als_NEP_Files/NEP_grid_5a.nc" ;
+		Runoff:cell_methods = "runoff_time: mean" ;
+		Runoff:units = "kilogram meter-2 second-1" ;
+		Runoff:time = "runoff_time" ;
+	double runoff_time(runoff_time) ;
+		runoff_time:units = "days since 1900-01-01 00:00:00" ;
+		runoff_time:axis = "T" ;
+		runoff_time:calendar = "GREGORIAN" ;
+		runoff_time:time_origin = "01-JAN-1900:00:00:00" ;
+		runoff_time:standard_name = "time" ;
+		runoff_time:cell_methods = "runoff_time: mean" ;
+
+// global attributes:
+		:history = "Wed Jan 18 15:06:53 2023: ncks -F -d xi_rho,25,206 -d eta_rho,350,607 /gscratch/bumblereem/ROMS_Datasets/GloFAS/GloFAS_runoff_NEP_1999.nc /gscratch/bumblereem/ROMS_Datasets/GloFAS/GloFAS_runoff_Bering10K_1999.nc\n",
+			"Thu Dec 15 17:24:52 2022: Replaced Runoff<0 values with 0s\n",
+			"Thu Dec 15 17:24:45 2022: Replaced Jan 1 0s with interpolated values\n",
+			"Thu Dec 15 17:24:37 2022: ncrename -v Runoff10_90_Sc,Runoff ../GloFAS/GloFAS_runoff_NEP_1999.nc\n",
+			"Thu Dec 15 17:24:33 2022: ncks -F -d runoff_time,7306,7670 ../runoff_glofas_on_nep_1979-2020.nc ../GloFAS/GloFAS_runoff_NEP_1999.nc\n",
+			"Sat Jan 29 14:41:41 2022: ncrcat -O glofas_on_nep/runoff_glofas_on_nep_1979.nc glofas_on_nep/runoff_glofas_on_nep_1980.nc glofas_on_nep/runoff_glofas_on_nep_1981.nc glofas_on_nep/runoff_glofas_on_nep_1982.nc glofas_on_nep/runoff_glofas_on_nep_1983.nc glofas_on_nep/runoff_glofas_on_nep_1984.nc glofas_on_nep/runoff_glofas_on_nep_1985.nc glofas_on_nep/runoff_glofas_on_nep_1986.nc glofas_on_nep/runoff_glofas_on_nep_1987.nc glofas_on_nep/runoff_glofas_on_nep_1988.nc glofas_on_nep/runoff_glofas_on_nep_1989.nc glofas_on_nep/runoff_glofas_on_nep_1990.nc glofas_on_nep/runoff_glofas_on_nep_1991.nc glofas_on_nep/runoff_glofas_on_nep_1992.nc glofas_on_nep/runoff_glofas_on_nep_1993.nc glofas_on_nep/runoff_glofas_on_nep_1994.nc glofas_on_nep/runoff_glofas_on_nep_1995.nc glofas_on_nep/runoff_glofas_on_nep_1996.nc glofas_on_nep/runoff_glofas_on_nep_1997.nc glofas_on_nep/runoff_glofas_on_nep_1998.nc glofas_on_nep/runoff_glofas_on_nep_1999.nc glofas_on_nep/runoff_glofas_on_nep_2000.nc glofas_on_nep/runoff_glofas_on_nep_2001.nc glofas_on_nep/runoff_glofas_on_nep_2002.nc glofas_on_nep/runoff_glofas_on_nep_2003.nc glofas_on_nep/runoff_glofas_on_nep_2004.nc glofas_on_nep/runoff_glofas_on_nep_2005.nc glofas_on_nep/runoff_glofas_on_nep_2006.nc glofas_on_nep/runoff_glofas_on_nep_2007.nc glofas_on_nep/runoff_glofas_on_nep_2008.nc glofas_on_nep/runoff_glofas_on_nep_2009.nc glofas_on_nep/runoff_glofas_on_nep_2010.nc glofas_on_nep/runoff_glofas_on_nep_2011.nc glofas_on_nep/runoff_glofas_on_nep_2012.nc glofas_on_nep/runoff_glofas_on_nep_2013.nc glofas_on_nep/runoff_glofas_on_nep_2014.nc glofas_on_nep/runoff_glofas_on_nep_2015.nc glofas_on_nep/runoff_glofas_on_nep_2016.nc glofas_on_nep/runoff_glofas_on_nep_2017.nc glofas_on_nep/runoff_glofas_on_nep_2018.nc glofas_on_nep/runoff_glofas_on_nep_2019.nc glofas_on_nep/runoff_glofas_on_nep_2020.nc glofas_on_nep/runoff_glofas_on_nep_1979-2020.nc\n",
+			"PyFerret V7.63 (optimized) 28-Jan-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+}

@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-lwrad-2022 {
+dimensions:
+	lat = 344 ;
+	lon = 588 ;
+	lrf_time = UNLIMITED ; // (1041 currently)
+variables:
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double lrf_time(lrf_time) ;
+		lrf_time:units = "day since 1900-01-01 00:00:00" ;
+		lrf_time:time_origin = "01-JAN-1900 00:00:00" ;
+		lrf_time:axis = "T" ;
+		lrf_time:standard_name = "time" ;
+	double lwrad_down(lrf_time, lat, lon) ;
+		lwrad_down:missing_value = -1.e+34 ;
+		lwrad_down:_FillValue = -1.e+34 ;
+		lwrad_down:time = "lrf_time" ;
+		lwrad_down:coordinates = "lon lat" ;
+		lwrad_down:long_name = "downward longwave radiation" ;
+		lwrad_down:history = "From roms-cfs-atmos-lwrad-2022" ;
+
+// global attributes:
+		:history = "Mon Oct 31 13:24:08 2022: ncks -F -O -d lrf_time,2,1042 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-lwrad-2022.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2022/CFS-atmos-northPacific-lwrad-2022.nc\n",
+			"Tue Sep 27 09:35:33 2022: Time overhang added to beginning\n",
+			"Tue Sep 27 09:35:27 2022: ncrcat /tmp/tp1e6f04c7_9e82_4ab0_b461_3a889c51a878.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-lwrad-2022.nc /tmp/tp7c1dafa5_e122_4edb_aaec_3ca709a71951.nc\n",
+			"Tue Sep 27 09:35:27 2022: ncks -F -d lrf_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-lwrad-2022.nc /tmp/tp1e6f04c7_9e82_4ab0_b461_3a889c51a878.nc\n",
+			"FERRET V7.6  22-Sep-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

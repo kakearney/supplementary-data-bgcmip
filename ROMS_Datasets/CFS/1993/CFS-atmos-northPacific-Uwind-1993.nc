@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/1993/CFS-atmos-northPacific-Uwind-1993.nc

@@ -1,0 +1,67 @@
+netcdf CFS-ocean-ESPER-NEP-N30-brycarbon-2002 {
+dimensions:
+	bry_time = UNLIMITED ; // (73 currently)
+	s_rho = 30 ;
+	eta_rho = 642 ;
+	xi_rho = 226 ;
+variables:
+	double bry_time(bry_time) ;
+		bry_time:long_name = "time since initialization" ;
+		bry_time:units = "seconds since 1900-01-01 00:00:00" ;
+		bry_time:calendar = "standard" ;
+		bry_time:cell_methods = "bry_time: mean" ;
+	double salt_east(bry_time, s_rho, eta_rho) ;
+		salt_east:long_name = "salinity, eastern boundary condition" ;
+		salt_east:time = "bry_time" ;
+		salt_east:cell_methods = "bry_time: mean" ;
+	double salt_south(bry_time, s_rho, xi_rho) ;
+		salt_south:long_name = "salinity, southern boundary condition" ;
+		salt_south:time = "bry_time" ;
+		salt_south:cell_methods = "bry_time: mean" ;
+	double salt_west(bry_time, s_rho, eta_rho) ;
+		salt_west:long_name = "salinity, western boundary condition" ;
+		salt_west:time = "bry_time" ;
+		salt_west:cell_methods = "bry_time: mean" ;
+	double alkalinity_west(bry_time, s_rho, eta_rho) ;
+		alkalinity_west:long_name = "alkalinity western boundary condition" ;
+		alkalinity_west:units = "umol/kg" ;
+		alkalinity_west:time = "bry_time" ;
+		alkalinity_west:_FillValue = 1.e+36 ;
+	double TIC_west(bry_time, s_rho, eta_rho) ;
+		TIC_west:long_name = "TIC western boundary condition" ;
+		TIC_west:units = "umol/kg" ;
+		TIC_west:time = "bry_time" ;
+		TIC_west:_FillValue = 1.e+36 ;
+	double alkalinity_east(bry_time, s_rho, eta_rho) ;
+		alkalinity_east:long_name = "alkalinity eastern boundary condition" ;
+		alkalinity_east:units = "umol/kg" ;
+		alkalinity_east:time = "bry_time" ;
+		alkalinity_east:_FillValue = 1.e+36 ;
+	double TIC_east(bry_time, s_rho, eta_rho) ;
+		TIC_east:long_name = "TIC eastern boundary condition" ;
+		TIC_east:units = "umol/kg" ;
+		TIC_east:time = "bry_time" ;
+		TIC_east:_FillValue = 1.e+36 ;
+	double alkalinity_south(bry_time, s_rho, xi_rho) ;
+		alkalinity_south:long_name = "alkalinity southern boundary condition" ;
+		alkalinity_south:units = "umol/kg" ;
+		alkalinity_south:time = "bry_time" ;
+		alkalinity_south:_FillValue = 1.e+36 ;
+	double TIC_south(bry_time, s_rho, xi_rho) ;
+		TIC_south:long_name = "TIC southern boundary condition" ;
+		TIC_south:units = "umol/kg" ;
+		TIC_south:time = "bry_time" ;
+		TIC_south:_FillValue = 1.e+36 ;
+
+// global attributes:
+		:type = "BOUNDARY file" ;
+		:history = "Tue Jan 17 15:27:11 2023: TIC and alkalinity estimated by salinty regression via ESPER_Mixed\n",
+			"Tue Jan 17 15:24:31 2023: ncks -v salt_west,salt_east,salt_south /Users/kakearney/Documents/Research/Working/mox_bumblereem/ROMS_Datasets/CFS/2002/CFS-ocean-NEP-N30-bryocn-2002.nc /Users/kakearney/Documents/Research/Working/mox_bumblereem/ROMS_Datasets/CFS/2002/CFS-ocean-ESPER-NEP-N30-brycarbon-2002.nc\n",
+			"Sun Dec 25 02:19:14 2022: ncrcat -O <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad01.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad02.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad03.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad04.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad05.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad06.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad07.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad08.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad09.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad10.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad11.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad12.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad13.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad14.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad15.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad16.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad17.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad18.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad19.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad20.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad21.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad22.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad23.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad24.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad25.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad26.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad27.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad28.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad29.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad30.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad31.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad32.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad33.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad34.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad35.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad36.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad37.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad38.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad39.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad40.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad41.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad42.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad43.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad44.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad45.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad46.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad47.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad48.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad49.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad50.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad51.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad52.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad53.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad54.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad55.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad56.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad57.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad58.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad59.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad60.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad61.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad62.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad63.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad64.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad65.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad66.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad67.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad68.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad69.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad70.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad71.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad72.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad73.nc <>/final/2002/CFS-ocean-NEP-N30-bryocn-2002.nc\n",
+			"Sun Dec 25 02:17:21 2022: ncks -O -F -d s_rho,1,30 <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad01.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad01.nc\n",
+			"Sun Dec 25 02:17:21 2022: ncra -O <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad01.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad01.nc\n",
+			"Sun Dec 25 02:17:20 2022: ncrcat -O <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010100.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010106.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010112.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010118.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010200.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010206.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010212.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010218.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010300.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010306.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010312.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010318.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010400.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010406.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010412.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010418.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010500.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010506.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010512.nc <>/prep/singletime/CFS-ocean-NEP-N30-bryocn-2002010518.nc <>/prep/pentads/CFS-ocean-NEP-N30-bryocn-2002pentad01.nc\n",
+			"Sat Dec 24 13:31:15 2022: CFS data added\n",
+			"Tue Dec 20 15:09:10 2022: File schema created via bry_schema.m" ;
+		:NCO = "netCDF Operators version 5.1.1 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco)" ;
+}

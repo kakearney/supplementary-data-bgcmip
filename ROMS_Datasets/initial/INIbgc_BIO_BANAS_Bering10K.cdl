@@ -1,0 +1,47 @@
+netcdf INIbgc_BIO_BANAS_Bering10K {
+dimensions:
+	xi_rho = 182 ;
+	eta_rho = 258 ;
+	s_rho = 30 ;
+	ocean_time = UNLIMITED ; // (1 currently)
+variables:
+	double ocean_time(ocean_time) ;
+		ocean_time:long_name = "time since initialization" ;
+		ocean_time:units = "seconds since 1900-01-01 00:00:00" ;
+		ocean_time:calendar = "standard" ;
+	double phyto(ocean_time, s_rho, eta_rho, xi_rho) ;
+		phyto:long_name = "phytoplankton" ;
+		phyto:unit = "mmol N m^-3" ;
+		phyto:time = "ocean_time" ;
+		phyto:_FillValue = 1.e+36 ;
+	double microzoo(ocean_time, s_rho, eta_rho, xi_rho) ;
+		microzoo:long_name = "microzooplankton" ;
+		microzoo:unit = "mmol N m^-3" ;
+		microzoo:time = "ocean_time" ;
+		microzoo:_FillValue = 1.e+36 ;
+	double det_small(ocean_time, s_rho, eta_rho, xi_rho) ;
+		det_small:long_name = "small detritus" ;
+		det_small:unit = "mmol N m^-3" ;
+		det_small:time = "ocean_time" ;
+		det_small:_FillValue = 1.e+36 ;
+	double det_large(ocean_time, s_rho, eta_rho, xi_rho) ;
+		det_large:long_name = "large detritus (aggregates)" ;
+		det_large:unit = "mmol N m^-3" ;
+		det_large:time = "ocean_time" ;
+		det_large:_FillValue = 1.e+36 ;
+	double NH4(ocean_time, s_rho, eta_rho, xi_rho) ;
+		NH4:long_name = "ammonium" ;
+		NH4:unit = "mmol N m^-3" ;
+		NH4:time = "ocean_time" ;
+		NH4:_FillValue = 1.e+36 ;
+	double NO3(ocean_time, s_rho, eta_rho, xi_rho) ;
+		NO3:long_name = "nitrate" ;
+		NO3:unit = "mmol N m^-3" ;
+		NO3:time = "ocean_time" ;
+		NO3:_FillValue = 1.e+36 ;
+
+// global attributes:
+		:type = "INITIALIZATION file" ;
+		:history = "Wed Jan 25 11:27:21 2023: BGC data added: NO3, PO4, Alk, TIC, O2, SiO4: GLODAPv2.2016b Mapped Climatologies; Fe: Huang et al., 2022 climatology + GOANPZ analytical; Hfree, CO3: GLODAPv2 + CO2sys; producers/consumers: seed value; others: 0\n",
+			"Wed Jan 25 11:27:20 2023: File schema created via ini_schema.m" ;
+}

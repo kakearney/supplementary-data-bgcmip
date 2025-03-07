@@ -1,0 +1,41 @@
+netcdf atmo_co2_barrow_1970_2020 {
+dimensions:
+	ocean_time = UNLIMITED ; // (612 currently)
+	eta_rho = 258 ;
+	xi_rho = 182 ;
+variables:
+	double pCO2air(ocean_time, eta_rho, xi_rho) ;
+	double ocean_time(ocean_time) ;
+		ocean_time:units = "days since 1900-01-01 00:00:00" ;
+		ocean_time:axis = "T" ;
+		ocean_time:time_origin = "01-JAN-1900" ;
+	double lon_rho(eta_rho, xi_rho) ;
+		lon_rho:long_name = "longitude of RHO-points" ;
+		lon_rho:units = "degree_east" ;
+		lon_rho:field = "lon_rho, scalar" ;
+	double lat_rho(eta_rho, xi_rho) ;
+		lat_rho:long_name = "latitude of RHO-points" ;
+		lat_rho:units = "degree_north" ;
+		lat_rho:field = "lat_rho, scalar" ;
+
+// global attributes:
+		:history = "Mon Oct 31 10:05:27 2022: ncatted -a units,ocean_time,m,c,days since 1900-01-01 00:00:00 atmo_co2_barrow_1970_2020.nc\n",
+			"Thu Aug  5 14:53:47 2021: ncrcat atmo_co2_barrow_1970_1971.nc atmo_co2_barrow_1972_2020.nc atmo_co2_barrow_1970_2020.nc\n",
+			"Thu Aug  5 14:53:27 2021: ncatted -a time_origin,ocean_time,c,c,01-JAN-1900 atmo_co2_barrow_1970_1971.nc\n",
+			"Thu Aug  5 14:53:13 2021: ncatted -a axis,ocean_time,c,c,T atmo_co2_barrow_1970_1971.nc\n",
+			"Thu Aug  5 14:53:00 2021: ncatted -a units,ocean_time,c,c,DAYS since 1900-01-01 00:00:00 atmo_co2_barrow_1970_1971.nc\n",
+			"Thu Aug  5 14:52:41 2021: ncks -A -v lat_rho lat_rho.nc atmo_co2_barrow_1970_1971.nc\n",
+			"Thu Aug  5 14:51:56 2021: ncks -A -v lon_rho lon_rho.nc atmo_co2_barrow_1970_1971.nc" ;
+		:history_of_appended_files = "Thu Aug  5 14:52:41 2021: Appended file lat_rho.nc had following \"history\" attribute:\n",
+			"Thu Jun  1 16:55:49 2017: ncks -v lat_rho Alkalinity_Runoff_mathis_seas_new.nc lat_rho.nc\n",
+			"Wed May 10 13:17:56 2017: ncrename -v runoff_time,alkalinity_time Alkalinity_Runoff_mathis_seas_new.nc\n",
+			"Wed May 10 13:17:43 2017: ncrename -v Runoff,Alkalinity_Flux -d runoff_time,alkalinity_time Alkalinity_Runoff_mathis_seas_new.nc\n",
+			"Tue Apr 12 08:41:48 2011: ncatted -a cycle_length,runoff_time,o,d,365.25 runoff_daitren_clim.nc\n",
+			"Thu Aug  5 14:51:56 2021: Appended file lon_rho.nc had following \"history\" attribute:\n",
+			"Thu Jun  1 16:55:39 2017: ncks -v lon_rho Alkalinity_Runoff_mathis_seas_new.nc lon_rho.nc\n",
+			"Wed May 10 13:17:56 2017: ncrename -v runoff_time,alkalinity_time Alkalinity_Runoff_mathis_seas_new.nc\n",
+			"Wed May 10 13:17:43 2017: ncrename -v Runoff,Alkalinity_Flux -d runoff_time,alkalinity_time Alkalinity_Runoff_mathis_seas_new.nc\n",
+			"Tue Apr 12 08:41:48 2011: ncatted -a cycle_length,runoff_time,o,d,365.25 runoff_daitren_clim.nc\n",
+			"" ;
+		:NCO = "4.6.9" ;
+}

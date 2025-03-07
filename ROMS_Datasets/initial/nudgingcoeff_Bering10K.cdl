@@ -1,0 +1,34 @@
+netcdf nudgingcoeff_Bering10K {
+dimensions:
+	xi_rho = 182 ;
+	eta_rho = 258 ;
+	s_rho = 30 ;
+variables:
+	double s_rho(s_rho) ;
+		s_rho:long_name = "S-coordinate at RHO-points" ;
+		s_rho:valid_min = -1. ;
+		s_rho:valid_max = 0. ;
+		s_rho:positive = "up" ;
+		s_rho:standard_name = "ocean_s_coordinate_g1" ;
+		s_rho:formula_terms = "s: s_rho C: Cs_r eta: zeta depth: h depth_c: hc" ;
+	double lon_rho(eta_rho, xi_rho) ;
+		lon_rho:long_name = "longitude of RHO-points" ;
+		lon_rho:unit = "degree_east" ;
+		lon_rho:standard_name = "longitude" ;
+	double lat_rho(eta_rho, xi_rho) ;
+		lat_rho:long_name = "latitude of RHO-points" ;
+		lat_rho:unit = "degree_north" ;
+		lat_rho:standard_name = "latitude" ;
+	double tracer_NudgeCoef(s_rho, eta_rho, xi_rho) ;
+		tracer_NudgeCoef:long_name = "generic tracer inverse nudging coefficients" ;
+		tracer_NudgeCoef:unit = "day-1" ;
+		tracer_NudgeCoef:_FillValue = 1.e+36 ;
+	int spherical ;
+		spherical:long_name = "grid type logical switch" ;
+		spherical:flag_values = 0., 1. ;
+		spherical:flag_meanings = "0 = Cartesian, 1 = spherical" ;
+
+// global attributes:
+		:type = "Nudging Coefficients file" ;
+		:history = "Fri Jan 27 14:24:45 2023: File schema created via nud_schema.m" ;
+}

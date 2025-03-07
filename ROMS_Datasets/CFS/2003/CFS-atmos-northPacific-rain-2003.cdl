@@ -1,0 +1,38 @@
+netcdf CFS-atmos-northPacific-rain-2003 {
+dimensions:
+	lat = 224 ;
+	lon = 384 ;
+	rain_time = UNLIMITED ; // (1460 currently)
+variables:
+	double lat(lat, lon) ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:standard_name = "latitude" ;
+		lat:coordinates = "lon lat" ;
+	double lon(lat, lon) ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:standard_name = "longitude" ;
+		lon:coordinates = "lon lat" ;
+	double rain(rain_time, lat, lon) ;
+		rain:long_name = "rain fall rate" ;
+		rain:units = "kilogram meter-2 second-1" ;
+		rain:coordinates = "lon lat" ;
+		rain:time = "rain_time" ;
+	double rain_time(rain_time) ;
+		rain_time:long_name = "forcing time" ;
+		rain_time:units = "days since 1900-01-01 00:00:00" ;
+		rain_time:time = "rain_time" ;
+
+// global attributes:
+		:type = "FORCING file" ;
+		:title = "Hindcast surface flux forcing for Bering 10K ROMS domain" ;
+		:history = "Fri Oct 28 16:17:31 2022: ncks -F -O -d rain_time,2,1461 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2003/roms-cfs-atmos-rain-2003.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2003/CFS-atmos-northPacific-rain-2003.nc\n",
+			"Mon Sep 10 13:50:30 2018: Time overhang added\n",
+			"Mon Sep 10 13:50:26 2018: ncrcat /tmp/tp0502899b_7e27_40ae_b85d_b41ffc3ef12b.nc frc/roms-cfs-atmos-rain-2003.nc /tmp/tp32b99ca8_c471_47c3_ab87_5301d31f516e.nc /tmp/tp3a46c4a9_731e_4f4c_91bf_ecb48ecd8b53.nc\n",
+			"Mon Sep 10 13:50:26 2018: ncks -F -d rain_time,1,1 frc/roms-cfs-atmos-rain-2003.nc /tmp/tp0502899b_7e27_40ae_b85d_b41ffc3ef12b.nc\n",
+			"Thu Sep  6 11:04:44 2018: ncks -O -F -d rain_time,2,1461 /Volumes/Storage/BeringROMS/hindcastFrcBry/frc/corecfs_2003_rain.nc /Volumes/Storage/BeringROMS/hindcastFrcBry/CFS/roms-cfs-atmos-rain-2003.nc\n",
+			"04-Oct-2017 17:59:12: File schema defined via bering10k_schema.m" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/ESM4dust/Mineral_Flux_AM4.nc

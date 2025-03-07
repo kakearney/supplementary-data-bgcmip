@@ -1,0 +1,30 @@
+netcdf zeros_Bering10K_ironflux_1970-2025 {
+dimensions:
+	xi_rho = 182 ;
+	eta_rho = 258 ;
+	fe_time = UNLIMITED ; // (2 currently)
+variables:
+	double fe_time(fe_time) ;
+		fe_time:units = "days since 1900-01-01 00:00:00" ;
+	double solublefe(fe_time, eta_rho, xi_rho) ;
+		solublefe:long_name = "dust deposition to dissolved iron" ;
+		solublefe:units = "mol.m-2.s-1" ;
+		solublefe:time = "fe_time" ;
+		solublefe:coordinates = "xi_rho eta_rho" ;
+	double ironsed(fe_time, eta_rho, xi_rho) ;
+		ironsed:long_name = "iron from sediments" ;
+		ironsed:units = "mol.m-2.s-1" ;
+		ironsed:time = "fe_time" ;
+		ironsed:coordinates = "xi_rho eta_rho" ;
+	double mineralfe(fe_time, eta_rho, xi_rho) ;
+		mineralfe:long_name = "dust deposition to lithogenic aluminosilicate" ;
+		mineralfe:units = "mol.m-2.s-1" ;
+		mineralfe:time = "fe_time" ;
+		mineralfe:coordinates = "xi_rho eta_rho" ;
+
+// global attributes:
+		:type = "FORCING file" ;
+		:title = "External iron fluxes for Bering 10K ROMS domain" ;
+		:history = "Tue Nov 08 16:13:11 2022: File created for no-flux conditions for all external iron sources\n",
+			" " ;
+}

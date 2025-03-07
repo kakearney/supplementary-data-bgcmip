@@ -1,0 +1,39 @@
+netcdf CFS-atmos-northPacific-Qair-2009 {
+dimensions:
+	qair_time = UNLIMITED ; // (1460 currently)
+	lat = 224 ;
+	lon = 384 ;
+variables:
+	double Qair(qair_time, lat, lon) ;
+		Qair:long_name = "surface air relative humidity" ;
+		Qair:units = "kg/kg" ;
+		Qair:coordinates = "lon lat" ;
+		Qair:time = "air_time" ;
+	double lat(lat, lon) ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:standard_name = "latitude" ;
+		lat:coordinates = "lon lat" ;
+	double lon(lat, lon) ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:standard_name = "longitude" ;
+		lon:coordinates = "lon lat" ;
+	double qair_time(qair_time) ;
+		qair_time:long_name = "forcing time" ;
+		qair_time:units = "days since 1900-01-01 00:00:00" ;
+		qair_time:time = "air_time" ;
+
+// global attributes:
+		:type = "FORCING file" ;
+		:title = "Hindcast surface flux forcing for Bering 10K ROMS domain" ;
+		:history = "Fri Oct 28 16:58:08 2022: ncks -F -O -d qair_time,2,1461 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2009/roms-cfs-atmos-Qair-2009.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2009/CFS-atmos-northPacific-Qair-2009.nc\n",
+			"Mon Sep 10 13:35:49 2018: Time overhang added\n",
+			"Mon Sep 10 13:35:46 2018: ncrcat /tmp/tp8d37727a_a130_48f4_b188_6341aa916613.nc frc/roms-cfs-atmos-Qair-2009.nc /tmp/tp1903c14f_c7d9_4230_8826_1531b65109fa.nc /tmp/tpc4fff091_59f9_401f_8066_220f526a6e56.nc\n",
+			"Mon Sep 10 13:35:45 2018: ncks -F -d qair_time,1,1 frc/roms-cfs-atmos-Qair-2009.nc /tmp/tp8d37727a_a130_48f4_b188_6341aa916613.nc\n",
+			"Thu Sep  6 12:01:02 2018: ncrename -d air_time,qair_time -v air_time,qair_time /Volumes/Storage/BeringROMS/hindcastFrcBry/CFS/roms-cfs-atmos-Qair-2009.nc\n",
+			"Thu Sep  6 12:00:17 2018: ncks -O -F -d air_time,2,1461 -v Qair /Volumes/Storage/BeringROMS/hindcastFrcBry/frc/corecfs_2009_air.nc /Volumes/Storage/BeringROMS/hindcastFrcBry/CFS/roms-cfs-atmos-Qair-2009.nc\n",
+			"04-Oct-2017 18:09:27: File schema defined via bering10k_schema.m" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

@@ -1,0 +1,41 @@
+netcdf CFS-atmos-northPacific-Qair-2022 {
+dimensions:
+	qair_time = UNLIMITED ; // (1041 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Qair(qair_time, lat, lon) ;
+		Qair:missing_value = -1.e+34 ;
+		Qair:_FillValue = -1.e+34 ;
+		Qair:time = "qair_time" ;
+		Qair:coordinates = "lon lat" ;
+		Qair:height_above_ground = 2.f ;
+		Qair:long_name = "specific humidity" ;
+		Qair:history = "From roms-cfs-atmos-Qair-2022" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double qair_time(qair_time) ;
+		qair_time:units = "day since 1900-01-01 00:00:00" ;
+		qair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		qair_time:axis = "T" ;
+		qair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 13:21:37 2022: ncks -F -O -d qair_time,2,1042 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Qair-2022.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2022/CFS-atmos-northPacific-Qair-2022.nc\n",
+			"Tue Sep 27 09:34:49 2022: Time overhang added to beginning\n",
+			"Tue Sep 27 09:34:43 2022: ncrcat /tmp/tpd8ff82df_2d9f_4427_bc46_da558129d2e5.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Qair-2022.nc /tmp/tp89f671e8_71fe_4993_895f_b8735fc404ee.nc\n",
+			"Tue Sep 27 09:34:43 2022: ncks -F -d qair_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Qair-2022.nc /tmp/tpd8ff82df_2d9f_4427_bc46_da558129d2e5.nc\n",
+			"FERRET V7.6  22-Sep-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

@@ -1,0 +1,38 @@
+netcdf CFS-atmos-northPacific-Uwind-1999 {
+dimensions:
+	wind_time = UNLIMITED ; // (1460 currently)
+	lat = 224 ;
+	lon = 384 ;
+variables:
+	double Uwind(wind_time, lat, lon) ;
+		Uwind:long_name = "surface u-wind component" ;
+		Uwind:units = "meter second-1" ;
+		Uwind:coordinates = "lon lat" ;
+		Uwind:time = "wind_time" ;
+	double lat(lat, lon) ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:standard_name = "latitude" ;
+		lat:coordinates = "lon lat" ;
+	double lon(lat, lon) ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:standard_name = "longitude" ;
+		lon:coordinates = "lon lat" ;
+	double wind_time(wind_time) ;
+		wind_time:long_name = "forcing time" ;
+		wind_time:units = "days since 1900-01-01 00:00:00" ;
+		wind_time:time = "wind_time" ;
+
+// global attributes:
+		:type = "FORCING file" ;
+		:title = "Hindcast surface flux forcing for Bering 10K ROMS domain" ;
+		:history = "Fri Oct 28 16:47:41 2022: ncks -F -O -d wind_time,2,1461 /gscratch/bumblereem/bering10k/input/hindcast_cfs/1999/roms-cfs-atmos-Uwind-1999.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/1999/CFS-atmos-northPacific-Uwind-1999.nc\n",
+			"Mon Sep 10 13:40:46 2018: Time overhang added\n",
+			"Mon Sep 10 13:40:42 2018: ncrcat /tmp/tp4a17d853_8be5_4be4_b020_d4967562abef.nc frc/roms-cfs-atmos-Uwind-1999.nc /tmp/tp3aae95ed_cd89_47cd_917d_3f0bf66215d2.nc /tmp/tp93408098_4f86_413d_b9cb_284e4d9c681a.nc\n",
+			"Mon Sep 10 13:40:42 2018: ncks -F -d wind_time,1,1 frc/roms-cfs-atmos-Uwind-1999.nc /tmp/tp4a17d853_8be5_4be4_b020_d4967562abef.nc\n",
+			"Thu Sep  6 10:27:55 2018: ncks -O -F -d wind_time,2,1461 -v Uwind /Volumes/Storage/BeringROMS/hindcastFrcBry/frc/corecfs_1999_wind.nc /Volumes/Storage/BeringROMS/hindcastFrcBry/CFS/roms-cfs-atmos-Uwind-1999.nc\n",
+			"04-Oct-2017 17:48:04: File schema defined via bering10k_schema.m" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

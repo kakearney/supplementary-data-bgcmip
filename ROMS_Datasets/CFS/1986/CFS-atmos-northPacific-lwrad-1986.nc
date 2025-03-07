@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/1986/CFS-atmos-northPacific-lwrad-1986.nc

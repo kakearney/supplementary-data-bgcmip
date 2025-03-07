@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/1997/CFS-atmos-northPacific-swrad-1997.nc

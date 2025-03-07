@@ -1,0 +1,46 @@
+netcdf CFS-atmos-northPacific-swrad-2018 {
+dimensions:
+	lat = 344 ;
+	bnds = 2 ;
+	lon = 588 ;
+	srf_time = UNLIMITED ; // (365 currently)
+variables:
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+		lat:bounds = "lat_bnds" ;
+	float lat_bnds(lat, bnds) ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+		lon:bounds = "lon_bnds" ;
+	float lon_bnds(lon, bnds) ;
+	double srf_time(srf_time) ;
+		srf_time:units = "day since 1900-01-01 00:00:00" ;
+		srf_time:axis = "T" ;
+		srf_time:calendar = "GREGORIAN" ;
+		srf_time:time_origin = "01-JAN-1900:00:00" ;
+		srf_time:standard_name = "time" ;
+	double swrad(srf_time, lat, lon) ;
+		swrad:missing_value = -1.e+34 ;
+		swrad:_FillValue = -1.e+34 ;
+		swrad:long_name = "downward shortwave radiation" ;
+		swrad:coordinates = "lon lat" ;
+		swrad:history = "From roms-cfs-atmos-swrad-2018-tfilled" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:35:55 2022: ncks -F -O -d srf_time,2,366 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-swrad-2018.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-swrad-2018.nc\n",
+			"Thu May 30 20:50:18 2019: Time overhang added\n",
+			"Thu May 30 20:50:16 2019: ncrcat /tmp/tpfb1ace8d_0b9d_49ac_a3a3_cc5c266af741.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-swrad-2018.nc /tmp/tp446977ba_0b24_475f_b671_c8eabde23ee5.nc /tmp/tp915fa116_22eb_44d5_9b43_24c4df7d8d7e.nc\n",
+			"Thu May 30 20:50:16 2019: ncks -F -d srf_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-swrad-2018.nc /tmp/tpfb1ace8d_0b9d_49ac_a3a3_cc5c266af741.nc\n",
+			"Wed May 29 20:33:27 2019: ncrename -v swradave,swrad -d tda,srf_time -v tda,srf_time ./roms-cfs-atmos-swrad-dayave-2018-tfilled.nc\n",
+			"FERRET V7.4  29-May-19" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

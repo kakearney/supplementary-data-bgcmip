@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-Pair-2017 {
+dimensions:
+	pair_time = UNLIMITED ; // (1460 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Pair(pair_time, lat, lon) ;
+		Pair:missing_value = -1.e+34 ;
+		Pair:_FillValue = -1.e+34 ;
+		Pair:time = "pair_time" ;
+		Pair:coordinates = "lon lat" ;
+		Pair:long_name = "atmos pressure" ;
+		Pair:history = "From roms-cfs-atmos-Pair-2017" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double pair_time(pair_time) ;
+		pair_time:units = "day since 1900-01-01 00:00:00" ;
+		pair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		pair_time:axis = "T" ;
+		pair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:07:28 2022: ncks -F -O -d pair_time,3,1462 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2017/roms-cfs-atmos-Pair-2017.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Pair-2017.nc\n",
+			"Mon Sep 17 12:08:48 2018: Time overhang added\n",
+			"Mon Sep 17 12:08:41 2018: ncrcat /tmp/tpe92db7fd_4d44_45f9_ab53_40867f0f62de.nc frc/roms-cfs-atmos-Pair-2017.nc /tmp/tpd26986e2_4e41_4dc6_afda_620160a4bcb0.nc /tmp/tp7d0d1f5c_0b73_43e6_b3f3_f6067950f87f.nc\n",
+			"Mon Sep 17 12:08:38 2018: ncks -F -d pair_time,1,1 frc/roms-cfs-atmos-Pair-2017.nc /tmp/tpe92db7fd_4d44_45f9_ab53_40867f0f62de.nc\n",
+			"FERRET V7.4  10-Aug-18" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

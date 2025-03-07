@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/1998/CFS-atmos-northPacific-Vwind-1998.nc

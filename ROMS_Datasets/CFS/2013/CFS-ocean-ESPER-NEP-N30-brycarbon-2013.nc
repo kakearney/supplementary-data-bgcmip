@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/2013/CFS-ocean-ESPER-NEP-N30-brycarbon-2013.nc

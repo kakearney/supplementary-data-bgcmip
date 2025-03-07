@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-Tair-1989 {
+dimensions:
+	tair_time = UNLIMITED ; // (1459 currently)
+	lat = 225 ;
+	lon = 385 ;
+variables:
+	double Tair(tair_time, lat, lon) ;
+		Tair:missing_value = -1.e+34 ;
+		Tair:_FillValue = -1.e+34 ;
+		Tair:time = "tair_time" ;
+		Tair:coordinates = "lon lat" ;
+		Tair:height_above_ground = 2.f ;
+		Tair:long_name = "surface air temperature" ;
+		Tair:history = "From roms-cfs-atmos-Tair-1989" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double tair_time(tair_time) ;
+		tair_time:units = "day since 1900-01-01 00:00:00" ;
+		tair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		tair_time:axis = "T" ;
+		tair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Fri Oct 28 16:22:39 2022: ncks -F -O -d tair_time,2,1460 /gscratch/bumblereem/bering10k/input/hindcast_cfs/1989/roms-cfs-atmos-Tair-1989.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/1989/CFS-atmos-northPacific-Tair-1989.nc\n",
+			"Wed Nov 20 13:54:48 2019: Time overhang added to end\n",
+			"Wed Nov 20 13:54:44 2019: ncrcat /gscratch/bumblereem/bering10k/input/hindcast_cfs/1989/roms-cfs-atmos-Tair-1989.nc /tmp/tp2f942c83_c266_4e83_b4f9_c47f5061e0f1.nc /tmp/tpc5407544_0097_420b_8abb_391c07757adf.nc\n",
+			"FERRET V7.4  11-Oct-19" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

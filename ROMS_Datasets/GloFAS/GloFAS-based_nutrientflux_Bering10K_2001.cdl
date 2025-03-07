@@ -1,0 +1,42 @@
+netcdf GloFAS-based_nutrientflux_Bering10K_2001 {
+dimensions:
+	runoff_time = UNLIMITED ; // (365 currently)
+	eta_rho = 258 ;
+	xi_rho = 182 ;
+variables:
+	double Alkalinity_Flux(runoff_time, eta_rho, xi_rho) ;
+		Alkalinity_Flux:long_name = "Total Alkalinity freshwater river flux: Mathis et al., 2011 + GloFAS" ;
+		Alkalinity_Flux:units = "micromoles meter-2 second-1" ;
+		Alkalinity_Flux:coordinates = "xi_rho eta_rho" ;
+		Alkalinity_Flux:time = "runoff_time" ;
+	double DIC_Flux(runoff_time, eta_rho, xi_rho) ;
+		DIC_Flux:long_name = "DIC freshwater river flux: Mathis et al., 2011 + GloFAS" ;
+		DIC_Flux:units = "micromoles meter-2 second-1" ;
+		DIC_Flux:coordinates = "xi_rho eta_rho" ;
+		DIC_Flux:time = "runoff_time" ;
+	double Iron_Flux(runoff_time, eta_rho, xi_rho) ;
+		Iron_Flux:long_name = "Iron injection with freshwater river flux: GOA-derived regression + GloFAS" ;
+		Iron_Flux:units = "nanomoles meter-2 second-1" ;
+		Iron_Flux:coordinates = "xi_rho eta_rho" ;
+		Iron_Flux:time = "runoff_time" ;
+	double runoff_time(runoff_time) ;
+		runoff_time:units = "days since 1900-01-01 00:00:00" ;
+		runoff_time:axis = "T" ;
+		runoff_time:calendar = "GREGORIAN" ;
+		runoff_time:time_origin = "01-JAN-1900:00:00:00" ;
+		runoff_time:standard_name = "time" ;
+		runoff_time:cell_methods = "runoff_time: mean" ;
+
+// global attributes:
+		:history = "Wed Jan 18 15:04:55 2023: ncks -F -d xi_rho,25,206 -d eta_rho,350,607 /gscratch/bumblereem/ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_NEP_2001.nc /gscratch/bumblereem/ROMS_Datasets/GloFAS/GloFAS-based_nutrientflux_Bering10K_2001.nc\n",
+			"Fri Dec 16 11:35:53 2022: Iron fluxes added using GOA-derived regression applied to freshwater runoff from GloFAS_runoff_NEP_2001.nc\n",
+			"Fri Dec 16 11:35:52 2022: DIC/Alkalinity fluxes added using Mathis et al., 2011 regression applied to freshwater runoff from GloFAS_runoff_NEP_2001.nc\n",
+			"Thu Dec 15 17:25:28 2022: Replaced Runoff<0 values with 0s\n",
+			"Thu Dec 15 17:25:21 2022: Replaced Jan 1 0s with interpolated values\n",
+			"Thu Dec 15 17:25:17 2022: ncrename -v Runoff10_90_Sc,Runoff ../GloFAS/GloFAS_runoff_NEP_2001.nc\n",
+			"Thu Dec 15 17:25:11 2022: ncks -F -d runoff_time,8037,8401 ../runoff_glofas_on_nep_1979-2020.nc ../GloFAS/GloFAS_runoff_NEP_2001.nc\n",
+			"Sat Jan 29 14:41:41 2022: ncrcat -O glofas_on_nep/runoff_glofas_on_nep_1979.nc glofas_on_nep/runoff_glofas_on_nep_1980.nc glofas_on_nep/runoff_glofas_on_nep_1981.nc glofas_on_nep/runoff_glofas_on_nep_1982.nc glofas_on_nep/runoff_glofas_on_nep_1983.nc glofas_on_nep/runoff_glofas_on_nep_1984.nc glofas_on_nep/runoff_glofas_on_nep_1985.nc glofas_on_nep/runoff_glofas_on_nep_1986.nc glofas_on_nep/runoff_glofas_on_nep_1987.nc glofas_on_nep/runoff_glofas_on_nep_1988.nc glofas_on_nep/runoff_glofas_on_nep_1989.nc glofas_on_nep/runoff_glofas_on_nep_1990.nc glofas_on_nep/runoff_glofas_on_nep_1991.nc glofas_on_nep/runoff_glofas_on_nep_1992.nc glofas_on_nep/runoff_glofas_on_nep_1993.nc glofas_on_nep/runoff_glofas_on_nep_1994.nc glofas_on_nep/runoff_glofas_on_nep_1995.nc glofas_on_nep/runoff_glofas_on_nep_1996.nc glofas_on_nep/runoff_glofas_on_nep_1997.nc glofas_on_nep/runoff_glofas_on_nep_1998.nc glofas_on_nep/runoff_glofas_on_nep_1999.nc glofas_on_nep/runoff_glofas_on_nep_2000.nc glofas_on_nep/runoff_glofas_on_nep_2001.nc glofas_on_nep/runoff_glofas_on_nep_2002.nc glofas_on_nep/runoff_glofas_on_nep_2003.nc glofas_on_nep/runoff_glofas_on_nep_2004.nc glofas_on_nep/runoff_glofas_on_nep_2005.nc glofas_on_nep/runoff_glofas_on_nep_2006.nc glofas_on_nep/runoff_glofas_on_nep_2007.nc glofas_on_nep/runoff_glofas_on_nep_2008.nc glofas_on_nep/runoff_glofas_on_nep_2009.nc glofas_on_nep/runoff_glofas_on_nep_2010.nc glofas_on_nep/runoff_glofas_on_nep_2011.nc glofas_on_nep/runoff_glofas_on_nep_2012.nc glofas_on_nep/runoff_glofas_on_nep_2013.nc glofas_on_nep/runoff_glofas_on_nep_2014.nc glofas_on_nep/runoff_glofas_on_nep_2015.nc glofas_on_nep/runoff_glofas_on_nep_2016.nc glofas_on_nep/runoff_glofas_on_nep_2017.nc glofas_on_nep/runoff_glofas_on_nep_2018.nc glofas_on_nep/runoff_glofas_on_nep_2019.nc glofas_on_nep/runoff_glofas_on_nep_2020.nc glofas_on_nep/runoff_glofas_on_nep_1979-2020.nc\n",
+			"PyFerret V7.63 (optimized) 28-Jan-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+}

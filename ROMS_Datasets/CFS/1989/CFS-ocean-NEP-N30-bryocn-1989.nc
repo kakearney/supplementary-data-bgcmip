@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/1989/CFS-ocean-NEP-N30-bryocn-1989.nc

@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/2005/CFS-atmos-northPacific-rain-2005.nc

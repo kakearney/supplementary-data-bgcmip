@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-Tair-2019.nc

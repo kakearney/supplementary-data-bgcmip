@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-Uwind-2018.nc

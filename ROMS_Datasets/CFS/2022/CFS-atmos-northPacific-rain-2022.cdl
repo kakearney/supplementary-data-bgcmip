@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-rain-2022 {
+dimensions:
+	lat = 344 ;
+	lon = 588 ;
+	rain_time = UNLIMITED ; // (1041 currently)
+variables:
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double rain(rain_time, lat, lon) ;
+		rain:missing_value = -1.e+34 ;
+		rain:_FillValue = -1.e+34 ;
+		rain:time = "rain_time" ;
+		rain:coordinates = "lon lat" ;
+		rain:long_name = "rainfall" ;
+		rain:history = "From roms-cfs-atmos-rain-2022" ;
+	double rain_time(rain_time) ;
+		rain_time:units = "day since 1900-01-01 00:00:00" ;
+		rain_time:time_origin = "01-JAN-1900 00:00:00" ;
+		rain_time:axis = "T" ;
+		rain_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 13:30:37 2022: ncks -F -O -d rain_time,2,1042 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-rain-2022.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2022/CFS-atmos-northPacific-rain-2022.nc\n",
+			"Tue Sep 27 09:35:53 2022: Time overhang added to beginning\n",
+			"Tue Sep 27 09:35:47 2022: ncrcat /tmp/tpa82f08ed_cbf0_4cb8_8d44_e44574720096.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-rain-2022.nc /tmp/tpd611bbe5_9b74_4b55_8d04_bd6752b17cb8.nc\n",
+			"Tue Sep 27 09:35:47 2022: ncks -F -d rain_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-rain-2022.nc /tmp/tpa82f08ed_cbf0_4cb8_8d44_e44574720096.nc\n",
+			"FERRET V7.6  22-Sep-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

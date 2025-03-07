@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-lwrad-2017 {
+dimensions:
+	lat = 344 ;
+	lon = 588 ;
+	lrf_time = UNLIMITED ; // (1460 currently)
+variables:
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double lrf_time(lrf_time) ;
+		lrf_time:units = "day since 1900-01-01 00:00:00" ;
+		lrf_time:time_origin = "01-JAN-1900 00:00:00" ;
+		lrf_time:axis = "T" ;
+		lrf_time:standard_name = "time" ;
+	double lwrad_down(lrf_time, lat, lon) ;
+		lwrad_down:missing_value = -1.e+34 ;
+		lwrad_down:_FillValue = -1.e+34 ;
+		lwrad_down:time = "lrf_time" ;
+		lwrad_down:coordinates = "lon lat" ;
+		lwrad_down:long_name = "downward longwave radiation" ;
+		lwrad_down:history = "From roms-cfs-atmos-lwrad-2017" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:11:52 2022: ncks -F -O -d lrf_time,3,1462 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2017/roms-cfs-atmos-lwrad-2017.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-lwrad-2017.nc\n",
+			"Mon Sep 17 12:10:29 2018: Time overhang added\n",
+			"Mon Sep 17 12:10:21 2018: ncrcat /tmp/tpfa0a4171_9048_49e7_8f5b_06bdf77d8c0a.nc frc/roms-cfs-atmos-lwrad-2017.nc /tmp/tp8192b74e_6fdf_4e0e_856d_42773c1ef817.nc /tmp/tp9f9479f6_ed76_4110_8bc3_37f711470141.nc\n",
+			"Mon Sep 17 12:10:21 2018: ncks -F -d lrf_time,1,1 frc/roms-cfs-atmos-lwrad-2017.nc /tmp/tpfa0a4171_9048_49e7_8f5b_06bdf77d8c0a.nc\n",
+			"FERRET V7.4  10-Aug-18" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/2003/CFS-atmos-northPacific-Tair-2003.nc

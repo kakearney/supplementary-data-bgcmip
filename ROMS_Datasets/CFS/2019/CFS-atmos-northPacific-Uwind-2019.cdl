@@ -1,0 +1,41 @@
+netcdf CFS-atmos-northPacific-Uwind-2019 {
+dimensions:
+	wind_time = UNLIMITED ; // (1456 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Uwind(wind_time, lat, lon) ;
+		Uwind:missing_value = -1.e+34 ;
+		Uwind:_FillValue = -1.e+34 ;
+		Uwind:time = "wind_time" ;
+		Uwind:coordinates = "lon lat" ;
+		Uwind:height_above_ground1 = 10.f ;
+		Uwind:long_name = "U wind" ;
+		Uwind:history = "From roms-cfs-atmos-Uwind-2019" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double wind_time(wind_time) ;
+		wind_time:units = "day since 1900-01-01 00:00:00" ;
+		wind_time:time_origin = "01-JAN-1900 00:00:00" ;
+		wind_time:axis = "T" ;
+		wind_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:38:39 2022: ncks -F -O -d wind_time,2,1457 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2019/roms-cfs-atmos-Uwind-2019.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2019/CFS-atmos-northPacific-Uwind-2019.nc\n",
+			"Fri Mar 27 16:04:15 2020: Time overhang added to both ends\n",
+			"Fri Mar 27 16:04:05 2020: ncrcat /tmp/tpd7785a5c_9e3f_4103_a627_e67d23dd8cf3.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2019/roms-cfs-atmos-Uwind-2019.nc /tmp/tp146928c6_5ed6_4eee_8ea3_6f361abdcbe0.nc /tmp/tp978e32b7_3284_4c98_8d0f_ae5c7e1db3a1.nc\n",
+			"Fri Mar 27 16:04:03 2020: ncks -F -d wind_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2019/roms-cfs-atmos-Uwind-2019.nc /tmp/tpd7785a5c_9e3f_4103_a627_e67d23dd8cf3.nc\n",
+			"FERRET V7.4   4-Mar-20" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

@@ -1,0 +1,60 @@
+netcdf tides_OTPS_Bering10K {
+dimensions:
+	tide_period = 8 ;
+	eta_rho = 258 ;
+	xi_rho = 182 ;
+	namelen = 4 ;
+variables:
+	double tide_Cangle(tide_period, eta_rho, xi_rho) ;
+		tide_Cangle:field = "tide_Cangle, scalar" ;
+		tide_Cangle:long_name = "tidal current inclination angle" ;
+		tide_Cangle:units = "degrees between semi-major axis and East" ;
+		tide_Cangle:_FillValue = -9999. ;
+	double tide_Cmax(tide_period, eta_rho, xi_rho) ;
+		tide_Cmax:field = "tide_Cmax, scalar" ;
+		tide_Cmax:long_name = "maximum tidal current, ellipse semi-major axis" ;
+		tide_Cmax:units = "meter second-1" ;
+		tide_Cmax:_FillValue = -9999. ;
+	double tide_Cmin(tide_period, eta_rho, xi_rho) ;
+		tide_Cmin:field = "tide_Cmin, scalar" ;
+		tide_Cmin:long_name = "minimum tidal current, ellipse semi-minor axis" ;
+		tide_Cmin:units = "meter second-1" ;
+		tide_Cmin:_FillValue = -9999. ;
+	double tide_Cphase(tide_period, eta_rho, xi_rho) ;
+		tide_Cphase:field = "tide_Cphase, scalar" ;
+		tide_Cphase:long_name = "tidal current phase angle" ;
+		tide_Cphase:units = "degrees, time of maximum velocity" ;
+		tide_Cphase:_FillValue = -9999. ;
+	double tide_Eamp(tide_period, eta_rho, xi_rho) ;
+		tide_Eamp:field = "tide_Eamp, scalar" ;
+		tide_Eamp:long_name = "tidal elevation amplitude" ;
+		tide_Eamp:units = "meter" ;
+		tide_Eamp:_FillValue = -9999. ;
+	double tide_Ephase(tide_period, eta_rho, xi_rho) ;
+		tide_Ephase:field = "tide_Ephase, scalar" ;
+		tide_Ephase:long_name = "tidal elevation phase angle" ;
+		tide_Ephase:units = "degrees, time of maximum elevation with respect chosen time origin" ;
+		tide_Ephase:_FillValue = -9999. ;
+	double tide_Pamp(tide_period, eta_rho, xi_rho) ;
+		tide_Pamp:field = "tide_Eamp, scalar" ;
+		tide_Pamp:long_name = "tidal potential elevation amplitude" ;
+		tide_Pamp:units = "meter" ;
+		tide_Pamp:_FillValue = -999. ;
+	double tide_Pphase(tide_period, eta_rho, xi_rho) ;
+		tide_Pphase:field = "tide_Ephase, scalar" ;
+		tide_Pphase:long_name = "tidal potential elevation phase angle" ;
+		tide_Pphase:units = "degrees, time of maximum elevation with respect chosen time origin" ;
+		tide_Pphase:_FillValue = -999. ;
+	char tide_name(tide_period, namelen) ;
+	double tide_period(tide_period) ;
+		tide_period:field = "tide_period, scalar" ;
+		tide_period:long_name = "tide angular period" ;
+		tide_period:units = "hours" ;
+		tide_period:_FillValue = -9999. ;
+
+// global attributes:
+		:history = "Thu Sep 18 15:20:30 2008: ncks -d xi_rho,24,205 -d eta_rho,349,606 ../../GOA_Tides/NEP5/NEP4_tides_otps.nc Bering_tides_otps.nc\n",
+			"adding potential tides" ;
+		:creation_date = "Wed Nov 15 12:06:02 AST 2006" ;
+		:type = "FORCING File" ;
+}

@@ -1,0 +1,41 @@
+netcdf sss.clim {
+dimensions:
+	sss_time = UNLIMITED ; // (12 currently)
+	lon = 360 ;
+	lat = 180 ;
+variables:
+	double sss_time(sss_time) ;
+		sss_time:cycle_length = 365.25f ;
+		sss_time:units = "Days" ;
+	float lon(lon) ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+	float lat(lat) ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+	float SSS(sss_time, lat, lon) ;
+		SSS:long_name = "Salinity, modified 10m average" ;
+		SSS:units = "psu" ;
+		SSS:missing_value = -99.f ;
+		SSS:coordinates = "lon lat" ;
+		SSS:sss_time = 15.21875 ;
+		SSS:_FillValue = -99.f ;
+
+// global attributes:
+		:date = "09-Oct-2001" ;
+		:horz_grid = "1x1 Levitus" ;
+		:source = "PHC_2.0" ;
+		:history = "Tue Sep 15 14:15:40 2009: ncatted -O -a type,global,c,c,FORCING file sss_2004.nc\n",
+			"Tue Sep 15 14:14:29 2009: ncatted -O -a units,sss_time,a,c,Days sss_2004.nc\n",
+			"Tue Sep 15 14:14:02 2009: ncatted -O -a cycle_length,sss_time,a,f,365.25 sss_2004.nc\n",
+			"Tue Sep 15 14:12:11 2009: ncap -s sss_time=sss_time*30.4375 PHC2_salx.2004_08_03.nc tmp.nc\n",
+			"Tue Sep 15 14:10:58 2009: ncatted -O -a units,sss_time,o,c,days since 1900-01-01 00:00:00 PHC2_salx.2004_08_03.nc\n",
+			"Tue Sep 15 14:07:30 2009: ncatted -O -a cycle_length,sss_time,a,f,365.25 PHC2_salx.2004_08_03.nc\n",
+			"Tue Sep 15 14:06:57 2009: ncatted -O -a coordinates,SSS,a,c,lon lat PHC2_salx.2004_08_03.nc\n",
+			"Tue Sep 15 14:02:25 2009: ncrename -v time,sss_time -d time,sss_time PHC2_salx.2004_08_03.nc\n",
+			"Tue Sep 15 13:56:37 2009: ncrename -v SALT,SSS PHC2_salx.2004_08_03.nc\n",
+			"Coastal Antarctic Values enhanced by as much as 0.15 psu, based on max found over 0-300m column depth and where PT < -1.5 : 09-Oct-2001\n",
+			"Foxe Basin levels 1-4 reset to level 5 : 08-Oct-2001\n",
+			"Hudson Bay April level 1 reset to level 2 : 08-Oct-2001" ;
+		:type = "FORCING file" ;
+}

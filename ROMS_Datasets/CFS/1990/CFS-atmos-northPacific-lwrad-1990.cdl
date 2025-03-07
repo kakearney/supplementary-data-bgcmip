@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-lwrad-1990 {
+dimensions:
+	lat = 225 ;
+	lon = 385 ;
+	lrf_time = UNLIMITED ; // (1460 currently)
+variables:
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double lrf_time(lrf_time) ;
+		lrf_time:units = "day since 1900-01-01 00:00:00" ;
+		lrf_time:time_origin = "01-JAN-1900 00:00:00" ;
+		lrf_time:axis = "T" ;
+		lrf_time:standard_name = "time" ;
+	double lwrad_down(lrf_time, lat, lon) ;
+		lwrad_down:missing_value = -1.e+34 ;
+		lwrad_down:_FillValue = -1.e+34 ;
+		lwrad_down:time = "lrf_time" ;
+		lwrad_down:coordinates = "lon lat" ;
+		lwrad_down:long_name = "downward longwave radiation" ;
+		lwrad_down:history = "From roms-cfs-atmos-lwrad-1990" ;
+
+// global attributes:
+		:history = "Fri Oct 28 16:25:42 2022: ncks -F -O -d lrf_time,2,1461 /gscratch/bumblereem/bering10k/input/hindcast_cfs/1990/roms-cfs-atmos-lwrad-1990.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/1990/CFS-atmos-northPacific-lwrad-1990.nc\n",
+			"Wed Nov 20 13:57:30 2019: Time overhang added to both ends\n",
+			"Wed Nov 20 13:57:23 2019: ncrcat /tmp/tp49feb7e4_99a5_494c_8430_5009524b4e77.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/1990/roms-cfs-atmos-lwrad-1990.nc /tmp/tp7b088d5e_e0d2_4f18_90d7_f5e067e1f2d8.nc /tmp/tp5cfcf6aa_68db_4e61_9392_3f790443457d.nc\n",
+			"Wed Nov 20 13:57:21 2019: ncks -F -d lrf_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/1990/roms-cfs-atmos-lwrad-1990.nc /tmp/tp49feb7e4_99a5_494c_8430_5009524b4e77.nc\n",
+			"FERRET V7.4  11-Oct-19" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

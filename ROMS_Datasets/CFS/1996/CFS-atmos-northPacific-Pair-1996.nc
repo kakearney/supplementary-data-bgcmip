@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/1996/CFS-atmos-northPacific-Pair-1996.nc

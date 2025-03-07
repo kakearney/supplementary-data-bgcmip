@@ -1,0 +1,31 @@
+netcdf ESM4_Bering10K_iron_dust_clim {
+dimensions:
+	xi_rho = 182 ;
+	eta_rho = 258 ;
+	fe_time = 12 ;
+variables:
+	double solublefe(fe_time, eta_rho, xi_rho) ;
+		solublefe:long_name = "dust deposition to dissolved iron" ;
+		solublefe:units = "mol m^-2 s^-1" ;
+		solublefe:time = "fe_time" ;
+		solublefe:coordinates = "xi_rho eta_rho" ;
+	double mineralfe(fe_time, eta_rho, xi_rho) ;
+		mineralfe:long_name = "dust deposition to lithogenic aluminosilicate" ;
+		mineralfe:units = "mol m^-2 s^-1" ;
+		mineralfe:time = "fe_time" ;
+		mineralfe:coordinates = "xi_rho eta_rho" ;
+	double ironsed(fe_time, eta_rho, xi_rho) ;
+		ironsed:long_name = "iron from sediments" ;
+		ironsed:units = "mol m^-2 s^-1" ;
+		ironsed:time = "fe_time" ;
+		ironsed:coordinates = "xi_rho eta_rho" ;
+	double fe_time(fe_time) ;
+		fe_time:long_name = "time, climatological" ;
+		fe_time:units = "days" ;
+		fe_time:cycle_length = 365.25 ;
+
+// global attributes:
+		:title = "FORCING file" ;
+		:history = "Fri Feb 24 10:51:15 2023: External iron forcing file created based on ESM4 climatological dataset used for regional MOM6-COBALT applications (received from Andrew Ross, Liz Drenkard on 2/10/2023)\n",
+			"" ;
+}

@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/OTPS/tides_OTPS_Bering10K.nc

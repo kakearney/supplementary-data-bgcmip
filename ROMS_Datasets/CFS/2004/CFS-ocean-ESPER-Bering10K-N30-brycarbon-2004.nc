@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/2004/CFS-ocean-ESPER-Bering10K-N30-brycarbon-2004.nc

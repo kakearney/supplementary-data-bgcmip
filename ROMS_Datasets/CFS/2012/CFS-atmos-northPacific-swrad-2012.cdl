@@ -1,0 +1,38 @@
+netcdf CFS-atmos-northPacific-swrad-2012 {
+dimensions:
+	lat = 342 ;
+	lon = 587 ;
+	srf_time = UNLIMITED ; // (366 currently)
+variables:
+	double lat(lat, lon) ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:standard_name = "latitude" ;
+		lat:coordinates = "lon lat" ;
+	double lon(lat, lon) ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:standard_name = "longitude" ;
+		lon:coordinates = "lon lat" ;
+	double srf_time(srf_time) ;
+		srf_time:long_name = "forcing time" ;
+		srf_time:units = "days since 1900-01-01 00:00:00" ;
+		srf_time:time = "srf_time" ;
+	double swrad(srf_time, lat, lon) ;
+		swrad:long_name = "solar shortwave radiation flux" ;
+		swrad:units = "watt meter-2" ;
+		swrad:coordinates = "lon lat" ;
+		swrad:time = "srf_time" ;
+
+// global attributes:
+		:type = "FORCING file" ;
+		:title = "Hindcast surface flux forcing for Bering 10K ROMS domain" ;
+		:history = "Fri Oct 28 17:20:28 2022: ncks -F -O -d srf_time,2,367 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2012/roms-cfs-atmos-swrad-2012.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2012/CFS-atmos-northPacific-swrad-2012.nc\n",
+			"Mon Sep 10 14:04:21 2018: Time overhang added\n",
+			"Mon Sep 10 14:04:19 2018: ncrcat /tmp/tp1ed848ab_940f_4bec_a01b_d3f88d971fd7.nc frc/roms-cfs-atmos-swrad-2012.nc /tmp/tp88d190ad_4527_4714_a39b_7c6681b0a32c.nc /tmp/tpd9aa8daa_0ddb_46d9_8e91_8447f6b65c37.nc\n",
+			"Mon Sep 10 14:04:18 2018: ncks -F -d srf_time,1,1 frc/roms-cfs-atmos-swrad-2012.nc /tmp/tp1ed848ab_940f_4bec_a01b_d3f88d971fd7.nc\n",
+			"Thu Sep  6 12:46:12 2018: ncks -O -F -d srf_time,2,367 /Volumes/Storage/BeringROMS/hindcastFrcBry/frc/corecfs_2012_swrad.nc /Volumes/Storage/BeringROMS/hindcastFrcBry/CFS/roms-cfs-atmos-swrad-2012.nc\n",
+			"04-Oct-2017 18:19:34: File schema defined via bering10k_schema.m" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

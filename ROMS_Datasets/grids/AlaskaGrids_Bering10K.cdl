@@ -1,0 +1,244 @@
+netcdf AlaskaGrids_Bering10K {
+dimensions:
+	two = 2 ;
+	eta_rho = 258 ;
+	xi_rho = 182 ;
+	bath = UNLIMITED ; // (9 currently)
+	eta_psi = 257 ;
+	xi_psi = 181 ;
+	eta_u = 258 ;
+	xi_u = 181 ;
+	eta_v = 257 ;
+	xi_v = 182 ;
+variables:
+	char JLTS(two) ;
+		JLTS:long_name = "How limits of map are chosen" ;
+		JLTS:option_CO = "P1, .. P4 define two opposite corners " ;
+		JLTS:option_MA = "Maximum (whole world)" ;
+		JLTS:option_AN = "Angles - P1..P4 define angles to edge of domain" ;
+		JLTS:option_LI = "Limits - P1..P4 define limits in u,v space" ;
+	char JPRJ(two) ;
+		JPRJ:long_name = "Map projection type" ;
+		JPRJ:option_ME = "Mercator" ;
+		JPRJ:option_ST = "Stereographic" ;
+		JPRJ:option_LC = "Lambert conformal conic" ;
+	float P1 ;
+		P1:long_name = "Map limit parameter number 1" ;
+	float P2 ;
+		P2:long_name = "Map limit parameter number 2" ;
+	float P3 ;
+		P3:long_name = "Map limit parameter number 3" ;
+	float P4 ;
+		P4:long_name = "Map limit parameter number 4" ;
+	float PLAT(two) ;
+		PLAT:long_name = "Reference latitude(s) for map projection" ;
+		PLAT:units = "degree_north" ;
+	float PLONG ;
+		PLONG:long_name = "Reference longitude for map projection" ;
+		PLONG:units = "degree_east" ;
+	float ROTA ;
+		ROTA:long_name = "Rotation angle for map projection" ;
+		ROTA:units = "degree" ;
+	float XOFF ;
+		XOFF:long_name = "Offset in x direction" ;
+		XOFF:units = "meter" ;
+	float YOFF ;
+		YOFF:long_name = "Offset in y direction" ;
+		YOFF:units = "meter" ;
+	double angle(eta_rho, xi_rho) ;
+		angle:long_name = "angle between xi axis and east" ;
+		angle:units = "radian" ;
+	double depthmax ;
+		depthmax:long_name = "Deep bathymetry clipping depth" ;
+		depthmax:units = "meter" ;
+	double depthmin ;
+		depthmin:long_name = "Shallow bathymetry clipping depth" ;
+		depthmin:units = "meter" ;
+	double dfdy ;
+		dfdy:long_name = "Coriolis parameter gradient on a beta-plane" ;
+		dfdy:_FillValue = 0. ;
+	double dmde(eta_rho, xi_rho) ;
+		dmde:long_name = "eta derivative of inverse metric factor pm" ;
+		dmde:units = "meter" ;
+		dmde:field = "dmde, scalar" ;
+	double dndx(eta_rho, xi_rho) ;
+		dndx:long_name = "xi derivative of inverse metric factor pn" ;
+		dndx:units = "meter" ;
+		dndx:field = "dndx, scalar" ;
+	double el ;
+		el:long_name = "domain length in the ETA-direction" ;
+		el:units = "meter" ;
+	double f(eta_rho, xi_rho) ;
+		f:long_name = "Coriolis parameter at RHO-points" ;
+		f:units = "second-1" ;
+		f:field = "Coriolis, scalar" ;
+	double f0 ;
+		f0:long_name = "Coriolis parameter central value on a beta-plane" ;
+		f0:_FillValue = 0. ;
+	double h(eta_rho, xi_rho) ;
+		h:long_name = "Final bathymetry at RHO-points" ;
+		h:units = "meter" ;
+		h:field = "bath, scalar" ;
+	double hraw(bath, eta_rho, xi_rho) ;
+		hraw:long_name = "Working bathymetry at RHO-points" ;
+		hraw:units = "meter" ;
+		hraw:field = "bath, scalar" ;
+	double lat_psi(eta_psi, xi_psi) ;
+		lat_psi:long_name = "latitude of PSI-points" ;
+		lat_psi:units = "degree_north" ;
+	double lat_rho(eta_rho, xi_rho) ;
+		lat_rho:long_name = "latitude of RHO-points" ;
+		lat_rho:units = "degree_north" ;
+	double lat_u(eta_u, xi_u) ;
+		lat_u:long_name = "latitude of U-points" ;
+		lat_u:units = "degree_north" ;
+	double lat_v(eta_v, xi_v) ;
+		lat_v:long_name = "latitude of V-points" ;
+		lat_v:units = "degree_north" ;
+	double lon_psi(eta_psi, xi_psi) ;
+		lon_psi:long_name = "longitude of PSI-points" ;
+		lon_psi:units = "degree_east" ;
+	double lon_rho(eta_rho, xi_rho) ;
+		lon_rho:long_name = "longitude of RHO-points" ;
+		lon_rho:units = "degree_east" ;
+	double lon_u(eta_u, xi_u) ;
+		lon_u:long_name = "longitude of U-points" ;
+		lon_u:units = "degree_east" ;
+	double lon_v(eta_v, xi_v) ;
+		lon_v:long_name = "longitude of V-points" ;
+		lon_v:units = "degree_east" ;
+	double mask_psi(eta_psi, xi_psi) ;
+		mask_psi:long_name = "mask on PSI-points" ;
+		mask_psi:option_0 = "land" ;
+		mask_psi:option_1 = "water" ;
+	double mask_rho(eta_rho, xi_rho) ;
+		mask_rho:long_name = "mask on RHO-points" ;
+		mask_rho:option_0 = "land" ;
+		mask_rho:option_1 = "water" ;
+	double mask_u(eta_u, xi_u) ;
+		mask_u:long_name = "mask on U-points" ;
+		mask_u:option_0 = "land" ;
+		mask_u:option_1 = "water" ;
+	double mask_v(eta_v, xi_v) ;
+		mask_v:long_name = "mask on V-points" ;
+		mask_v:option_0 = "land" ;
+		mask_v:option_1 = "water" ;
+	double pm(eta_rho, xi_rho) ;
+		pm:long_name = "curvilinear coordinate metric in XI" ;
+		pm:units = "meter-1" ;
+		pm:field = "pm, scalar" ;
+	double pn(eta_rho, xi_rho) ;
+		pn:long_name = "curvilinear coordinate metric in ETA" ;
+		pn:units = "meter-1" ;
+		pn:field = "pn, scalar" ;
+	double rdrg_grid(eta_rho, xi_rho) ;
+		rdrg_grid:longname = "spatially variable bottom drag coef." ;
+		rdrg_grid:units = "m/s" ;
+		rdrg_grid:_FillValue = -9999. ;
+	char spherical ;
+		spherical:long_name = "Grid type logical switch" ;
+		spherical:option_T = "spherical" ;
+		spherical:option_F = "Cartesian" ;
+	double x_psi(eta_psi, xi_psi) ;
+		x_psi:long_name = "x location of PSI-points" ;
+		x_psi:units = "meter" ;
+	double x_rho(eta_rho, xi_rho) ;
+		x_rho:long_name = "x location of RHO-points" ;
+		x_rho:units = "meter" ;
+	double x_u(eta_u, xi_u) ;
+		x_u:long_name = "x location of U-points" ;
+		x_u:units = "meter" ;
+	double x_v(eta_v, xi_v) ;
+		x_v:long_name = "x location of V-points" ;
+		x_v:units = "meter" ;
+	double xl ;
+		xl:long_name = "domain length in the XI-direction" ;
+		xl:units = "meter" ;
+	double y_psi(eta_psi, xi_psi) ;
+		y_psi:long_name = "y location of PSI-points" ;
+		y_psi:units = "meter" ;
+	double y_rho(eta_rho, xi_rho) ;
+		y_rho:long_name = "y location of RHO-points" ;
+		y_rho:units = "meter" ;
+	double y_u(eta_u, xi_u) ;
+		y_u:long_name = "y location of U-points" ;
+		y_u:units = "meter" ;
+	double y_v(eta_v, xi_v) ;
+		y_v:long_name = "y location of V-points" ;
+		y_v:units = "meter" ;
+	double mask_feast(eta_rho, xi_rho) ;
+		mask_feast:units = "Boolean" ;
+		mask_feast:missing_value = -1.e+30 ;
+		mask_feast:long_name = "FEAST EBS stock mask" ;
+	double area_feast(eta_rho, xi_rho) ;
+		area_feast:units = "kilometer-2" ;
+		area_feast:missing_value = -1.e+30 ;
+		area_feast:long_name = "FEAST rho-centered area for scaling" ;
+	int domain_feast(eta_rho, xi_rho) ;
+		domain_feast:units = "Boolean" ;
+		domain_feast:missing_value = -1 ;
+		domain_feast:long_name = "FEAST domains on rho points" ;
+	double surveystrata_updated(eta_rho, xi_rho) ;
+		surveystrata_updated:long_name = "Bering Sea continental shelf survey strata, updated 2019-09-30" ;
+	double surveystrata_original(eta_rho, xi_rho) ;
+		surveystrata_original:long_name = "Bering Sea continental shelf survey strata, used prior to 2019" ;
+	double surveystrata_comboeast(eta_rho, xi_rho) ;
+		surveystrata_comboeast:long_name = "eastern Bering Sea survey strata; uses updated version where available (US) and original otherwise (Russia)" ;
+	double bsierp_marine_regions(eta_rho, xi_rho) ;
+		bsierp_marine_regions:long_name = "Ortiz, I., Wiese, F., Greig, A. 2012. Marine Regions Boundary Data for the Bering Sea Shelf and Slope. Version 1.0. UCAR/NCAR - Earth Observing Laboratory. https://doi.org/10.5065/D6DF6P6C. Accessed 23 Jun 2014." ;
+	double stations_regions(eta_rho, xi_rho) ;
+		stations_regions:long_name = "Bering Sea analysis regions; see Bering10K Dataset Documentation for details." ;
+	double shelf_mismatch(eta_rho, xi_rho) ;
+		shelf_mismatch:long_name = "1 = regions where real world bathymetry is <200m but model >200m" ;
+	double visc_factor_v1(eta_rho, xi_rho) ;
+		visc_factor_v1:long_name = "horizontal viscocity factor (see VISC2) (open bry: west,south)" ;
+		visc_factor_v1:valid_min = 0. ;
+		visc_factor_v1:coordinates = "lon_rho lat_rho" ;
+	double diff_factor_v1(eta_rho, xi_rho) ;
+		diff_factor_v1:long_name = "horizontal diffusivity factor (see TNU2) (open bry: west,south)" ;
+		diff_factor_v1:valid_min = 0. ;
+		diff_factor_v1:coordinates = "lon_rho lat_rho" ;
+	double visc_factor_v2(eta_rho, xi_rho) ;
+		visc_factor_v2:long_name = "horizontal viscocity factor (see VISC2) (open bry: west,south,east)" ;
+		visc_factor_v2:valid_min = 0. ;
+		visc_factor_v2:coordinates = "lon_rho lat_rho" ;
+	double diff_factor_v2(eta_rho, xi_rho) ;
+		diff_factor_v2:long_name = "horizontal diffusivity factor (see TNU2) (open bry: west,south,east)" ;
+		diff_factor_v2:valid_min = 0. ;
+		diff_factor_v2:coordinates = "lon_rho lat_rho" ;
+	double diff_factor(eta_rho, xi_rho) ;
+		diff_factor:long_name = "horizontal diffusivity factor (see TNU2) (open bry: west,south)" ;
+		diff_factor:valid_min = 0. ;
+		diff_factor:coordinates = "lon_rho lat_rho" ;
+	double visc_factor(eta_rho, xi_rho) ;
+		visc_factor:long_name = "horizontal viscocity factor (see VISC2) (open bry: west,south)" ;
+		visc_factor:valid_min = 0. ;
+		visc_factor:coordinates = "lon_rho lat_rho" ;
+
+// global attributes:
+		:type = "Gridpak file" ;
+		:gridid = "Northeast Pacific #4" ;
+		:history = "Fri Jan 20 10:24:10 2023: ncks -A ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5 /Users/kakearney/Documents/Research/Working/mox_bumblereem/ROMS_Datasets/grids/AlaskaGrids_Bering10K.nc\n",
+			"Fri Jan 20 10:24:04 2023: ncrename -v visc_factor_v1,visc_factor ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5\n",
+			"Fri Jan 20 10:24:04 2023: ncrename -v diff_factor_v1,diff_factor ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5\n",
+			"Fri Jan 20 10:24:03 2023: ncks -v diff_factor_v1,visc_factor_v1 /Users/kakearney/Documents/Research/Working/mox_bumblereem/ROMS_Datasets/grids/AlaskaGrids_Bering10K.nc ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5\n",
+			"Thu Jan 19 14:45:34 2023: Edited masks to eliminate disconnected water points along eastern (Bering Strait) boundary\n",
+			"Fri Mar 05 17:15:51 2021: Extended analysis mask variables added by K. Kearney via b10k_extended_grid.m\n",
+			"Wed Apr 15 16:24:44 2009: ncks -d xi_rho,24,205 -d xi_psi,24,204 -d xi_u,24,204 -d xi_v,24,205 -d eta_rho,349,606 -d eta_psi,349,605 -d eta_u,349,606 -d eta_v,349,605 NEP_grid_5a.nc Bering_grid_10k.nc\n",
+			"Wed Apr 15 15:46:05 2009: ncks -v rdrg_grid -x NEP_grid_5a.nc foo.nx\n",
+			"Fri Mar 20 09:42:11 2009: ncatted -O -a _FillValue,mask_rho,d,, -a _FillValue,mask_u,d,, -a _FillValue,mask_v,d,, -a _FillValue,mask_psi,d,, /archive/u1/uaf/kate/gridpak/NEP4/NEP_grid_5a.nc\n",
+			"Gridpak, Version 5.3  , Tuesday - February 15, 2005 - 2:42:56 PM" ;
+		:CPP-options = "DCOMPLEX, DBLEPREC, ETOPO5, DRAW_COASTS, KEEP_SHALLOW, PLOTS," ;
+		:NCO = "netCDF Operators version 5.1.1 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco)" ;
+		:history_of_appended_files = "Fri Jan 20 10:24:10 2023: Appended file ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5 had following \"history\" attribute:\n",
+			"Fri Jan 20 10:24:04 2023: ncrename -v visc_factor_v1,visc_factor ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5\n",
+			"Fri Jan 20 10:24:04 2023: ncrename -v diff_factor_v1,diff_factor ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5\n",
+			"Fri Jan 20 10:24:03 2023: ncks -v diff_factor_v1,visc_factor_v1 /Users/kakearney/Documents/Research/Working/mox_bumblereem/ROMS_Datasets/grids/AlaskaGrids_Bering10K.nc ./tpc6448e34_0111_45f2_9afb_dad3972bf2c5\n",
+			"Thu Jan 19 14:45:34 2023: Edited masks to eliminate disconnected water points along eastern (Bering Strait) boundary\n",
+			"Fri Mar 05 17:15:51 2021: Extended analysis mask variables added by K. Kearney via b10k_extended_grid.m\n",
+			"Wed Apr 15 16:24:44 2009: ncks -d xi_rho,24,205 -d xi_psi,24,204 -d xi_u,24,204 -d xi_v,24,205 -d eta_rho,349,606 -d eta_psi,349,605 -d eta_u,349,606 -d eta_v,349,605 NEP_grid_5a.nc Bering_grid_10k.nc\n",
+			"Wed Apr 15 15:46:05 2009: ncks -v rdrg_grid -x NEP_grid_5a.nc foo.nx\n",
+			"Fri Mar 20 09:42:11 2009: ncatted -O -a _FillValue,mask_rho,d,, -a _FillValue,mask_u,d,, -a _FillValue,mask_v,d,, -a _FillValue,mask_psi,d,, /archive/u1/uaf/kate/gridpak/NEP4/NEP_grid_5a.nc\n",
+			"Gridpak, Version 5.3  , Tuesday - February 15, 2005 - 2:42:56 PM\n",
+			"" ;
+}

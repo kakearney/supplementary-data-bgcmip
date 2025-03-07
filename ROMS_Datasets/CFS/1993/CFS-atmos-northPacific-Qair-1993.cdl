@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-Qair-1993 {
+dimensions:
+	qair_time = UNLIMITED ; // (1459 currently)
+	lat = 225 ;
+	lon = 385 ;
+variables:
+	double Qair(qair_time, lat, lon) ;
+		Qair:missing_value = -1.e+34 ;
+		Qair:_FillValue = -1.e+34 ;
+		Qair:time = "qair_time" ;
+		Qair:coordinates = "lon lat" ;
+		Qair:height_above_ground = 2.f ;
+		Qair:long_name = "specific humidity" ;
+		Qair:history = "From roms-cfs-atmos-Qair-1993" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double qair_time(qair_time) ;
+		qair_time:units = "day since 1900-01-01 00:00:00" ;
+		qair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		qair_time:axis = "T" ;
+		qair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Fri Oct 28 16:31:57 2022: ncks -F -O -d qair_time,2,1460 /gscratch/bumblereem/bering10k/input/hindcast_cfs/1993/roms-cfs-atmos-Qair-1993.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/1993/CFS-atmos-northPacific-Qair-1993.nc\n",
+			"Wed Nov 20 14:02:49 2019: Time overhang added to end\n",
+			"Wed Nov 20 14:02:45 2019: ncrcat /gscratch/bumblereem/bering10k/input/hindcast_cfs/1993/roms-cfs-atmos-Qair-1993.nc /tmp/tp03340f43_a4b4_46ed_9d7c_372034dbca6c.nc /tmp/tp9084655e_c458_465f_a404_5aea8b3980bb.nc\n",
+			"FERRET V7.4  11-Oct-19" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

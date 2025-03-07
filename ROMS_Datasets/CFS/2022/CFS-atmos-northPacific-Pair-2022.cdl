@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-Pair-2022 {
+dimensions:
+	pair_time = UNLIMITED ; // (1041 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Pair(pair_time, lat, lon) ;
+		Pair:missing_value = -1.e+34 ;
+		Pair:_FillValue = -1.e+34 ;
+		Pair:time = "pair_time" ;
+		Pair:coordinates = "lon lat" ;
+		Pair:long_name = "atmos pressure" ;
+		Pair:history = "From roms-cfs-atmos-Pair-2022" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double pair_time(pair_time) ;
+		pair_time:units = "day since 1900-01-01 00:00:00" ;
+		pair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		pair_time:axis = "T" ;
+		pair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 13:21:00 2022: ncks -F -O -d pair_time,2,1042 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Pair-2022.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2022/CFS-atmos-northPacific-Pair-2022.nc\n",
+			"Tue Sep 27 09:34:38 2022: Time overhang added to beginning\n",
+			"Tue Sep 27 09:34:32 2022: ncrcat /tmp/tp16f5846d_bbc6_4fe5_ac1c_c9adda22eac6.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Pair-2022.nc /tmp/tp21c70282_41f6_4e94_9a4e_def43013294e.nc\n",
+			"Tue Sep 27 09:34:32 2022: ncks -F -d pair_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Pair-2022.nc /tmp/tp16f5846d_bbc6_4fe5_ac1c_c9adda22eac6.nc\n",
+			"FERRET V7.6  22-Sep-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

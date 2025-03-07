@@ -1,0 +1,41 @@
+netcdf CFS-atmos-northPacific-Uwind-2022 {
+dimensions:
+	wind_time = UNLIMITED ; // (1041 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Uwind(wind_time, lat, lon) ;
+		Uwind:missing_value = -1.e+34 ;
+		Uwind:_FillValue = -1.e+34 ;
+		Uwind:time = "wind_time" ;
+		Uwind:coordinates = "lon lat" ;
+		Uwind:height_above_ground1 = 10.f ;
+		Uwind:long_name = "U wind" ;
+		Uwind:history = "From roms-cfs-atmos-Uwind-2022" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double wind_time(wind_time) ;
+		wind_time:units = "day since 1900-01-01 00:00:00" ;
+		wind_time:time_origin = "01-JAN-1900 00:00:00" ;
+		wind_time:axis = "T" ;
+		wind_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 13:22:52 2022: ncks -F -O -d wind_time,2,1042 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Uwind-2022.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2022/CFS-atmos-northPacific-Uwind-2022.nc\n",
+			"Tue Sep 27 09:35:12 2022: Time overhang added to beginning\n",
+			"Tue Sep 27 09:35:06 2022: ncrcat /tmp/tp16568487_287a_40ab_bfc6_1bb5a6522d17.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Uwind-2022.nc /tmp/tpbe5fbb03_f61a_49cc_994f_1ef845c287b6.nc\n",
+			"Tue Sep 27 09:35:06 2022: ncks -F -d wind_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Uwind-2022.nc /tmp/tp16568487_287a_40ab_bfc6_1bb5a6522d17.nc\n",
+			"FERRET V7.6  22-Sep-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/ESM4dust/RiverNutrients_Integrated_NEP10k_GLOFAS_03192022.nc

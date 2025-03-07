@@ -1,0 +1,41 @@
+netcdf CFS-atmos-northPacific-Vwind-2017 {
+dimensions:
+	wind_time = UNLIMITED ; // (1460 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Vwind(wind_time, lat, lon) ;
+		Vwind:missing_value = -1.e+34 ;
+		Vwind:_FillValue = -1.e+34 ;
+		Vwind:time = "wind_time" ;
+		Vwind:coordinates = "lon lat" ;
+		Vwind:height_above_ground1 = 10.f ;
+		Vwind:long_name = "V wind" ;
+		Vwind:history = "From roms-cfs-atmos-Vwind-2017" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double wind_time(wind_time) ;
+		wind_time:units = "day since 1900-01-01 00:00:00" ;
+		wind_time:time_origin = "01-JAN-1900 00:00:00" ;
+		wind_time:axis = "T" ;
+		wind_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:11:00 2022: ncks -F -O -d wind_time,3,1462 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2017/roms-cfs-atmos-Vwind-2017.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Vwind-2017.nc\n",
+			"Mon Sep 17 12:10:09 2018: Time overhang added\n",
+			"Mon Sep 17 12:10:01 2018: ncrcat /tmp/tp6d863b20_0318_447e_9eef_a4300c923d1b.nc frc/roms-cfs-atmos-Vwind-2017.nc /tmp/tpd1f8eec1_247a_4b4e_b10e_16f9b4e8d1a3.nc /tmp/tp9bf3eae7_0767_4edd_8937_4336e06004e6.nc\n",
+			"Mon Sep 17 12:10:01 2018: ncks -F -d wind_time,1,1 frc/roms-cfs-atmos-Vwind-2017.nc /tmp/tp6d863b20_0318_447e_9eef_a4300c923d1b.nc\n",
+			"FERRET V7.4  10-Aug-18" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

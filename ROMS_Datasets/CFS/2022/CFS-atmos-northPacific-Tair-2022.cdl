@@ -1,0 +1,41 @@
+netcdf CFS-atmos-northPacific-Tair-2022 {
+dimensions:
+	tair_time = UNLIMITED ; // (1041 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Tair(tair_time, lat, lon) ;
+		Tair:missing_value = -1.e+34 ;
+		Tair:_FillValue = -1.e+34 ;
+		Tair:time = "tair_time" ;
+		Tair:coordinates = "lon lat" ;
+		Tair:height_above_ground = 2.f ;
+		Tair:long_name = "surface air temperature" ;
+		Tair:history = "From roms-cfs-atmos-Tair-2022" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double tair_time(tair_time) ;
+		tair_time:units = "day since 1900-01-01 00:00:00" ;
+		tair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		tair_time:axis = "T" ;
+		tair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 13:22:14 2022: ncks -F -O -d tair_time,2,1042 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Tair-2022.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2022/CFS-atmos-northPacific-Tair-2022.nc\n",
+			"Tue Sep 27 09:34:59 2022: Time overhang added to beginning\n",
+			"Tue Sep 27 09:34:54 2022: ncrcat /tmp/tp4a26f8ce_b08a_4718_ad30_ce0f20433b23.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Tair-2022.nc /tmp/tpbfb4a004_fc2d_4648_810b_20f1052de7bc.nc\n",
+			"Tue Sep 27 09:34:54 2022: ncks -F -d tair_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2022/roms-cfs-atmos-Tair-2022.nc /tmp/tp4a26f8ce_b08a_4718_ad30_ce0f20433b23.nc\n",
+			"FERRET V7.6  22-Sep-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

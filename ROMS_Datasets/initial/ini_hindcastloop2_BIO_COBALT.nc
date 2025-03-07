@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/initial/ini_hindcastloop2_BIO_COBALT.nc

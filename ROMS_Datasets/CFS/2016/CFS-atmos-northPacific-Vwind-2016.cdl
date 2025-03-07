@@ -1,0 +1,38 @@
+netcdf CFS-atmos-northPacific-Vwind-2016 {
+dimensions:
+	wind_time = UNLIMITED ; // (1448 currently)
+	lat = 342 ;
+	lon = 587 ;
+variables:
+	double Vwind(wind_time, lat, lon) ;
+		Vwind:long_name = "surface v-wind component" ;
+		Vwind:units = "meter second-1" ;
+		Vwind:coordinates = "lon lat" ;
+		Vwind:time = "wind_time" ;
+	double lat(lat, lon) ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:standard_name = "latitude" ;
+		lat:coordinates = "lon lat" ;
+	double lon(lat, lon) ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:standard_name = "longitude" ;
+		lon:coordinates = "lon lat" ;
+	double wind_time(wind_time) ;
+		wind_time:long_name = "forcing time" ;
+		wind_time:units = "days since 1900-01-01 00:00:00" ;
+		wind_time:time = "wind_time" ;
+
+// global attributes:
+		:type = "FORCING file" ;
+		:title = "Hindcast surface flux forcing for Bering 10K ROMS domain" ;
+		:history = "Mon Oct 31 11:56:43 2022: ncks -F -O -d wind_time,2,1449 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2016/roms-cfs-atmos-Vwind-2016.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2016/CFS-atmos-northPacific-Vwind-2016.nc\n",
+			"Mon Sep 10 13:46:03 2018: Time overhang added\n",
+			"Mon Sep 10 13:45:55 2018: ncrcat /tmp/tpdb51beb0_f151_4919_89dd_ac3591bb626b.nc frc/roms-cfs-atmos-Vwind-2016.nc /tmp/tp95891188_e2a4_4350_8bde_7d67cd1148bd.nc /tmp/tpda86618f_74f4_472f_a4b3_bb3d8c80c386.nc\n",
+			"Mon Sep 10 13:45:55 2018: ncks -F -d wind_time,1,1 frc/roms-cfs-atmos-Vwind-2016.nc /tmp/tpdb51beb0_f151_4919_89dd_ac3591bb626b.nc\n",
+			"Thu Sep  6 14:18:28 2018: ncks -O -F -d wind_time,2,1449 -v Vwind /Volumes/Storage/BeringROMS/hindcastFrcBry/frc/corecfs_2016_wind.nc /Volumes/Storage/BeringROMS/hindcastFrcBry/CFS/roms-cfs-atmos-Vwind-2016.nc\n",
+			"04-Oct-2017 18:34:55: File schema defined via bering10k_schema.m" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

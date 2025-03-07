@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/2020/CFS-atmos-northPacific-rain-2020.nc

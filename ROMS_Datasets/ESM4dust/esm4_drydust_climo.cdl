@@ -1,0 +1,42 @@
+netcdf esm4_drydust_climo {
+dimensions:
+	time = UNLIMITED ; // (12 currently)
+	lat = 180 ;
+	lon = 288 ;
+	bnds = 2 ;
+variables:
+	double lat(lat) ;
+		lat:_FillValue = NaN ;
+		lat:long_name = "latitude" ;
+		lat:units = "degrees_north" ;
+		lat:axis = "Y" ;
+		lat:bounds = "lat_bnds" ;
+		lat:standard_name = "latitude" ;
+		lat:cell_methods = "time: point" ;
+	double lon(lon) ;
+		lon:_FillValue = NaN ;
+		lon:long_name = "longitude" ;
+		lon:units = "degrees_east" ;
+		lon:axis = "X" ;
+		lon:bounds = "lon_bnds" ;
+		lon:standard_name = "longitude" ;
+		lon:cell_methods = "time: point" ;
+	double time(time) ;
+		time:_FillValue = NaN ;
+		time:units = "days since 0001-01-01" ;
+		time:calendar = "noleap" ;
+		time:modulo = " " ;
+		time:cartesian_axis = "T" ;
+	float drydust(time, lat, lon) ;
+		drydust:_FillValue = NaNf ;
+	double bnds(bnds) ;
+		bnds:_FillValue = NaN ;
+		bnds:long_name = "vertex number" ;
+	double lat_bnds(lat, bnds) ;
+		lat_bnds:_FillValue = NaN ;
+		lat_bnds:long_name = "latitude bounds" ;
+	double lon_bnds(lon, bnds) ;
+		lon_bnds:_FillValue = NaN ;
+		lon_bnds:long_name = "longitude bounds" ;
+		lon_bnds:units = "mol m-2 s-1" ;
+}

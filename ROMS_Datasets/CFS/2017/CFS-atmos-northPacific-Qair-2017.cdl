@@ -1,0 +1,41 @@
+netcdf CFS-atmos-northPacific-Qair-2017 {
+dimensions:
+	qair_time = UNLIMITED ; // (1460 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Qair(qair_time, lat, lon) ;
+		Qair:missing_value = -1.e+34 ;
+		Qair:_FillValue = -1.e+34 ;
+		Qair:time = "qair_time" ;
+		Qair:coordinates = "lon lat" ;
+		Qair:height_above_ground = 2.f ;
+		Qair:long_name = "specific humidity" ;
+		Qair:history = "From roms-cfs-atmos-Qair-2017" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double qair_time(qair_time) ;
+		qair_time:units = "day since 1900-01-01 00:00:00" ;
+		qair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		qair_time:axis = "T" ;
+		qair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:08:21 2022: ncks -F -O -d qair_time,3,1462 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2017/roms-cfs-atmos-Qair-2017.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2017/CFS-atmos-northPacific-Qair-2017.nc\n",
+			"Mon Sep 17 12:09:09 2018: Time overhang added\n",
+			"Mon Sep 17 12:09:01 2018: ncrcat /tmp/tp6aceee76_b7e5_448a_b214_7d9ed8d7c880.nc frc/roms-cfs-atmos-Qair-2017.nc /tmp/tpa53314a5_c6a4_4a24_b1a4_82e8e9fad015.nc /tmp/tp141ffb59_664e_4b1f_b834_c325309c4f2f.nc\n",
+			"Mon Sep 17 12:09:01 2018: ncks -F -d qair_time,1,1 frc/roms-cfs-atmos-Qair-2017.nc /tmp/tp6aceee76_b7e5_448a_b214_7d9ed8d7c880.nc\n",
+			"FERRET V7.4  10-Aug-18" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

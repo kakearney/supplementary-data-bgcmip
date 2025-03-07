@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/BarrowCO2/atmo_co2_barrow_1970_2020.nc

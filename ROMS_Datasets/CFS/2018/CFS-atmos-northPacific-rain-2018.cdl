@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-rain-2018 {
+dimensions:
+	lat = 344 ;
+	lon = 588 ;
+	rain_time = UNLIMITED ; // (1451 currently)
+variables:
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double rain(rain_time, lat, lon) ;
+		rain:missing_value = -1.e+34 ;
+		rain:_FillValue = -1.e+34 ;
+		rain:time = "rain_time" ;
+		rain:coordinates = "lon lat" ;
+		rain:long_name = "rainfall" ;
+		rain:history = "From roms-cfs-atmos-rain-2018" ;
+	double rain_time(rain_time) ;
+		rain_time:units = "day since 1900-01-01 00:00:00" ;
+		rain_time:time_origin = "01-JAN-1900 00:00:00" ;
+		rain_time:axis = "T" ;
+		rain_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 12:35:04 2022: ncks -F -O -d rain_time,2,1452 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-rain-2018.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2018/CFS-atmos-northPacific-rain-2018.nc\n",
+			"Thu May 30 20:50:11 2019: Time overhang added\n",
+			"Thu May 30 20:50:03 2019: ncrcat /tmp/tpfb0011af_e109_44f6_bd41_ada50a94a7ef.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-rain-2018.nc /tmp/tpb40e90fc_ecc7_4f9d_8370_e795185b9df0.nc /tmp/tp222dfedc_4d59_4956_95b5_57eb91047ba4.nc\n",
+			"Thu May 30 20:50:03 2019: ncks -F -d rain_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2018/roms-cfs-atmos-rain-2018.nc /tmp/tpfb0011af_e109_44f6_bd41_ada50a94a7ef.nc\n",
+			"FERRET V7.4  29-May-19" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

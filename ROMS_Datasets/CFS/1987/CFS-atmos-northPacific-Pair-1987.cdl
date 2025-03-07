@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-Pair-1987 {
+dimensions:
+	pair_time = UNLIMITED ; // (1459 currently)
+	lat = 225 ;
+	lon = 385 ;
+variables:
+	double Pair(pair_time, lat, lon) ;
+		Pair:missing_value = -1.e+34 ;
+		Pair:_FillValue = -1.e+34 ;
+		Pair:time = "pair_time" ;
+		Pair:coordinates = "lon lat" ;
+		Pair:long_name = "atmos pressure" ;
+		Pair:history = "From roms-cfs-atmos-Pair-1987" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double pair_time(pair_time) ;
+		pair_time:units = "day since 1900-01-01 00:00:00" ;
+		pair_time:time_origin = "01-JAN-1900 00:00:00" ;
+		pair_time:axis = "T" ;
+		pair_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Fri Oct 28 16:20:12 2022: ncks -F -O -d pair_time,2,1460 /gscratch/bumblereem/bering10k/input/hindcast_cfs/1987/roms-cfs-atmos-Pair-1987.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/1987/CFS-atmos-northPacific-Pair-1987.nc\n",
+			"Wed Nov 20 13:50:03 2019: Time overhang added to both ends\n",
+			"Wed Nov 20 13:49:57 2019: ncrcat /tmp/tp7e024b92_ec09_419f_8ec5_e1c771ec279a.nc /gscratch/bumblereem/bering10k/input/hindcast_cfs/1987/roms-cfs-atmos-Pair-1987.nc /tmp/tpaf3e6ee6_9528_48f4_a1f0_d26372d26994.nc /tmp/tp124f46df_538d_4c89_af74_85bc81905ab8.nc\n",
+			"Wed Nov 20 13:49:55 2019: ncks -F -d pair_time,1,1 /gscratch/bumblereem/bering10k/input/hindcast_cfs/1987/roms-cfs-atmos-Pair-1987.nc /tmp/tp7e024b92_ec09_419f_8ec5_e1c771ec279a.nc\n",
+			"FERRET V7.4  11-Oct-19" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

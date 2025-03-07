@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/initial/INIocean_CFS19900115_Bering10K.nc

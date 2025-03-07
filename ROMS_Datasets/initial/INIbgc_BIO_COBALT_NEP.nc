@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/initial/INIbgc_BIO_COBALT_NEP.nc

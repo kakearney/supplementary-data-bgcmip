@@ -1,0 +1,33 @@
+netcdf depflux_total.mean.1860 {
+dimensions:
+	lat = 64 ;
+	lon = 128 ;
+	Time = UNLIMITED ; // (12 currently)
+variables:
+	float NO3_WET_DEP(Time, lat, lon) ;
+		NO3_WET_DEP:long_name = "total nitrate wet deposition" ;
+		NO3_WET_DEP:units = "mole/m2/s" ;
+		NO3_WET_DEP:sum_op_ncl = "dim_sum over dimension: lev" ;
+	double Time(Time) ;
+		Time:units = "seconds since 0001-01-01 00:00:00" ;
+		Time:time_origin = "01-JAN-0001 00:00:00" ;
+		Time:calendar = "NOLEAP" ;
+		Time:modulo = "T" ;
+		Time:axis = "T" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:long_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:long_name = "longitude" ;
+	float NO3_DRY_DEP(Time, lat, lon) ;
+		NO3_DRY_DEP:long_name = "total nitrate dry deposition" ;
+		NO3_DRY_DEP:units = "mole/m2/s" ;
+	float NH4_WET_DEP(Time, lat, lon) ;
+		NH4_WET_DEP:long_name = "total ammonium wet deposition" ;
+		NH4_WET_DEP:units = "mole/m2/s" ;
+		NH4_WET_DEP:sum_op_ncl = "dim_sum over dimension: lev" ;
+	float NH4_DRY_DEP(Time, lat, lon) ;
+		NH4_DRY_DEP:long_name = "total ammonium dry deposition" ;
+		NH4_DRY_DEP:units = "mole/m2/s" ;
+}

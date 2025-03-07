@@ -1,0 +1,40 @@
+netcdf CFS-atmos-northPacific-Vwind-2021 {
+dimensions:
+	wind_time = UNLIMITED ; // (1432 currently)
+	lat = 344 ;
+	lon = 588 ;
+variables:
+	double Vwind(wind_time, lat, lon) ;
+		Vwind:missing_value = -1.e+34 ;
+		Vwind:_FillValue = -1.e+34 ;
+		Vwind:time = "wind_time" ;
+		Vwind:coordinates = "lon lat" ;
+		Vwind:height_above_ground1 = 10.f ;
+		Vwind:long_name = "V wind" ;
+		Vwind:history = "From roms-cfs-atmos-Vwind-2021" ;
+	float lat(lat) ;
+		lat:units = "degrees_north" ;
+		lat:point_spacing = "uneven" ;
+		lat:axis = "Y" ;
+		lat:standard_name = "latitude" ;
+	float lon(lon) ;
+		lon:units = "degrees_east" ;
+		lon:modulo = 360.f ;
+		lon:point_spacing = "uneven" ;
+		lon:axis = "X" ;
+		lon:standard_name = "longitude" ;
+	double wind_time(wind_time) ;
+		wind_time:units = "day since 1900-01-01 00:00:00" ;
+		wind_time:time_origin = "01-JAN-1900 00:00:00" ;
+		wind_time:axis = "T" ;
+		wind_time:standard_name = "time" ;
+
+// global attributes:
+		:history = "Mon Oct 31 13:10:05 2022: ncks -F -O -d wind_time,2,1433 /gscratch/bumblereem/bering10k/input/hindcast_cfs/2021/roms-cfs-atmos-Vwind-2021.nc /gscratch/bumblereem/kearney/ROMS_Datasets/CFS/2021/CFS-atmos-northPacific-Vwind-2021.nc\n",
+			"Fri May 06 13:51:42 2022: Time overhang added to end\n",
+			"Fri May  6 13:51:33 2022: ncrcat /gscratch/bumblereem/bering10k/input/hindcast_cfs/2021/roms-cfs-atmos-Vwind-2021.nc /tmp/tp30ae32f0_dda6_40e3_a4ec_7b45e14c7e20.nc /tmp/tpc52e2492_bdd2_4e24_9881_f2ff876f70ed.nc\n",
+			"FERRET V7.6  20-Jan-22" ;
+		:Conventions = "CF-1.6" ;
+		:NCO = "4.6.9" ;
+		:nco_openmp_thread_number = 1 ;
+}

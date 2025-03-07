@@ -1,0 +1,66 @@
+netcdf RiverNutrients_Integrated_NEP10k_GLOFAS_03192022 {
+dimensions:
+	time = UNLIMITED ; // (12 currently)
+	y = 816 ;
+	x = 342 ;
+variables:
+	double time(time) ;
+		time:calendar = "NOLEAP" ;
+		time:calendar_type = "NOLEAP" ;
+		time:modulo = "T" ;
+		time:units = "days since 1990-1-1 0:00:00" ;
+		time:time_origin = "01-JAN-1990 00:00:00" ;
+	int y(y) ;
+		y:cartesian_axis = "Y" ;
+	int x(x) ;
+		x:cartesian_axis = "X" ;
+	double lat(y, x) ;
+		lat:units = "degrees north" ;
+	double lon(y, x) ;
+		lon:units = "degrees east" ;
+	double DIC_CONC(time, y, x) ;
+		DIC_CONC:units = "mol m-3" ;
+		DIC_CONC:long_name = "DIC_CONC" ;
+	double ALK_CONC(time, y, x) ;
+		ALK_CONC:units = "mole Eq. m-3" ;
+		ALK_CONC:long_name = "ALK_CONC" ;
+	double NO3_CONC(time, y, x) ;
+		NO3_CONC:units = "mol m-3" ;
+		NO3_CONC:long_name = "NO3_CONC" ;
+	double NH4_CONC(time, y, x) ;
+		NH4_CONC:units = "mol m-3" ;
+		NH4_CONC:long_name = "NH4_CONC" ;
+	double LDON_CONC(time, y, x) ;
+		LDON_CONC:units = "mol m-3" ;
+		LDON_CONC:long_name = "0.3*DON_CONC" ;
+	double SLDON_CONC(time, y, x) ;
+		SLDON_CONC:units = "mol m-3" ;
+		SLDON_CONC:long_name = "0.35*DON_CONC" ;
+	double SRDON_CONC(time, y, x) ;
+		SRDON_CONC:units = "mol m-3" ;
+		SRDON_CONC:long_name = "0.35*DON_CONC" ;
+	double NDET_CONC(time, y, x) ;
+		NDET_CONC:units = "mol m-3" ;
+		NDET_CONC:long_name = "1.0*PN_CONC" ;
+	double PO4_CONC(time, y, x) ;
+		PO4_CONC:units = "mol m-3" ;
+		PO4_CONC:long_name = "PO4_CONC+0.3*PP_CONC" ;
+	double LDOP_CONC(time, y, x) ;
+		LDOP_CONC:units = "mol m-3" ;
+		LDOP_CONC:long_name = "0.3*DOP_CONC" ;
+	double SLDOP_CONC(time, y, x) ;
+		SLDOP_CONC:units = "mol m-3" ;
+		SLDOP_CONC:long_name = "0.35*DOP_CONC" ;
+	double SRDOP_CONC(time, y, x) ;
+		SRDOP_CONC:units = "mol m-3" ;
+		SRDOP_CONC:long_name = "0.35*DOP_CONC" ;
+	double PDET_CONC(time, y, x) ;
+		PDET_CONC:units = "mol m-3" ;
+		PDET_CONC:long_name = "0*PP_CONC" ;
+	double FED_CONC(time, y, x) ;
+		FED_CONC:units = "mol m-3" ;
+		FED_CONC:long_name = "FED_CONC" ;
+	double FEDET_CONC(time, y, x) ;
+		FEDET_CONC:units = "mol m-3" ;
+		FEDET_CONC:long_name = "FEDET_CONC" ;
+}

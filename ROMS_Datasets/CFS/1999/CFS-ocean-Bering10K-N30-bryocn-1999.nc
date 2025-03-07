@@ -1,0 +1,1 @@
+/Volumes/LaCie2023/BGCMIP/ROMS_Datasets/CFS/1999/CFS-ocean-Bering10K-N30-bryocn-1999.nc
