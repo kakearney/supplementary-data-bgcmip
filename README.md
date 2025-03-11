@@ -39,7 +39,38 @@ The ``bgcmip_*/In/`` subfolders hold the ROMS input parameter files for each sim
 
 ### analysis/
 
-This folder includes the primary Matlab analysis script (bgcmip_paper2.m) used to calculate metrics and generate figures for this paper.  It also includes all code dependencies of that script and the temporary output datasets (in .mat format) required to reproduce those figures.
+This folder includes the primary Matlab analysis script (bgcmip_paper_final.m) used to calculate metrics and generate figures for this paper.  It also includes some additional .m files called directly by that script and the temporary output datasets (in .mat format) required to reproduce those figures.
+
+Note that if you wish to run this code locally, this script uses large number of third party functions, primarily small plotting or data analysis utilities.  These can be downloaded from GitHub
+( [barareaneg    ](https://github.com/kakearney/barareaneg-pkg  )
+, [Bering10KInput](https://github.com/beringnpz/Bering10KInput  )
+, [labelaxes     ](https://github.com/kakearney/labelaxes-pkg   )
+, [legendflex    ](https://github.com/kakearney/legendflex-pkg  )
+, [mergeaxes     ](https://github.com/kakearney/mergeaxes-pkg   )
+, [minmax        ](https://github.com/kakearney/minmax-pkg      )
+, [offsetaxis    ](https://github.com/kakearney/offsetaxis-pkg  )
+, [pcolorpad     ](https://github.com/kakearney/pcolorpad-pkg   )
+, [plotboxpos    ](https://github.com/kakearney/plotboxpos-pkg  )
+, [plotgrid      ](https://github.com/kakearney/plotgrid-pkg    )
+, [roms          ](https://github.com/kakearney/roms            )
+, [shapeprjread  ](https://github.com/kakearney/shapeprjread-pkg)
+, [singlepatch   ](https://github.com/kakearney/singlepatch-pkg )
+, [suplabel      ](https://github.com/kakearney/suplabel-pkg    )
+, [uniquecell    ](https://github.com/kakearney/uniquecell-pkg  )
+, [wraptext      ](https://github.com/kakearney/wraptext-pkg    )
+) or from the MatlabCentral File Exchange
+( [Climate Data Toolbox](https://www.mathworks.com/matlabcentral/fileexchange/70338 )
+, [export_fig          ](https://www.mathworks.com/matlabcentral/fileexchange/23629 )
+, [interparc           ](https://www.mathworks.com/matlabcentral/fileexchange/34874 )
+, [subaxis             ](https://www.mathworks.com/matlabcentral/fileexchange/3696  )
+, [wprctile            ](https://www.mathworks.com/matlabcentral/fileexchange/16920 )
+, [RunLength           ](https://www.mathworks.com/matlabcentral/fileexchange/41813 )
+, [crameri             ](https://www.mathworks.com/matlabcentral/fileexchange/68546 )
+, [hex2rgb             ](https://www.mathworks.com/matlabcentral/fileexchange/46289 )
+, [treemap             ](https://www.mathworks.com/matlabcentral/fileexchange/17192 )
+, [yaml                ](https://www.mathworks.com/matlabcentral/fileexchange/106765)
+) and must be added to your Matlab path for full functionality.
+
 
 ### roms-kate-ice/
 
