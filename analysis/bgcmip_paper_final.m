@@ -34,6 +34,8 @@ Metrics = Metrics.Metrics;
 bgcname = fieldnames(Metrics);
 nbgc = length(bgcname);
 
+figfol = fullfile('~/Documents/Manuscripts/2023_BGCMIP/figures');
+
 %% ... colors
 
 % GeoDataViz qualitative palette
@@ -130,20 +132,46 @@ worldmap(latlim, lonlim);
 proj = getm(gca);
 close(htmp);
 
-% Project stuff
+
+% Borders, stations, polygons projected
+
+[P.xbor, P.ybor] = projfwd(proj, Border.lat, Border.lon);
+
+[P.xstat, P.ystat] = projfwd(proj, Station.lat, Station.lon);
+
+Bsierp = shapeprjread('/Volumes/LaCie2023/AlaskaShapefiles/bsierp/BSIERP_regions_2012.shp');
+[P.xbsierp, P.ybsierp] = projfwd(proj, [Bsierp.Lat], [Bsierp.Lon]);
+for ii = 1:length(Bsierp)
+    Bsierp(ii).Lon = wrapTo360(Bsierp(ii).Lon);
+end
+[lonc, latc] = polycenter(rmfield(Bsierp, ["X","Y"]));
+
+[P.xbsierplbl, P.ybsierplbl] = projfwd(proj, latc, lonc);
+
+Strata = catstruct(1, shapeprjread('/Volumes/LaCie2023/AlaskaShapefiles/gis_updated/EBS_NBS_2019.shp'), ...
+                      shapeprjread('/Volumes/LaCie2023/AlaskaShapefiles/gis_updated/RUSSIAN_2019.shp'));
+[P.xstrata, P.ystrata] = projfwd(proj, [Strata.Lat], [Strata.Lon]);
+[lonc, latc] = polycenter(rmfield(Strata, ["X","Y"]));
+[P.xstratalbl, P.ystratalbl] = projfwd(proj, latc, lonc);
+
+issebs = [Strata.STRATUM] <= 62;
+pebs = polyshape([Strata(issebs).Lon], [Strata(issebs).Lat]);
+[P.xebs, P.yebs] = projfwd(proj, pebs.Vertices(:,2), pebs.Vertices(:,1));
+
+% Grid
 
 [P.xgrd, P.ygrd] = projfwd(proj, Grd.lat_psi, Grd.lon_psi);
 
-xlim = minmax(P.xgrd, 'expand');
-ylim = minmax(P.ygrd, 'expand');
+xboxlim = minmax(P.xbsierp, 'expand');
+yboxlim = minmax(P.ybsierp, 'expand');
 
-xybox = interparc(linspace(0,1,200), xlim([1 1 2 2 1]), ylim([1 2 2 1 1]), 'linear');
+xybox = interparc(linspace(0,1,200), xboxlim([1 1 2 2 1]), yboxlim([1 2 2 1 1]), 'linear');
 [ltbox, lnbox] = projinv(proj, xybox(:,1), xybox(:,2));
 
-ltextract = minmax(ltbox);
-lnextract = minmax(wrapTo360(lnbox));
-
 % ETOPO_2022 60" data
+
+% ltextract = minmax(ltbox);
+% lnextract = minmax(wrapTo360(lnbox));
 
 % tilename = 'https://www.ngdc.noaa.gov/thredds/dodsC/global/ETOPO2022/60s/60s_surface_elev_netcdf/ETOPO_2022_v1_60s_N90W180_surface.nc';
 % E = ncstruct(tilename, 'lat', 'lon');
@@ -179,27 +207,6 @@ Etop(1).z   = cat(2, Etop.z);
 Etop = Etop(1);
 
 [P.xtop, P.ytop] = projfwd(proj, Etop.lat, Etop.lon);
-
-% Borders, stations, polygons projected
-
-[P.xbor, P.ybor] = projfwd(proj, Border.lat, Border.lon);
-
-[P.xstat, P.ystat] = projfwd(proj, Station.lat, Station.lon);
-
-Bsierp = shapeprjread('/Volumes/LaCie2023/AlaskaShapefiles/bsierp/BSIERP_regions_2012.shp');
-[P.xbsierp, P.ybsierp] = projfwd(proj, [Bsierp.Lat], [Bsierp.Lon]);
-[lonc, latc] = polycenter(rmfield(Bsierp, ["X","Y"]));
-[P.xbsierplbl, P.ybsierplbl] = projfwd(proj, latc, lonc);
-
-Strata = catstruct(1, shapeprjread('/Volumes/LaCie2023/AlaskaShapefiles/gis_updated/EBS_NBS_2019.shp'), ...
-                      shapeprjread('/Volumes/LaCie2023/AlaskaShapefiles/gis_updated/RUSSIAN_2019.shp'));
-[P.xstrata, P.ystrata] = projfwd(proj, [Strata.Lat], [Strata.Lon]);
-[lonc, latc] = polycenter(rmfield(Strata, ["X","Y"]));
-[P.xstratalbl, P.ystratalbl] = projfwd(proj, latc, lonc);
-
-issebs = [Strata.STRATUM] <= 62;
-pebs = polyshape([Strata(issebs).Lon], [Strata(issebs).Lat]);
-[P.xebs, P.yebs] = projfwd(proj, pebs.Vertices(:,2), pebs.Vertices(:,1));
 
 
 %% ... paper fig: map
@@ -293,6 +300,119 @@ globeplot(ltbox, lnbox, 'color', 'k', 'linewidth', 1.5);
 
 export_fig(h.fig, 'B10K_map', '-png', '-r150');
 
+%% ... paper fig: map take 2, more zoomed in
+
+% Create figure
+
+h = plotgrid('size', [1 1], 'margin', 0.01);
+h.fig.Position(3:4) = [600 600];
+set(h.fig, 'color', 'w');
+
+% ETOPO shaded relief
+
+h.ax(2) = copyobj(h.ax(1), h.fig);
+axes(h.ax(1));
+
+h.topo = pcolor(P.xtop', P.ytop', Etop.z');
+colormap(adjustcol(colors{'gray','rgb'}, 1.0));
+set(h.ax, 'xlim', xboxlim, 'ylim', yboxlim, 'dataaspectratio', [1 1 1]);
+shadem([90 45], 2);
+shading flat;
+
+% B10K grid
+
+axes(h.ax(2));
+
+h.roms = pcolor(P.xgrd, P.ygrd, Grd.h(2:end,2:end));
+shading flat;
+set(h.roms, 'facealpha', 0.6);
+cmapbathy = crameri('-oslo'); %cmocean('deep'); %adjustcol(colors{'purple','rgb'}, linspace(1,0,50));
+set(h.ax(2), 'colormap', cmapbathy, 'clim', [0 7000]);
+hold(h.ax(2), 'on');
+
+[cc, h.cont] = contour(P.xtop', P.ytop', Etop.z', [-50 -100 -200], 'k');
+set(h.cont, 'color', rgb('gray'));
+
+% Borders
+
+plot(P.xbor, P.ybor, 'color', 'k');
+
+% Stations and BSIERP regions
+
+dx = diff(minmax(P.xgrd))*0.005;
+
+h.letter = text(P.xstat-dx, P.ystat, Station.letter, 'horiz', 'right', ...
+    'fontname', 'menlo', 'fontsize', 12);
+ismoor = startsWith(Station.name, 'BS-');
+h.stat1 = plot(P.xstat(ismoor), P.ystat(ismoor), 'r^');
+h.stat2 = plot(P.xstat(~ismoor), P.ystat(~ismoor), 'ro');
+set([h.stat1 h.stat2], 'markerfacecolor', 'w', 'markersize', 5, 'markeredgecolor', 'k');
+
+h.bsebs   = patch(P.xebs,    P.yebs,    'w', 'edgecolor', adjustcol(colors{'red','rgb'}, 0.5), 'linewidth', 5);
+h.breg    = patch(P.xbsierp, P.ybsierp, 'w', 'edgecolor', colors{'yellow','rgb'},              'linestyle', '-');
+h.bstrata = patch(P.xstrata, P.ystrata, 'w', 'edgecolor', colors{'red','rgb'},                 'linestyle', '-');
+set([h.bsebs; h.breg; h.bstrata], 'facecolor', 'none', 'edgealpha', 0.3);
+set(h.breg, 'edgealpha', 1.0, 'linewidth', 2);
+
+str = arrayfun(@(X) "\it "+string(wraptext(X.name, 10)), Bsierp, 'UniformOutput', false);
+str{4} = "\it "+string(wraptext(Bsierp(4).name, 15));
+str{9} = "\it" + Bsierp(9).name;
+h.lblreg = text(P.xbsierplbl, P.ybsierplbl,str, 'horiz', 'center', 'color', adjustcol(colors{'yellow','rgb'}, -0.3), 'fontsize', 10, 'fontname', 'Atkinson Hyperlegible');
+
+h.lblreg( 2).Position = h.lblreg( 2).Position + [-2 0 0]*10000; % manual tweak for legibility
+h.lblreg( 3).Position = h.lblreg( 3).Position + [-2 1 0]*10000; % manual tweak for legibility
+h.lblreg( 4).Position = h.lblreg( 4).Position + [ 0 -1 0]*10000; % manual tweak for legibility
+h.lblreg( 7).Position = h.lblreg( 7).Position + [ 3 0 0]*10000; % manual tweak for legibility
+h.lblreg( 8).Position = h.lblreg( 8).Position + [ 1 0 0]*10000; % manual tweak for legibility
+h.lblreg(10).Position = h.lblreg(10).Position + [-1 0 0]*10000; % manual tweak for legibility
+h.lblreg(11).Position = h.lblreg(11).Position + [ 3 0 0]*10000; % manual tweak for legibility
+h.lblreg(12).Position = h.lblreg(12).Position + [ 0 5 0]*10000; % manual tweak for legibility
+h.lblreg(13).Position = h.lblreg(13).Position + [10 4 0]*10000; % manual tweak for legibility
+h.lblreg(15).Position = h.lblreg(15).Position + [-8 13 0]*10000; % manual tweak for legibility
+
+uistack(h.letter, 'top');
+
+% Axes
+
+set(h.ax(2), 'visible', 'off');
+set(h.ax, 'xlim', xboxlim, 'ylim', yboxlim, 'dataaspectratio', [1 1 1], ...
+    'layer', 'top', 'xtick', [], 'ytick', []);
+
+% Colorbar
+
+% drawnow;
+% puase(1);
+h.cb = colorbar('south');
+h.cb.Position(3) = 0.3;
+set(h.cb, 'ticks', [], 'edgecolor', colors{'dark','rgb'});
+tprops = {'edgecolor', 'none', 'fontsize', 12, 'vert', 'middle'};
+annotation('textbox', h.cb.Position, 'string', '0m', 'horiz', 'left', tprops{:});
+annotation('textbox', h.cb.Position, 'string', '7000m', 'horiz', 'right', tprops{:}, 'color', 'w');
+
+% Inset map
+
+pos = plotboxpos(h.ax(2));
+dxin = 0.2;
+h.axin = axes('position', [pos(1)+pos(3)-dxin pos(2)+pos(4)-dxin, dxin, dxin]);
+
+axesm('ortho', 'origin', [mean(ltbox) mean(wrapTo360(lnbox)) 0], 'frame', 'on', 'grid', 'on', 'ffacecolor', ones(1,3)*0.9, 'flinewidth', 1.0);
+C = load('coastlines');
+plotm(C.coastlat, C.coastlon, 'color', ones(1,3)*0.2, 'linewidth', 0.5);
+plotromsrho(Grd, Grd.h, false);
+plotm(ltbox, lnbox, 'color', 'k', 'linewidth', 1.2);
+
+
+set(h.axin, 'colormap', cmapbathy, 'clim', [0 7000], 'visible', 'off');
+
+% globeplot(C.coastlat, C.coastlon, 'color', ones(1,3)*0.2, 'linewidth', 0.5);
+% globegraticule('linestyle', ':');
+% axis tight;
+% view(-90,50);
+% 
+% globeplot(ltbox, lnbox, 'color', 'k', 'linewidth', 1.5);
+
+% export_fig(h.fig, fullfile(figfol, 'final', 'B10K_map'), '-png', '-r150');
+
 
 %% Climatological metrics by station: Do they agree across models?
 
@@ -358,6 +478,8 @@ lprops = {'linewidth', 1.5};
 
 xtk = datetime(2024,1:12,1);
 
+%% ... original plots (one per variable)
+
 % Loop over variables to plot
 
 lineprops = {'linewidth', 1.5};
@@ -415,6 +537,74 @@ for iplt = 1:height(pltvars)
     close(h.fig);
 
 end
+
+%% ... same plots, but combining the 3 main-paper ones (NPP, NO3, NH4)
+
+% Props that differ from above
+
+lineprops = {'linewidth', 1.0};
+legprop = {'anchor', {'w','w'}, 'buffer', [0 0], 'interpreter', 'none', 'box', 'off', 'fontsize', 9, 'xscale', 0.5};
+labelprop = {'vbuffer', 0, 'hbuffer', 0.05, 'fontname', 'menlo', 'fontsize', 10};
+
+colplt = [colmodel; colors{'yellow','rgb'}];
+
+% Plot
+
+h = plotgrid('size', [3 1], 'mar', 0.01, 'sv', 0.05, 'ml', 0.07, 'mb', 0.03, 'mt', 0.05);
+h.fig.Position(3:4) = [612 792];
+
+sz = size(statordergrd);
+h.ax = subgridaxes(h.ax, sz(1), sz(2));
+
+for iplt = 1:3
+
+    axtmp = h.ax(:,:,iplt);
+
+    [~,im] = ismember(pltvars.vars{iplt}, mvars);
+    % im = find(strcmp(mvars, 'npp'));
+    
+    for ii = 1:numel(statordergrd)
+        if ~pltmask(ii)
+            is = statordergrd(ii);
+            [rr,cc] = ind2sub(sz, ii);
+    
+            if length(im) == 1
+                [~,h.ens(ii,1)] = ensemble2bnd(MetClim.doy, permute(MetClim.all(:,1:4,im,is,:), [1 2 5 3 4]), 'prc', [10 90], 'plot', 'boundedline', 'alpha', true, 'axis', axtmp(ii), 'cmap', colplt, 'tlim', [0.2 0.2]);
+                set(h.ens(ii,1).ln, lineprops{:});
+            elseif length(im) == 2
+                [~,h.ens(ii,1)] = ensemble2bnd(MetClim.doy, permute(MetClim.all(:,1:4,im(1),is,:), [1 2 5 3 4]), 'prc', [10 90], 'plot', 'boundedline', 'alpha', true, 'axis', axtmp(ii), 'cmap', colplt, 'tlim', [0.2 0.2]);
+                set(h.ens(ii,1).ln, lineprops{:});
+                [~,h.ens(ii,2)] = ensemble2bnd(MetClim.doy, permute(MetClim.all(:,1:4,im(2),is,:), [1 2 5 3 4]), 'prc', [10 90], 'plot', 'boundedline', 'alpha', true, 'axis', axtmp(ii), 'cmap', colplt, 'tlim', [0.2 0.2]);
+                set(h.ens(ii,2).ln, lineprops{:}, 'linestyle', '-.');
+            end
+        end
+    end
+    % set(h.ens, 'edgealpha', 0.1);
+    
+    h.lbl = labelaxes(axtmp(~pltmask), Station.letter(statordergrd(~pltmask)), 'northwest', labelprop{:});
+    set(axtmp, 'ylim', minmax(cat(1, axtmp(~pltmask).YLim)), 'box', 'off', 'xlim', [0 365], 'xtick', doy(xtk), 'xticklabel', datestr(xtk, 'm'), 'tickdir', 'out', 'fontsize', 8);
+    if ~isnan(pltvars.maxval(iplt))
+        set(axtmp, 'ylim', [0 pltvars.maxval(iplt)]);
+    end
+    set(axtmp(:,2:end), 'yticklabel', '');
+    set(axtmp(1:end-1,:), 'xticklabel', '');
+    set(h.fig, 'color', 'w');
+    set(axtmp(pltmask), 'visible', 'off');
+    
+    if length(im) == 1
+        h.leg = legendflex(h.ens(1).ln, {'Banas', 'BEST_NPZ', 'COBALT', 'BEST_NPZ no-ben'}, 'ref', axtmp(3,end), legprop{:});
+    else
+        h.leg = legendflex([h.ens(1,:).ln], {'Banas, surface', 'BEST_NPZ, surface', 'COBALT, surface', 'BEST_NPZ no-ben, surface', ...
+                                             'Banas, bottom',  'BEST_NPZ, bottom',  'COBALT, bottom',  'BEST_NPZ no-ben, bottom'}, 'ref', axtmp(3,end), legprop{:});
+    end
+
+    ylabel(axtmp(1,1), pltvars.lname{iplt}, 'fontsize', 10);
+
+end
+
+export_fig(h.fig, fullfile(figfol, 'final', "metrics_NPP_NO3_NH4"), '-png', '-r150', '-painters');
+
+
 
 %% ... same axes setup, but NO3,NH4 from initialization
 
@@ -681,8 +871,8 @@ h.b(3,1) = bar(x(1:end-1), FlxAvg.cobalt{1,:});
 % h.b(3,2) = bar(x(end), sum(FlxAvg.cobalt{1,:}));
 h.b(3,2) = bar(x(end-1:end), [NaN sum(FlxAvg.cobalt{1,:})]);
 
-set(h.ax, 'xlim', [0 12.33], 'box', 'off', 'xcolor', 'none', 'fontsize', 8, 'ylim', [-2 1.5]);
-labelaxes(h.ax, "Boundary flux (mmol N m^{-2} d^{-1})", 'northwest', 'fontsize', 10);
+set(h.ax, 'xlim', [0 12.33], 'box', 'off', 'xcolor', 'none', 'fontsize', 9, 'ylim', [-2 1.5], 'ygrid', 'on');
+labelaxes(h.ax, "Boundary flux (mmol N m^{-2} d^{-1})", 'northwest', 'fontsize', 11);
 
 set(h.b(1:3,1), {'facecolor'}, num2cell(colmodel,2),{'edgecolor'}, num2cell(colmodel,2), 'linewidth', 1.0);
 set(h.b(1:3,2), {'edgecolor'}, num2cell(colmodel,2), 'facecolor', 'none', 'linewidth', 1.5);
@@ -693,8 +883,8 @@ set(h.fig, 'color', 'w');
 
 annotation('rectangle', [0 0 1 1], 'edgecolor', 'w');
 
-return
-exportgraphics(h.fig, 'bottom_flux_bars.pdf');
+exportgraphics(h.fig, fullfile(figfol, 'other', 'bottom_flux_bars.pdf'));
+% Note: didn't export well to png, converted in preview after the fact
 
 % TDOD Add labels on fluxes?  Words?  Schematics (type, x -> y w/
 % pictographs for x,y?)
@@ -734,7 +924,6 @@ nbudfile = fullfile(simfolder, 'analysis/nbudgets_all_SEBS.mat');
 Nbud = load(nbudfile);
 
 maskarea = sum(Grd.area_feast(Budget(5).mask)) * 1e6; % m^2
-
 
 pltopt{1} = ["../bgcmip_loop_nbudget_banas/Out", ...
           "../bgcmip_loop_nbudget_bestnpz/Out", ...
@@ -1099,7 +1288,18 @@ for ig = 1:length(graphplt)
     h.edge = patch((r(1:10).*cos(th) + ecoord.x(1:10))', ...
                    (r(1:10).*sin(th) + ecoord.y(1:10))', 'g');
 
-    h.elbl = text(ecoord.x(1:10), ecoord.y(1:10), compose("%.2f", abs(edgesum(1:10))), 'horiz', 'center', 'fontsize', 8);
+    evalue = abs(edgesum(1:10));
+    estr = compose("%.2f", evalue);
+    estr(evalue < 1) = compose("%.2g", evalue(evalue<1));
+
+    h.elbl = text(ecoord.x(1:10), ecoord.y(1:10), estr, 'horiz', 'center', 'fontsize', 10);
+    
+    needsoffset = evalue < 1.5;
+    oldpos = cat(1, h.elbl(needsoffset).Position);
+    newpos = oldpos + [0.5 0.2 0];
+
+    set(h.elbl(needsoffset), {'Position'}, num2cell(newpos,2), 'horiz', 'left', 'vert', 'base'); 
+    h.econ = line([oldpos(:,1) newpos(:,1)]', [oldpos(:,2) newpos(:,2)]', 'color', ones(1,3)*0.6, 'linestyle', '-');
     set(h.edge, 'facecolor', 'w', 'edgecolor', rgb('gray'));
 
     % Some formatting
@@ -1109,7 +1309,7 @@ for ig = 1:length(graphplt)
     set(h.fig, 'color', 'w');
 
     ttlstr = sprintf("%s: %.2f Tg N", pltlbl{iplt}{ig}, sum(Gplt.Nodes.meanval));
-    labelaxes(h.ax(ig), ttlstr, 'northoutside', 'fontweight', 'b', 'interpreter', 'none');
+    labelaxes(h.ax(ig), ttlstr, 'northoutside', 'fontweight', 'b', 'interpreter', 'none', 'fontsize', 12);
 
     % Invisible patches for labels
 
@@ -1124,7 +1324,7 @@ for ig = 1:length(graphplt)
              compose("(%5.2f%%)", 100*Gplt.Nodes.meanval./sum(Gplt.Nodes.meanval));
 
     h.leg = legendflex(h.ptmp, cellstr(lblstr(1:end-1)), 'ref', h.ax(ig), 'anchor', leganchor{2}, 'buffer', [0 0], ...
-        'interpreter', 'none', 'fontsize', 10, 'box', 'off', 'xscale', 0.5, 'fontname', 'menlo');
+        'interpreter', 'none', 'fontsize', 12, 'box', 'off', 'xscale', 0.5, 'fontname', 'menlo');
 
 
 end
@@ -1132,9 +1332,9 @@ end
 set(h.ax, 'colormap', cmocean('-gray'), 'clim', [0 1.2]);
 
 if iplt == 1
-    export_fig(h.fig, 'nbudgets_graph', '-png', '-r150');
+    export_fig(h.fig, fullfile(figfol, 'final', 'nbudgets_graph'), '-png', '-r150');
 else
-    export_fig(h.fig, 'nbudgets_graph_bestnpz', '-png', '-r150');
+    export_fig(h.fig, fullfile(figfol, 'final', 'nbudgets_graph_bestnpz'), '-png', '-r150');
 end
 
 % TODO: add arrow directions (maybe line gradient?), treemap the nodes
@@ -1846,8 +2046,10 @@ exportgraphics(h.fig, 'biomass_pz_logscaled_2.png', 'resolution', 150);
 
 % M2, M8 ice cover
 
-outfile = dir(fullfile(simfolder, 'bgcmip_loop_banas', 'Out', '*avg*'));
+outfile = dir(fullfile(fileparts(simfolder), 'postprocessed/B10K-BGCMIPbanas_CFS_loop/Level1/*aice.nc'));
+% outfile = dir(fullfile(simfolder, 'bgcmip_loop_banas', 'Out', '*avg*'));
 outfile = fullfile({outfile.folder}, {outfile.name});
+
 
 taice = ncdateread(outfile, 'ocean_time');
 Scs = struct('xi_rho', [Station.xi(2) 1 1], 'eta_rho', [Station.eta(2) 1 1]);
@@ -1929,10 +2131,10 @@ end
 
 midx = [2 6];
 
-h = plotgrid('size', [3 2], 'mb', 0.05, 'mt', 0.08, ...
+h = plotgrid('size', [3 2], 'mb', 0.05, 'mt', 0.06, 'sv', 0.03, ...
     'collabel', {'Southeastern Bering Sea (M2)', 'Northern Bering Sea (M8)'}, ...
     'rowlabel', {'Banas', 'BEST\_NPZ', 'COBALT'}, 'rowlabeloffset', 0.08, 'collabeloffset', 0.03);
-setpos(h.fig, '# # 8.5in 8in');
+setpos(h.fig, '# # 8.5in 9in');
 
 for im = 1:length(midx)
 
@@ -1957,14 +2159,162 @@ end
 arrayfun(@(x) shading(x, 'flat'), h.ax);
 tk = datetime(1990,1:12,1);
 set(h.ax, 'colormap', cmocean('speed'), 'clim', [0 50], 'xtick', doy(tk), ...
-    'xticklabel', datestr(tk, 'm'), 'fontsize', 6, 'layer', 'top', 'tickdir', 'out');
+    'xticklabel', datestr(tk, 'm'), 'fontsize', 6, 'layer', 'top', 'tickdir', 'out', 'fontname', 'andale mono');
 
 h.cb = colorbar(h.ax(end), 'east');
-h.cb.Position(1) = 0.95;
-ylabel(h.cb, 'NPP (mmol N m^-3)')
+h.cb.Position(1) = 0.96;
+ylabel(h.cb, 'NPP (mmol N m^{-3})')
+set(h.cb, 'fontname', 'Helvetica', 'fontsize', 8);
+h.cb.Label.FontSize = 10;
+
+exportgraphics(h.fig, fullfile(figfol, 'final', 'bloomvariability.png'), 'resolution', 150);
+
+%% Response to reviewer: Is there a trend in the Banas phytoplankton?
+
+tloop = Metrics(2,2).banas.Time;
+tloop = datevec(tloop);
+tloop(:,1) = tloop(:,1) + 30;
+tloop = datetime(tloop);
+
+for ii = length(statorder):-1:1
+
+    x = [Metrics(statorder(ii),1).banas.Time; tloop];
+    y = [Metrics(statorder(ii),1).banas.phyto; Metrics(statorder(ii),2).banas.phyto];
+    
+    tmp = timetable(x,y);
+    tmp.day = days(tmp.x - tmp.x(1));
+    mdl{ii} = fitlm(tmp.day, tmp.y);
+end
+
+fstat = cellfun(@(x) x.ModelFitVsNullModel.Fstat, mdl);
+pval = cellfun(@(x) x.ModelFitVsNullModel.Pvalue, mdl);
+coeff = cell2mat(cellfun(@(x) x.Coefficients.Estimate, mdl, 'uni', 0));
+
+%% ... drift in total N on SEBS?
+
+axorder = [...
+    "nbudget_banas"                 "loop_nbudget_banas"
+    "nbudget_bestnpz"               "loop_nbudget_bestnpz"
+    "nbudget_bestnpzburynoinfauna"  "loop_nbudget_bestnpzburynoinfauna"
+    "nbudget_cobalt"                "loop_nbudget_cobalt"];
+
+[~,loc] = ismember(fullfile("..", "bgcmip_"+axorder, "Out"), Nbud.outpath);
+
+h = plotgrid('size', size(axorder), 'collabel', {'Spinup', 'Primary'});
+for ii = 1:numel(axorder)
+    Nd = Nbud.G{loc(ii)}.Nodes;
+    x = Nd.val; 
+    t = Nbud.tg{loc(ii)};
+
+    x = cat(2,x{:}) .* maskarea * ngpermol * 1e-3 * 1e-12; % Tg N
+
+    tf = cellfun(@(x) ismember(Nd.Name, x), vtype.vars, 'uni', 0);
+    [rr,cc] = find(cat(2,tf{:}));
+    Nd.subtype(rr) = vtype.type(cc);
+    Nd.color(rr,:) = vtype.rgb(cc,:);
+    
+    h.ar{ii} = area(h.ax(ii), t, x);
+    set(h.ar{ii}, {'facecolor'}, num2cell(Nd.color,2), 'edgecolor', 'none');
+end
+
+set(h.ax, 'ylim', [0 14], 'xtick', datetime(1990:1994,1,1), 'box', 'off', ...
+    'ygrid', 'on', 'layer', 'top', 'fontsize', 7, 'tickdir', 'out', 'ytick', 0:2:14);
+set(h.ax(1:end-1,:), 'xticklabel', '');
+ylabel(h.ax(1), 'Total N (Tg)')
+
+labelaxes(h.ax(:,1), ["Banas", "BEST_NPZ", "BEST_NPZ +burial -infauna", "COBALT"], 'northwest', 'interpreter', 'none');
+
+copygraphics(h.fig, 'resolution', 150)
+
+%% More precise bloom date: M2 only (corresponds to log_pz_biomass plot)
+
+threshfac = 1.0;
+fracmax = 0.3;
+
+yrnom = 1991:2018;
+ny = length(yrnom);
+
+sidx = 2; % M2
+
+bloomvars = ["phyto", "zmicro", "zmeso"];
+% bloomvars = ["npp", "zprod_micro", "zprod_meso"];
+bloomvarsl = ["Phytoplankton", "Microzooplankton", "Mesozooplankton"];
+nbv = length(bloomvars);
+
+tblmstats = nan(nbgc,nbv,ny,4); % model x variable x year x bloom-stat
+
+statvars = ["min_doy", "bloom_doy", "max_doy", "maxx_doy"];
+
+for ii = 1:nbgc
+    for ib = 1:nbv
+        if ii == 3 && ib == 2 % COBALT zmicro
+            doylimit = 150;
+        else 
+            doylimit = 250;
+        end
+        if ~all(isnan(Metrics(sidx,2).(bgcname{ii}).(bloomvars{ib})))
+            Tmp = bloomdate(Metrics(sidx,2).(bgcname{ii}), bloomvars{ib}, ...
+                'thresh', threshfac, 'fracmax', fracmax, 'doylimit', doylimit, ...
+                'plotflag', true);
+        
+            [tf,loc] = ismember(Tmp.yrnom, yrnom);
+            tblmstats(ii,ib,loc(tf),:) = Tmp{tf,statvars};
+        end
+    end
+end
+
+%% Plot
+
+h = plotgrid('size', [1 1], 'mb', 0.2);
+h.fig.Color = 'w';
+
+[~,h.ens(1)] = ensemble2bnd((1:3)+0.0, permute(tblmstats(:,1,:,:), [1 4 3 2]), 'plot', 'boxplot');
+hold on;
+[~,h.ens(2)] = ensemble2bnd((1:3)+4.0, permute(tblmstats(:,2,:,:), [1 4 3 2]), 'plot', 'boxplot');
+[~,h.ens(3)] = ensemble2bnd((1:3)+8.0, permute(tblmstats(:,3,:,:), [1 4 3 2]), 'plot', 'boxplot');
 
 
-exportgraphics(h.fig, 'bloomvariability.png', 'resolution', 150);
+tk = datetime(2020,-1:11,1);
+tklbl = tk(1:end-1)+diff(tk)./2;
+tklbl.Format = 'MMM';
+tk2doy = @(x) days(x-datetime(2020,1,1));
+
+xtk = [0 4 8]+(1:nbgc)';
+
+set(h.ax, 'tickdir', 'out', ...
+          'ylim', tk2doy(tk([1 end])), ...
+          'xtick', xtk(:), ...
+          'xticklabel', repmat(["Banas", "BEST_NPZ", "COBALT"],1,3), ...
+          'xlim', [-1 13]);
+
+gridxy([4 8], tk2doy(tk), 'color', [1 1 1]*0.8);
+text(ones(size(tklbl))*-0.8, tk2doy(tklbl), string(tklbl), 'horiz', 'left', 'color', [1 1 1]*0.8);
+ylabel('Day of year');
+
+ytxt = h.ax.YLim(1)-diff(h.ax.YLim)*0.2;
+text(xtk(2,:), ones(1,3)*ytxt, bloomvarsl, 'horiz', 'center');
+
+tmp = [h.ens.box];
+set(tmp(endsWith(get(tmp,'tag'),'Whisker')), 'linestyle', '-');
+
+exportgraphics(h.fig, fullfile(figfol, 'other', 'bio_peak_timing.png'), 'resolution', 150);
+
+
+mn = mean(tblmstats,3, 'omitnan');
+st = std(tblmstats,1,3,'omitnan');
+
+for ii = 1:nbgc
+    for ib = 1:nbv
+        for is = 1:length(statvars)
+            fprintf('%8s, %8s, %8s: %.1f +/- %.1f\n', bgcname{ii}, bloomvars{ib}, statvars{is}, mn(ii,ib,1,is), st(ii,ib,1,is));
+        end
+    end
+end
+
+
+
+
+
 
 
 
