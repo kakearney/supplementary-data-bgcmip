@@ -4,7 +4,8 @@
 
 This repository holds the supporting code for the following mansucript:
 
-Kearney, K.A., Cheng, W, and Hermann, A.J. A biogeochemical model intercomparison for the eastern Bering Sea shelf.  Submitted for review to JGR: Oceans.
+Kearney, K.A., Cheng, W., Hermann, A.J. (2025). A biogeochemical model intercomparison for the eastern Bering Sea shelf. Journal of Geophysical Research:
+Oceans, 130, e2025JC022634. https://doi.org/10.1029/2025JC022634
 
 The contents include the scripts used to compile several variants of the ROMS model for the Bering10K domain, parameterize and run each simulation, analyze output, and create figures for the paper.
 
